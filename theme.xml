@@ -1,0 +1,10 @@
+<theme defaultView="grid">
+	<formatVersion>7</formatVersion>
+	<include>./_inc/systems/metadata-global/_default.xml</include>
+	<include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+	<!--<include>./_inc/xml/variables.xml</include>
+	<include>./_inc/xml/scheme-dark.xml</include>
+	<include>./_inc/xml/view-menu.xml</include>
+	<include>./_inc/xml/view-system.xml</include>
+	<include>./_inc/xml/view-grid.xml</include>-->
+</theme>
