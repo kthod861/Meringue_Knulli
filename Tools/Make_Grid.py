@@ -233,6 +233,7 @@ def main_grid_creator(boxart_fold, system_name, ntiles, padding, ouputimg, only_
         #ouputimg = os.path.join( thumb_fold, "{}.jpg".format( system_name ))
         makegrid_fixed_outputres(resolution, (1920,1080), ouputimg, limages, ntiles, padding)
 
+'''
 ###################################################
 # This will run on libretro-thumbnails depots only
 ###################################################
@@ -256,3 +257,12 @@ for system_name in os.listdir(thumb_fold):
             if i >= 300:
                 break
                 #break
+
+'''
+
+system_name = "The 3DO Company - 3DO"
+boxart_fold = r"F:\libretro-thumbnails\The 3DO Company - 3DO\Named_Boxarts"
+output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli\Tools\Make_Grid_generated"
+ouputimg = os.path.join( output_path, "{}.jpg".format( system_name ))
+
+main_grid_creator(boxart_fold, system_name, 8, 10, ouputimg, only_compat_aspectratio= True)
