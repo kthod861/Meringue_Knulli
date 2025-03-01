@@ -260,9 +260,11 @@ for system_name in os.listdir(thumb_fold):
 
 '''
 
-system_name = "The 3DO Company - 3DO"
-boxart_fold = r"F:\libretro-thumbnails\The 3DO Company - 3DO\Named_Boxarts"
-output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli\Tools\Make_Grid_generated"
+system_name = "snes"
+boxart_fold = r"Y:\RG35XX\SD_card02\roms\snes\images"
+
+output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli"
+
 ouputimg = os.path.join( output_path, "{}.jpg".format( system_name ))
 
 main_grid_creator(boxart_fold, system_name, 8, 10, ouputimg, only_compat_aspectratio= True)
