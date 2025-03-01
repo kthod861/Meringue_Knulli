@@ -219,7 +219,7 @@ def cleanup_unidentified(imgfolder):
         except:
             os.rename(image_path, image_path+".NO")
     
-def main_grid_creator(boxart_fold, system_name, ntiles, padding, only_compat_aspectratio = False, cleanup = False):
+def main_grid_creator(boxart_fold, system_name, ntiles, padding, ouputimg, only_compat_aspectratio = False, cleanup = False):
     print(system_name)
     if only_compat_aspectratio:
         resolution, limages  = get_resolution_onlyrescompatible(boxart_fold)
@@ -230,7 +230,7 @@ def main_grid_creator(boxart_fold, system_name, ntiles, padding, only_compat_asp
         if cleanup:
             cleanup_unidentified(boxart_fold)
 
-        ouputimg = os.path.join( thumb_fold, "{}.jpg".format( system_name ))
+        #ouputimg = os.path.join( thumb_fold, "{}.jpg".format( system_name ))
         makegrid_fixed_outputres(resolution, (1920,1080), ouputimg, limages, ntiles, padding)
 
 ###################################################
@@ -238,6 +238,7 @@ def main_grid_creator(boxart_fold, system_name, ntiles, padding, only_compat_asp
 ###################################################
 
 thumb_fold = r"F:\libretro-thumbnails"
+output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli\Tools\Make_Grid_generated"
 i = 0
 for system_name in os.listdir(thumb_fold):
     if not "git" in system_name:
@@ -246,7 +247,9 @@ for system_name in os.listdir(thumb_fold):
             for subfold in os.listdir(systemfold):
                 if "Named_Boxarts" in subfold:
                     boxart_fold = os.path.join( systemfold, subfold)
-                    main_grid_creator(boxart_fold, system_name, 8, 10)
+                    ouputimg = os.path.join( output_path, "{}.jpg".format( system_name ))
+
+                    main_grid_creator(boxart_fold, system_name, 8, 10, ouputimg)
                     
 
             i+=1
