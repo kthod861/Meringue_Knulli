@@ -1,0 +1,32 @@
+<theme>
+
+<formatVersion>7</formatVersion>
+
+	<view name="system">
+		<image name="logo">
+			<path>./_inc/systems/logos/${system.theme}.png</path>
+			
+			<!--<reflexion>0.3 0.0</reflexion>-->
+		</image>
+		<carousel name="systemcarousel">
+			<origin>0 0.5</origin>
+			<pos>0 0.15</pos>
+			<size>1 1</size>
+			<color>00000000</color>
+			<itemScale>1.80</itemScale>
+			<minLogoOpacity>0</minLogoOpacity>
+			<logoScale>1.3</logoScale>
+			<transitionSpeed>800</transitionSpeed>
+			<systemInfoDelay>100</systemInfoDelay>
+			<scaledLogoSpacing>0.4</scaledLogoSpacing>
+			<zIndex>500</zIndex>
+		</carousel>
+		<image name="controler" extra="true">
+			<path>./_inc/systems/controllers/${system.theme}.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.65</pos>
+			<maxSize>.7 .7</maxSize>
+			<zIndex>400</zIndex>
+		</image>
+	</view>
+</theme>

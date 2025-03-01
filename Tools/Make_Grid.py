@@ -219,7 +219,7 @@ def cleanup_unidentified(imgfolder):
         except:
             os.rename(image_path, image_path+".NO")
     
-def main_grid_creator(boxart_fold, system_name, ntiles, padding, ouputimg, only_compat_aspectratio = False, cleanup = False):
+def main_grid_creator(boxart_fold, system_name , output_resolution, ntiles, padding, ouputimg, only_compat_aspectratio = False, cleanup = False):
     print(system_name)
     if only_compat_aspectratio:
         resolution, limages  = get_resolution_onlyrescompatible(boxart_fold)
@@ -231,7 +231,7 @@ def main_grid_creator(boxart_fold, system_name, ntiles, padding, ouputimg, only_
             cleanup_unidentified(boxart_fold)
 
         #ouputimg = os.path.join( thumb_fold, "{}.jpg".format( system_name ))
-        makegrid_fixed_outputres(resolution, (1920,1080), ouputimg, limages, ntiles, padding)
+        makegrid_fixed_outputres(resolution, output_resolution, ouputimg, limages, ntiles, padding)
 
 '''
 ###################################################
@@ -248,7 +248,7 @@ for system_name in os.listdir(thumb_fold):
             for subfold in os.listdir(systemfold):
                 if "Named_Boxarts" in subfold:
                     boxart_fold = os.path.join( systemfold, subfold)
-                    ouputimg = os.path.join( output_path, "{}.jpg".format( system_name ))
+                    ouputimg = os.path.join( output_path, (1920,1080), "{}.jpg".format( system_name ))
 
                     main_grid_creator(boxart_fold, system_name, 8, 10, ouputimg)
                     
@@ -260,11 +260,11 @@ for system_name in os.listdir(thumb_fold):
 
 '''
 
-system_name = "snes"
-boxart_fold = r"Y:\RG35XX\SD_card02\roms\snes\images"
+system_name = "gba"
+boxart_fold = r"Y:\RG35XX\SD_card02\roms\gba\images"
 
-output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli"
+output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli\_inc\systems\background_4_3"
 
 ouputimg = os.path.join( output_path, "{}.jpg".format( system_name ))
 
-main_grid_creator(boxart_fold, system_name, 8, 10, ouputimg, only_compat_aspectratio= True)
+main_grid_creator(boxart_fold, system_name, (960,720), 10, 5, ouputimg, only_compat_aspectratio= True)

@@ -1,0 +1,22 @@
+<theme>
+
+<formatVersion>7</formatVersion>
+
+	<view name="system">
+		<!-- Background-->
+		<image name="background_console" extra="true">
+			<path>./_inc/systems/background_4_3/${system.theme}.jpg</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="foreground_console" extra="static">
+			<path>./_inc/images/SystemForeground_4_3.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>400</zIndex>
+		</image>
+	</view>
+</theme>
