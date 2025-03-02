@@ -5,8 +5,6 @@
 	<view name="system">
 		<image name="logo">
 			<path>./_inc/systems/logos/${system.theme}.png</path>
-			
-			<!--<reflexion>0.3 0.0</reflexion>-->
 		</image>
 		<carousel name="systemcarousel">
 			<origin>0 0.5</origin>
@@ -24,41 +22,76 @@
 		<image name="controler" extra="true">
 			<path>./_inc/systems/controllers/${system.theme}.png</path>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.65</pos>
-			<maxSize>.7 .7</maxSize>
+			<pos>0.5 0.57</pos>
+			<maxSize>.6 .6</maxSize>
 			<zIndex>400</zIndex>
-			<storyboard repeatAt="100">
-				<animation property="offsetX" from="-0.002" to="-0.002" duration="100" mode="linear"/>
-				<animation property="offsetX" from="-0.002" to="0" duration="350" mode="easeIn" begin="100"/>
-				<animation property="offsetX" from="0" to="0.002" duration="350" mode="easeOut" begin="450"/>
-				<animation property="offsetX" from="0.002" to="0" duration="350" mode="easeIn" begin="800"/>
-				<animation property="offsetX" from="0" to="-0.002" duration="350" mode="easeOut" begin="1150"/>
-				<animation property="offsetX" from="-0.002" to="0" duration="350" mode="easeIn" begin="1500"/>
-				<animation property="offsetX" from="0" to="0.002" duration="350" mode="easeOut" begin="1850"/>
-				<animation property="offsetX" from="0.002" to="0" duration="350" mode="easeIn" begin="2200"/>
-				<animation property="offsetX" from="0" to="-0.002" duration="350" mode="easeOut" begin="2550"/>
-				<animation property="offsetX" from="-0.002" to="0" duration="350" mode="easeIn" begin="2900"/>
-				<animation property="offsetX" from="0" to="0.002" duration="350" mode="easeOut" begin="3250"/>
-				<animation property="offsetX" from="0.002" to="0" duration="350" mode="easeIn" begin="3600"/>
-				<animation property="offsetX" from="0" to="-0.002" duration="350" mode="easeOut" begin="3950"/>
-				<animation property="offsetX" from="-0.002" to="0" duration="350" mode="easeIn" begin="4300"/>
-				<animation property="offsetX" from="0" to="0.002" duration="350" mode="easeOut" begin="4650"/>
-				<animation property="offsetX" from="0.002" to="0" duration="350" mode="easeIn" begin="5000"/>
-				<animation property="offsetX" from="0" to="-0.002" duration="350" mode="easeOut" begin="5350"/>
-				<animation property="offsetX" from="-0.002" to="0" duration="350" mode="easeIn" begin="5700"/>
-				<animation property="offsetX" from="0" to="0.002" duration="350" mode="easeOut" begin="6050"/>
-				<animation property="offsetX" from="0.002" to="0" duration="350" mode="easeIn" begin="6400"/>
-				<animation property="offsetX" from="0" to="-0.002" duration="350" mode="easeOut" begin="6750"/>
-				<animation property="offsetX" from="-0.002" to="0" duration="350" mode="easeIn" begin="7100"/>
-				<animation property="offsetX" from="0" to="0.002" duration="350" mode="easeOut" begin="7450"/>
-				<animation property="offsetX" from="0.002" to="0" duration="350" mode="easeIn" begin="7800"/>
-				<animation property="offsetX" from="0" to="-0.002" duration="350" mode="easeOut" begin="8150"/>
-				<animation property="offsetX" from="-0.002" to="0" duration="350" mode="easeIn" begin="8500"/>
-				<animation property="offsetX" from="0" to="0.002" duration="350" mode="easeOut" begin="8850"/>
-				<animation property="offsetX" from="0.002" to="0" duration="350" mode="easeIn" begin="9200"/>
-				<animation property="offsetX" from="0" to="-0.002" duration="350" mode="easeOut" begin="9550"/>
-			</storyboard>
 		</image>
-
+		<!-- System view Infos-->
+		<text name="systemInfo" >
+			<origin>0 0</origin>
+			<pos>0.4 0.25</pos>
+			<size>1 0.22</size>
+			<backgroundColor>00000000</backgroundColor>
+			<color>ADADAD</color>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.02</fontSize>
+			<letterCase>capitalize</letterCase>
+			<zIndex>600</zIndex>
+		</text>
+		<!-- Manufacturer Infos-->
+		<text name="Manufacturer" extra="static">
+			<origin>0 0</origin>
+			<pos>0.02 0.25</pos>
+			<size>1 0.22</size>
+			<backgroundColor>00000000</backgroundColor>
+			<color>ADADAD</color>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.02</fontSize>
+			<text>${systemManufacturer}    ${systemReleaseDateFormated}</text>
+			<opacity>0.8</opacity>
+			<zIndex>800</zIndex>
+		</text>
+		<!-- Logo animation -->
+		<control name="logo,logoText" scale="1" >
+			<storyboard event="activate" repeatAt="100" >
+				<animation property="offsetX" from="-0.005" to="-0.005" duration="100" mode="linear"/>
+				<animation property="offsetX" from="-0.005" to="0" duration="350" mode="easeIn" begin="100"/>
+				<animation property="offsetX" from="0" to="0.005" duration="350" mode="easeOut" begin="450"/>
+				<animation property="offsetX" from="0.005" to="0" duration="350" mode="easeIn" begin="800"/>
+				<animation property="offsetX" from="0" to="-0.005" duration="350" mode="easeOut" begin="1150"/>
+				<animation property="offsetX" from="-0.005" to="0" duration="350" mode="easeIn" begin="1500"/>
+				<animation property="offsetX" from="0" to="0.005" duration="350" mode="easeOut" begin="1850"/>
+				<animation property="offsetX" from="0.005" to="0" duration="350" mode="easeIn" begin="2200"/>
+				<animation property="offsetX" from="0" to="-0.005" duration="350" mode="easeOut" begin="2550"/>
+				<animation property="offsetX" from="-0.005" to="0" duration="350" mode="easeIn" begin="2900"/>
+				<animation property="offsetX" from="0" to="0.005" duration="350" mode="easeOut" begin="3250"/>
+				<animation property="offsetX" from="0.005" to="0" duration="350" mode="easeIn" begin="3600"/>
+				<animation property="offsetX" from="0" to="-0.005" duration="350" mode="easeOut" begin="3950"/>
+				<animation property="offsetX" from="-0.005" to="0" duration="350" mode="easeIn" begin="4300"/>
+				<animation property="offsetX" from="0" to="0.005" duration="350" mode="easeOut" begin="4650"/>
+				<animation property="offsetX" from="0.005" to="0" duration="350" mode="easeIn" begin="5000"/>
+				<animation property="offsetX" from="0" to="-0.005" duration="350" mode="easeOut" begin="5350"/>
+				<animation property="offsetX" from="-0.005" to="0" duration="350" mode="easeIn" begin="5700"/>
+				<animation property="offsetX" from="0" to="0.005" duration="350" mode="easeOut" begin="6050"/>
+				<animation property="offsetX" from="0.005" to="0" duration="350" mode="easeIn" begin="6400"/>
+				<animation property="offsetX" from="0" to="-0.005" duration="350" mode="easeOut" begin="6750"/>
+				<animation property="offsetX" from="-0.005" to="0" duration="350" mode="easeIn" begin="7100"/>
+				<animation property="offsetX" from="0" to="0.005" duration="350" mode="easeOut" begin="7450"/>
+				<animation property="offsetX" from="0.005" to="0" duration="350" mode="easeIn" begin="7800"/>
+				<animation property="offsetX" from="0" to="-0.005" duration="350" mode="easeOut" begin="8150"/>
+				<animation property="offsetX" from="-0.005" to="0" duration="350" mode="easeIn" begin="8500"/>
+				<animation property="offsetX" from="0" to="0.005" duration="350" mode="easeOut" begin="8850"/>
+				<animation property="offsetX" from="0.005" to="0" duration="350" mode="easeIn" begin="9200"/>
+				<animation property="offsetX" from="0" to="-0.005" duration="350" mode="easeOut" begin="9550"/>
+			</storyboard>
+			<storyboard event="scroll" >
+				<animation property="offsetX" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="rotation" from="0" to="0" duration="1" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate" >
+				<animation property="offsetX" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="rotation" from="0" to="0" duration="1" mode="linear"/>
+			</storyboard>
+		</control>
 	</view>
 </theme>

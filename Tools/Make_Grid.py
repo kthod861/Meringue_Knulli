@@ -233,13 +233,13 @@ def main_grid_creator(boxart_fold, system_name , output_resolution, ntiles, padd
         #ouputimg = os.path.join( thumb_fold, "{}.jpg".format( system_name ))
         makegrid_fixed_outputres(resolution, output_resolution, ouputimg, limages, ntiles, padding)
 
-'''
+
 ###################################################
 # This will run on libretro-thumbnails depots only
 ###################################################
 
 thumb_fold = r"F:\libretro-thumbnails"
-output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli\Tools\Make_Grid_generated"
+output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePersonnal_ES_DE_Knulli\_inc\systems\background_4_3"
 i = 0
 for system_name in os.listdir(thumb_fold):
     if not "git" in system_name:
@@ -248,9 +248,9 @@ for system_name in os.listdir(thumb_fold):
             for subfold in os.listdir(systemfold):
                 if "Named_Boxarts" in subfold:
                     boxart_fold = os.path.join( systemfold, subfold)
-                    ouputimg = os.path.join( output_path, (1920,1080), "{}.jpg".format( system_name ))
+                    ouputimg = os.path.join( output_path, "{}.jpg".format( system_name ))
 
-                    main_grid_creator(boxart_fold, system_name, 8, 10, ouputimg)
+                    main_grid_creator(boxart_fold, system_name, (960,720), 10, 5, ouputimg)
                     
 
             i+=1
@@ -268,3 +268,4 @@ output_path = r"F:\RetroBat\emulationstation\.emulationstation\themes\MeringuePe
 ouputimg = os.path.join( output_path, "{}.jpg".format( system_name ))
 
 main_grid_creator(boxart_fold, system_name, (960,720), 10, 5, ouputimg, only_compat_aspectratio= True)
+'''
