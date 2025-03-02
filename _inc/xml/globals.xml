@@ -1,0 +1,143 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<variables>
+		<mainColor>4075F9</mainColor>
+		<onMainColor>1D1B16</onMainColor>
+		<bgColor>1D1B16</bgColor>
+		<sectColor>94A0FF</sectColor>
+		<fgColor>FFFFFF</fgColor>
+	</variables>
+
+	<!-- Move help away -->
+	<view name="system,grid">
+	<helpsystem name="help">
+		<textColor>${fgColor}</textColor>
+		<iconColor>${sectColor}</iconColor>
+		<pos>10 10</pos>
+	</helpsystem>
+	</view>
+
+	<!-- Menu tweaks -->
+  <view name="menu">
+    <menuText name="menutext">
+      <selectedColor>${onMainColor}</selectedColor>
+      <selectorColor>${mainColor}</selectorColor>
+      <color>${fgColor}</color>
+      <separatorColor>${fgColor}${percent.5}</separatorColor>
+    </menuText>
+
+    <menuTextSmall name="menutextsmall">
+      <color>${sectColor}</color>
+    </menuTextSmall>
+
+    <menuGroup name="menugroup">
+      <color>${sectColor}</color>
+      <separatorColor>${sectColor}${percent.60}</separatorColor>
+      <backgroundColor>${sectColor}${percent.10}</backgroundColor>
+    </menuGroup>
+
+    <menuBackground name="menubg">
+      <color>${bgColor}</color>
+    </menuBackground>
+
+    <menuText name="menufooter">
+      <color>${fgColor}${percent.80}</color>
+    </menuText>
+
+    <menuText name="menutitle">
+      <color>${fgColor}</color>
+    </menuText>
+
+    <menuTextEdit name="menutextedit">
+      <inactive>./../systems/input_inactive-dark.svg</inactive>
+      <active>./../systems/input_active-dark.svg</active>
+    </menuTextEdit>
+  </view>
+
+	<!-- MBattery and clock tweaks -->
+	<view name="screen">
+		<batteryIndicator name="batteryIndicator">
+		<color>FFFFFF</color>
+		</batteryIndicator>
+		
+		<batteryIndicator name="batteryIndicator"
+			visible="false"
+		/>
+		
+		<controllerActivity name="controllerActivity">
+			<visible>false</visible>
+		</controllerActivity>
+
+		<text name="clock">
+			<pos>1 1</pos>
+		</text>
+
+
+		<stackpanel name="batteryIndicatorExtra" extra="true"
+			orientation="horizontal"
+			separator="2"
+			reverse="true"
+			size="0.58 0.045"
+			pos="0.4165 0"
+		>
+
+			<batteryText name="ss.batterytext"
+				fontPath="./../fonts/${fontRegular}"
+				color="${c.text}"
+				fontSize="0.035"
+				
+			/>
+
+			<text name="ss.separator1"
+			
+				text="  "
+				ifSubset="batterybar:yes"
+				fontPath="./../fonts/${fontRegular}"
+				fontSize="0.017"
+				color="${c.text}"
+			/>
+	
+			<batteryIcon name="ss.battery"
+			
+				ifSubset="batterybar:yes"
+				incharge="./../systems/batteryIndicator/incharge.svg"
+				full="./../systems/batteryIndicator/full.svg"
+				at75="./../systems/batteryIndicator/75.svg"
+				at50="./../systems/batteryIndicator/50.svg"
+				at25="./../systems/batteryIndicator/25.svg"
+				empty="./../systems/batteryIndicator/empty.svg"
+				planemodeIcon="./../systems/batteryIndicator/planemode.png"
+				maxSize="1 1"
+				linearSmooth="true"
+				color="${c.text}"
+				
+			/>
+			<text name="ss.separator2"
+				text="  "
+				fontPath="./../fonts/${fontRegular}"
+				fontSize="0.017"
+				color="${c.text}"
+			/>
+		  
+			<networkIcon name="ss.network"
+				networkIcon="./../systems/icons/Network.png"
+				planemodeIcon="./../systems/icons/Planemode.png"
+				maxSize="1 1"
+				linearSmooth="true"
+				color="${c.text}"
+			/>
+	  
+		</stackpanel>
+		<stackpanel name="systemClockPanel" orientation="horizontal" size="0.58 0.045" pos="0.005 0.005">
+			<clock name="system-clock"
+				fontPath="./../fonts/${fontRegular}"
+				color="${c.text}"
+				fontSize="0.023"
+			/>
+			
+		</stackpanel>
+
+	</view>
+
+</theme>

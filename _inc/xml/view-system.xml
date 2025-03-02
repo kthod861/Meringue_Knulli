@@ -57,14 +57,18 @@
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
 			<origin>0 0</origin>
-			<pos>0.02 0.25</pos>
+			<pos>0.01 0.25</pos>
 			<size>1 0.22</size>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ADADAD</color>
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.02</fontSize>
-			<text>${systemManufacturer}    ${systemReleaseDateFormated}</text>
+			<text>${systemManufacturer}  ${systemReleaseDateFormated}</text>
 			<opacity>0.8</opacity>
+			<w>0.20</w>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScroll>horizontal</autoScroll>
+			<autoScrollDelay>0.01</autoScrollDelay>
 			<zIndex>600</zIndex>
 		</text>
 		<!-- Logo animation -->

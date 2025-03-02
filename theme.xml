@@ -5,14 +5,12 @@
 		<include name="ratio43" displayName="4:3">./_inc/xml/variables_4_3.xml</include>
 		<include name="ratio169" displayName="16:9">./_inc/xml/variables_16_9.xml</include>
 	</subset>
-	
+	<include>./_inc/xml/globals.xml</include>
 	<include>./_inc/systems/metadata-global/_default.xml</include>
 	<include>./_inc/systems/metadata-global/${system.theme}.xml</include>
-	<!--<include>./_inc/xml/variables.xml</include>
-	<include>./_inc/xml/scheme-dark.xml</include>
-	<include>./_inc/xml/view-menu.xml</include>-->
+
 	<include>./_inc/xml/view-system.xml</include>
-	<!--<include>./_inc/xml/view-grid.xml</include>-->
+
 	
 
 
