@@ -3,6 +3,22 @@
 <formatVersion>7</formatVersion>
 
 	<view name="system">
+		<!-- Background-->
+		<image name="background_console" extra="true">
+			<path>${background_path}</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>100</zIndex>
+		</image>
+		<!-- Foreground-->
+		<image name="foreground_console" extra="static">
+			<path>${foreground_path}</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>410</zIndex>
+		</image>
 		<image name="logo">
 			<path>./_inc/systems/logos/${system.theme}.png</path>
 		</image>
@@ -49,7 +65,7 @@
 			<fontSize>0.02</fontSize>
 			<text>${systemManufacturer}    ${systemReleaseDateFormated}</text>
 			<opacity>0.8</opacity>
-			<zIndex>800</zIndex>
+			<zIndex>600</zIndex>
 		</text>
 		<!-- Logo animation -->
 		<control name="logo,logoText" scale="1" >
