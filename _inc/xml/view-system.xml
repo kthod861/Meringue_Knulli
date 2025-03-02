@@ -39,13 +39,13 @@
 			<path>./_inc/systems/controllers/${system.theme}.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.57</pos>
-			<maxSize>.6 .6</maxSize>
+			<maxSize>${controller_maxSize}</maxSize>
 			<zIndex>400</zIndex>
 		</image>
 		<!-- System view Infos-->
 		<text name="systemInfo" >
 			<origin>0 0</origin>
-			<pos>0.4 0.25</pos>
+			<pos>${sysinfo_pos}</pos>
 			<size>1 0.22</size>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ADADAD</color>
@@ -57,7 +57,7 @@
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
 			<origin>0 0</origin>
-			<pos>0.01 0.25</pos>
+			<pos>${manufacturer_pos}</pos>
 			<size>1 0.22</size>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ADADAD</color>
