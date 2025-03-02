@@ -4,6 +4,5 @@
 	<variables>
 		<background_path>./_inc/systems/background_16_9/${system.theme}.jpg</background_path>
 		<foreground_path>./_inc/images/SystemForeground_16_9.png</foreground_path>
-		<fontRegular>./../fonts/font.ttf</fontRegular>
 	</variables>
 </theme>

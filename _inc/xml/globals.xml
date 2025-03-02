@@ -7,6 +7,18 @@
 		<bgColor>1D1B16</bgColor>
 		<sectColor>94A0FF</sectColor>
 		<fgColor>FFFFFF</fgColor>
+		<percent.90>E6</percent.90>
+		<percent.80>CC</percent.80>
+		<percent.70>B3</percent.70>
+		<percent.60>99</percent.60>
+		<percent.50>80</percent.50>
+		<percent.40>66</percent.40>
+		<percent.30>4D</percent.30>
+		<percent.20>33</percent.20>
+		<percent.10>1A</percent.10>
+		<percent.5>0D</percent.5>
+		<c.text>ffffff</c.text>
+		<fontRegular>./../fonts/font.ttf</fontRegular>
 	</variables>
 
 	<!-- Move help away -->
