@@ -11,3 +11,10 @@ Support 4:3 and 16:9 (but may evolve if needed), with simple grid system behind.
 
 Systems preview:<br />
 <img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="400" /><br />
+
+
+TODO: <br />
+- add grid list view ( only system view atm )<br />
+- add missing systems<br />
+- add missing controlers<br />
+  
