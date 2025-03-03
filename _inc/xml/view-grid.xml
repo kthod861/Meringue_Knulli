@@ -19,7 +19,7 @@
 		<text name="md_name">
 			<fontSize>0.025</fontSize>
 			<fontPath>${fontRegular}</fontPath>
-			<pos>0.03 0.10</pos>
+			<pos>0.005 0.095</pos>
 			<origin>0 0.5</origin>
 			<size>0.7 ${fontSizeBody-small}</size>
 			<alignment>left</alignment>
@@ -32,7 +32,7 @@
 		</text>
 		<!-- release date-->
 		<datetime name="md_releasedate">
-			<pos>0.03 0.065</pos>
+			<pos>0.005 0.15</pos>
 			<origin>0 0.5</origin>
 			<size>0.1 0.035</size>
 			<format>%Y</format>
@@ -45,14 +45,14 @@
 		</datetime>
 		<!-- rating-->
 		<rating name="md_rating">
-			<pos>0.08 0.065</pos>
+			<pos>0.08 0.15</pos>
 			<origin>0 0.5</origin>
 			<size>0.05 0.03</size>
 			<color>FFFF00</color>
 			<unfilledColor>808080</unfilledColor>
 			<unfilledPath>:/star_filled.svg</unfilledPath>
 			<horizontalAlignment>left</horizontalAlignment>
-			<zIndex>15</zIndex>
+			<zIndex>4000</zIndex>
 		</rating>
 		<!-- play time -->
 		<text name="md_lbl_gametime">
@@ -112,11 +112,11 @@
 		<!-- Foreground-->
 		<image name="foreground_console" extra="static">
 			<path>${foreground_path}</path>
-			<origin>0 0.05</origin>
+			<origin>${origin_foreground}</origin>
 			<pos>0 0</pos>
 			<size>1 .6</size>
 			<opacity>1</opacity>
-			<clipRect>0 0 1 0.23</clipRect>
+			<clipRect>${clipRect_foreground}</clipRect>
 			<zIndex>3000</zIndex>
 		</image>
 

@@ -25,7 +25,7 @@
 		</image>
 		<carousel name="systemcarousel">
 			<origin>0 0.5</origin>
-			<pos>0 0.15</pos>
+			<pos>0 0.13</pos>
 			<size>1 1</size>
 			<color>00000000</color>
 			<itemScale>1.80</itemScale>
@@ -64,16 +64,17 @@
 		</text>
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
-			<origin>0 0</origin>
+			<origin>0.5 0</origin>
 			<pos>${manufacturer_pos}</pos>
 			<size>1 0.22</size>
+			<alignment>center</alignment>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ADADAD</color>
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.02</fontSize>
 			<text>${systemManufacturer}  ${systemReleaseDateFormated}</text>
 			<opacity>0.8</opacity>
-			<w>0.20</w>
+			<w>0.5</w>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
