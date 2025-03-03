@@ -10,7 +10,7 @@ Support 4:3 and 16:9 (but may evolve if needed), with simple grid system behind.
 (Boxart grid is generated using a simple an dirty python script so they may be upgraded a lot during dev)
 
 Systems preview:<br />
-<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="400" /><br />
+<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="960" /><br />
 
 
 TODO: <br />
