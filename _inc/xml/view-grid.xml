@@ -122,7 +122,7 @@
 		<!--actual game grid -->
 		<imagegrid name="gamegrid"
 			zIndex="1001"
-			pos="0.015 0.15"
+			pos="0 0.15"
 			size="${v.gamelistGrid.size}"
 			margin="0.02 0.02"
 			padding="0.02 0.02 0.02 0.02"
@@ -188,8 +188,8 @@
 		</image>
 		<!-- default cartridge -->
 		<imagegrid name="gamegrid">
-			<gameImage>./../systems/icons/cartridge-dark.png</gameImage>
-			<folderImage>./../systems/icons/folder-dark.png</folderImage>
+			<gameImage>./../icons/cartridge-dark.png</gameImage>
+			<folderImage>./../icons/folder-dark.png</folderImage>
 		</imagegrid>
 	</view>
 

@@ -22,7 +22,7 @@
 		<fontRegular>./../fonts/font.ttf</fontRegular>
 		<fontSizeBody-small>0.03125</fontSizeBody-small>
 		
-		<v.gamelistGrid.size>0.98 0.85</v.gamelistGrid.size>
+		<v.gamelistGrid.size>1 0.85</v.gamelistGrid.size>
 		<v.gridAutoLayout if="${screen.width} &lt;= '641'">3 2</v.gridAutoLayout>
 		<v.gridAutoLayout if="${screen.width} &gt; '641' &amp;&amp; ${screen.width} &lt;= '721'">3 3</v.gridAutoLayout>
 		<v.gridAutoLayout if="${screen.width} &gt; '721' &amp;&amp; ${screen.width} &lt;= '1281'">4 2</v.gridAutoLayout>
