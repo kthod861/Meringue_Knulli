@@ -6,6 +6,7 @@
 		<!-- Background-->
 		<image name="background_console" extra="true">
 			<path>${background_path}</path>
+			<default>${default_background_path}</default>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
@@ -38,6 +39,7 @@
 		</carousel>
 		<image name="controler" extra="true">
 			<path>./_inc/systems/controllers/${system.theme}.png</path>
+			<default>./_inc/systems/controllers/_default.png</default>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.57</pos>
 			<maxSize>${controller_maxSize}</maxSize>

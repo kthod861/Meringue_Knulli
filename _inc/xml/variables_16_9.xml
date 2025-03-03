@@ -3,6 +3,7 @@
 	<formatVersion>7</formatVersion>
 	<variables>
 		<background_path>./_inc/systems/background_16_9/${system.theme}.jpg</background_path>
+		<default_background_path>./_inc/systems/background_16_9/_default.jpg</default_background_path>
 		<foreground_path>./_inc/images/SystemForeground_16_9.png</foreground_path>
 		<controller_maxSize>.5 .5</controller_maxSize>
 		<sysinfo_pos>0.4 0.30</sysinfo_pos>

@@ -101,10 +101,11 @@
 		<!-- Background-->
 		<image name="background_color" extra="true">
 			<path>${background_path}</path>
+			<default>${default_background_path}</default>
 			<origin>0 0</origin>
 			<pos>0 .20</pos>
 			<size>1 1</size>
-			<opacity>0.4</opacity>
+			<opacity>0.3</opacity>
 			<zIndex>2</zIndex>
 		</image>
 
