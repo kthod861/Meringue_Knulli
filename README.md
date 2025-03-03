@@ -18,12 +18,16 @@ TODO: <br />
 - add missing controlers<br />
 - Handle battery and wifi icons in a better way
 - Probabaly replace 16:9 with 1:1 for larger knully compatibility
+- Get better controler arts
+- Incorporate battery in the foreground
+- Make arts for knulli specific categories
 
 DONE: <br />
 - 16:9 <> 4:3 now switch automatically
 - controlers get animated on show
 - Foreground upgrade/polish with some bevel
 - grid view added ( wip )
+- More backgrounds trying to cover as much systems as possible 
   
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
 At the moment everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
