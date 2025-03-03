@@ -17,6 +17,7 @@ TODO: <br />
 - add missing systems<br />
 - add missing controlers<br />
 - Handle battery and wifi icons in a better way
+- Probabaly replace 16:9 with 1:1 for larger knully compatibility
 
 DONE: <br />
 - 16:9 <> 4:3 now switch automatically
