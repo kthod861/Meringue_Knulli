@@ -3,7 +3,7 @@
 	
 	<view name="grid">
 		<!-- System logo -->
-		<image name="logo">
+		<image name="logo" extra="static">
 			<pos>0.4 0.02</pos>
 			<origin>0 0</origin>
 			<horizontalAlignment>center</horizontalAlignment>
@@ -11,8 +11,8 @@
 			<scale>0.3 </scale>
 			<maxSize>0.8 0.3</maxSize>
 			<path>./_inc/systems/logos/${system.theme}.png</path>
-			<zIndex>10</zIndex>
-			<reflexion>0.3 0.1</reflexion>
+			<zIndex>4000</zIndex>
+			<!--<reflexion>0.3 0.1</reflexion>-->
 			<linearSmooth>true</linearSmooth>
 		</image>
 		<!-- game name-->
@@ -106,6 +106,17 @@
 			<size>1 1</size>
 			<opacity>0.4</opacity>
 			<zIndex>2</zIndex>
+		</image>
+
+		<!-- Foreground-->
+		<image name="foreground_console" extra="static">
+			<path>${foreground_path}</path>
+			<origin>0 0.05</origin>
+			<pos>0 0</pos>
+			<size>1 .6</size>
+			<opacity>1</opacity>
+			<clipRect>0 0 1 0.23</clipRect>
+			<zIndex>3000</zIndex>
 		</image>
 
 		<!--actual game grid -->
