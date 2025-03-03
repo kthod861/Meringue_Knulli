@@ -133,8 +133,8 @@
 			/>
 		  
 			<networkIcon name="ss.network"
-				networkIcon="./../systems/icons/Network.png"
-				planemodeIcon="./../systems/icons/Planemode.png"
+				networkIcon="./../icons/Network.png"
+				planemodeIcon="./../icons/Planemode.png"
 				maxSize="1 1"
 				linearSmooth="true"
 				color="${c.text}"
