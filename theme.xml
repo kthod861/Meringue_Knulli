@@ -1,16 +1,19 @@
 <theme defaultView="grid">
 	<formatVersion>7</formatVersion>
 	
-	<subset name="Ratio" displayName="Screen ratio">
+	<!--<subset name="Ratio" displayName="Screen ratio">
 		<include name="ratio43" displayName="4:3">./_inc/xml/variables_4_3.xml</include>
 		<include name="ratio169" displayName="16:9">./_inc/xml/variables_16_9.xml</include>
-	</subset>
+	</subset>-->
+	<include if="${screen.width} &lt; '1080'">./_inc/xml/variables_4_3.xml</include>
+	<include if="${screen.width} &gt; '1079'">./_inc/xml/variables_16_9.xml</include>
+	
 	<include>./_inc/xml/globals.xml</include>
 	<include>./_inc/systems/metadata-global/_default.xml</include>
 	<include>./_inc/systems/metadata-global/${system.theme}.xml</include>
 
 	<include>./_inc/xml/view-system.xml</include>
-
+	<include>./_inc/xml/view-grid.xml</include>
 	
 
 
