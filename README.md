@@ -14,9 +14,15 @@ Systems preview:<br />
 
 
 TODO: <br />
-- add the actual grid list view ( only system view atm )<br />
 - add missing systems<br />
 - add missing controlers<br />
+- Handle battery and wifi icons in a better way
+
+DONE: <br />
+- 16:9 <> 4:3 now switch automatically
+- controlers get animated on show
+- Foreground upgrade/polish with some bevel
+- grid view added ( wip )
   
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
 At the moment everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
