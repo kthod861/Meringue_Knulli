@@ -38,8 +38,8 @@
 			<opacity>0</opacity>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="300" duration="100" mode="easeOut"/>
-				<animation property="scale" from="0.5" to="1" begin="300" duration="200" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="100" mode="easeOut"/>
+				<animation property="scale" from="0.5" to="1" begin="100" duration="200" mode="easeOut"/>
 			</storyboard>
 			<zIndex>400</zIndex>
 		</image>
