@@ -4,8 +4,8 @@
 	<view name="grid">
 		<!-- System logo -->
 		<image name="logo" extra="static">
-			<pos>0.4 0.02</pos>
-			<origin>0 0</origin>
+			<pos>0.5 0.06</pos>
+			<origin>0.5 0.5</origin>
 			<horizontalAlignment>center</horizontalAlignment>
 			<verticalAlignment>center</verticalAlignment>
 			<scale>0.3 </scale>
@@ -14,6 +14,11 @@
 			<zIndex>4000</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
 			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<storyboard>
+				<animation property="opacity" from="1" to="1" begin="300" duration="100" mode="easeOut"/>
+				<animation property="scale" from="0" to="0.3" begin="300" duration="200" mode="easeOut"/>
+			</storyboard>
 		</image>
 		<!-- game name-->
 		<text name="md_name">
