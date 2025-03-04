@@ -56,7 +56,7 @@
 		</rating>
 		<!-- play time -->
 		<text name="md_lbl_gametime">
-			<pos>0.7 0.05</pos>
+			<pos>0.81 0.17</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
@@ -66,7 +66,7 @@
 			<zIndex>4000</zIndex>
 		</text>
 		<text name="md_gametime">
-			<pos>0.82 0.05</pos>
+			<pos>0.90 0.17</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
@@ -77,7 +77,7 @@
 		</text>
 		<!-- last played-->
 		<text name="md_lbl_lastplayed">
-			<pos>0.7 0.10</pos>
+			<pos>0.81 0.14</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
@@ -87,7 +87,7 @@
 			<zIndex>4000</zIndex>
 		</text>		
 		<datetime name="md_lastplayed">
-			<pos>0.82 0.10</pos>
+			<pos>0.90 0.14</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
