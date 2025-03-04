@@ -140,7 +140,7 @@
 			autoLayout="${v.gridAutoLayout}"
 			animateSelection="true"
 			centerSelection="false"
-			scrollbarColor="${c.textHeader}"
+			scrollbarColor="FFFFFF"
 			scrollbarSize="${v.ScrollBar}"
 			autoLayoutSelectedZoom="1.15"
 			scrollbarAlignment="right"
