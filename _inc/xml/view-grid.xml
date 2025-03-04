@@ -19,7 +19,7 @@
 		<text name="md_name">
 			<fontSize>0.025</fontSize>
 			<fontPath>${fontRegular}</fontPath>
-			<pos>0.005 0.095</pos>
+			<pos>0.010 0.095</pos>
 			<origin>0 0.5</origin>
 			<size>0.7 ${fontSizeBody-small}</size>
 			<alignment>left</alignment>
@@ -32,7 +32,7 @@
 		</text>
 		<!-- release date-->
 		<datetime name="md_releasedate">
-			<pos>0.005 0.15</pos>
+			<pos>0.005 0.17</pos>
 			<origin>0 0.5</origin>
 			<size>0.1 0.035</size>
 			<format>%Y</format>
@@ -45,7 +45,7 @@
 		</datetime>
 		<!-- rating-->
 		<rating name="md_rating">
-			<pos>0.08 0.15</pos>
+			<pos>0.08 0.17</pos>
 			<origin>0 0.5</origin>
 			<size>0.05 0.03</size>
 			<color>FFFF00</color>

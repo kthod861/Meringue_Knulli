@@ -34,7 +34,7 @@
 			<transitionSpeed>800</transitionSpeed>
 			<systemInfoDelay>100</systemInfoDelay>
 			<scaledLogoSpacing>0.4</scaledLogoSpacing>
-			<defaultTransition>fade &amp; slide</defaultTransition>
+			<defaultTransition>fade &amp; slide</defaultTransition><!--fade &amp; -->
 			<zIndex>500</zIndex>
 		</carousel>
 		<image name="controler" extra="true">
@@ -45,8 +45,8 @@
 			<maxSize>${controller_maxSize}</maxSize>
 			<opacity>0</opacity>
 			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="10" duration="100" mode="easeOut"/>
-				<animation property="scale" from="0.5" to="1" begin="10" duration="200" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="100" mode="easeOut"/>
+				<animation property="scale" from="0.5" to="1" begin="300" duration="200" mode="easeOut"/>
 			</storyboard>
 			<zIndex>400</zIndex>
 		</image>
