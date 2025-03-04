@@ -41,9 +41,10 @@
 			<path>./_inc/systems/controllers/${system.theme}.png</path>
 			<default>./_inc/systems/controllers/_default.png</default>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.57</pos>
+			<pos>0.5 0.59</pos>
 			<maxSize>${controller_maxSize}</maxSize>
 			<opacity>0</opacity>
+			<linearSmooth>true</linearSmooth>
 			<storyboard>
 				<animation property="opacity" from="0" to="1" begin="300" duration="100" mode="easeOut"/>
 				<animation property="scale" from="0.5" to="1" begin="300" duration="200" mode="easeOut"/>
