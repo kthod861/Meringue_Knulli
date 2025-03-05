@@ -7,10 +7,24 @@
 		<!-- Foreground-->
 		<image name="foreground_console" extra="static">
 			<path>${foreground_path}</path>
-			<origin>0 0</origin>
-			<pos>0 0</pos>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
 			<size>1 1</size>
 			<zIndex>410</zIndex>
+		</image>
+		<!-- Background-->
+		<image name="background_console" extra="true">
+			<path>${background_path}</path>
+			<default>${default_background_path}</default>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<zIndex>100</zIndex>
+			<storyboard repeatAt="100" >
+				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
+				<animation property="scale" from="1.005" to="1" duration="800" mode="easeIn" begin="800"/>
+			</storyboard>
+			<linearSmooth>true</linearSmooth>
 		</image>
 		<!-- Logo -->
 		<image name="logo">
@@ -64,20 +78,6 @@
 			<letterCase>capitalize</letterCase>
 			<zIndex>600</zIndex>
 		</text>
-		<!-- Background-->
-		<image name="background_console" extra="true">
-			<path>${background_path}</path>
-			<default>${default_background_path}</default>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
-			<zIndex>100</zIndex>
-			<storyboard repeatAt="100" >
-				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
-				<animation property="scale" from="1.005" to="1" duration="800" mode="easeIn" begin="800"/>
-			</storyboard>
-			<linearSmooth>true</linearSmooth>
-		</image>
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
 			<origin>0.5 0</origin>

@@ -1,0 +1,14 @@
+
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<background_path>./_inc/systems/background_4_3/${system.theme}.jpg</background_path>
+		<default_background_path>./_inc/systems/background_4_3/_default.jpg</default_background_path>
+		<foreground_path>./_inc/images/SystemForeground_4_3.png</foreground_path>
+		<origin_foreground>0 0.07</origin_foreground>
+		<clipRect_foreground>0 0 1 0.223</clipRect_foreground>
+		<controller_maxSize>.7 .7</controller_maxSize>
+		<sysinfo_pos>0.39 0.22</sysinfo_pos>
+		<manufacturer_pos>0.5 0.138</manufacturer_pos>
+	</variables>
+</theme>
