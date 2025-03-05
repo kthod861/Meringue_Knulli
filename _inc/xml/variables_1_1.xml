@@ -14,10 +14,10 @@
 		<origin_foreground>0 0.07</origin_foreground>
 		<clipRect_foreground>0 0 1 0.223</clipRect_foreground>
 		
-		<logo_pos>0.5 0.11</logo_pos>
+		<logo_pos>0.5 0.09</logo_pos>
 		<controller_maxSize>.75 .75</controller_maxSize>
 		<sysinfo_pos>0.39 0.14</sysinfo_pos>
 		
-		<manufacturer_pos>0.5 0.138</manufacturer_pos>
+		<manufacturer_pos>0.5 0.08</manufacturer_pos>
 	</variables>
 </theme>
