@@ -20,7 +20,6 @@ TODO: <br />
 - Get better controler arts
 - Incorporate battery in the foreground
 - Make arts for knulli specific categories
-- Better support for 1:1 <> 4:3
 
 DONE: <br />
 - 16:9 <> 4:3 now switch automatically
@@ -30,6 +29,7 @@ DONE: <br />
 - More backgrounds trying to cover as much systems as possible
 - Minimal animations here and there
 - Removed 16:9 assets
+- Full support of 1:1 and 4:3
   
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
 At the moment everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
