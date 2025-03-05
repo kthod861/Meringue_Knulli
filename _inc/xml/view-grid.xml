@@ -37,7 +37,7 @@
 		</text>
 		<!-- release date-->
 		<datetime name="md_releasedate">
-			<pos>0.005 0.17</pos>
+			<pos>0.02 0.17</pos>
 			<origin>0 0.5</origin>
 			<size>0.1 0.035</size>
 			<format>%Y</format>
@@ -50,7 +50,7 @@
 		</datetime>
 		<!-- rating-->
 		<rating name="md_rating">
-			<pos>0.08 0.17</pos>
+			<pos>0.08 0.168</pos>
 			<origin>0 0.5</origin>
 			<size>0.05 0.03</size>
 			<color>FFFF00</color>
@@ -61,7 +61,7 @@
 		</rating>
 		<!-- play time -->
 		<text name="md_lbl_gametime">
-			<pos>0.80 0.17</pos>
+			<pos>0.80 0.171</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
@@ -131,23 +131,23 @@
 		</image>
 
 		<!--actual game grid -->
-		<imagegrid name="gamegrid"
-			zIndex="1001"
-			pos="0 0.15"
-			size="${v.gamelistGrid.size}"
-			margin="0.02 0.02"
-			padding="0.02 0.02 0.02 0.02"
-			autoLayout="${v.gridAutoLayout}"
-			animateSelection="true"
-			centerSelection="false"
-			scrollbarColor="FFFFFF"
-			scrollbarSize="${v.ScrollBar}"
-			autoLayoutSelectedZoom="1.15"
-			scrollbarAlignment="right"
-			imageSource="thumbnail"
-			scrollSound="./../systems/scroll.wav"
-			scrollDirection="horizontal"
-		/>
+		<imagegrid name="gamegrid">
+			<zIndex>1001</zIndex>
+			<pos>0 0.15</pos>
+			<size>${v.gamelistGrid.size}</size>
+			<margin>0.02 0.02</margin>
+			<padding>0.02 0.02 0.02 0.02</padding>
+			<autoLayout>${v.gridAutoLayout}</autoLayout>
+			<animateSelection>true</animateSelection>
+			<centerSelection>false</centerSelection>
+			<scrollbarColor>FFFFFF</scrollbarColor>
+			<scrollbarSize>${v.ScrollBar}</scrollbarSize>
+			<autoLayoutSelectedZoom>1.15</autoLayoutSelectedZoom>
+			<scrollbarAlignment>right</scrollbarAlignment>
+			<imageSource>thumbnail</imageSource>
+			<scrollSound>./../systems/scroll.wav</scrollSound>
+			<scrollDirection>horizontal</scrollDirection>
+		</imagegrid>
 		
 		<!-- each game -->
 		<gridtile name="default"
@@ -160,43 +160,30 @@
 			padding="2 2"
 			imageColor="ffffff"
 		/>
-		<!-- each game name hidden-->
-		<text name="gridtile"
-			fontPath="./../fonts/${fontRegular}"
-			fontSize="0.01"
-			color="${c.text}"
-			extraTextColor="${c.textHeader}"
-			alignment="center"
-			singleLineScroll="true"
-			autoScrollDelay="0"
-		>
-			<visible>false</visible>
-		</text>
-		
 		<!-- selected behavior-->
-		<gridtile name="selected"
-			backgroundCenterColor="ffffff59"
-			backgroundEdgeColor="ffffff59"
-			imageColor="ffffff"
-			
-		/>
-
-		<image name="gridtile.image"
-			linearSmooth="true"
-			roundCorners="0.03"
-			
-		/>
-		<!-- favorites -->
-		<image name="gridtile.favorite"
-			path="./../images/favorite.png"
-			pos="0.2 0.2"
-			maxSize="0.2 0.2"
-			origin="0.5 0.5"
-			horizontalAlignment="left"
-			verticalAlignment="top"
-			>
-			<reflexion>0.7 0.5</reflexion>
+		<gridtile name="selected">
+			<backgroundCenterColor>ffffff59</backgroundCenterColor>
+			<backgroundEdgeColor>ffffff59</backgroundEdgeColor>
+			<imageColor>ffffff</imageColor>
+		</gridtile>
+		
+		<!-- each game tile-->
+		<image name="gridtile.image">
+			<linearSmooth>true</linearSmooth>
+			<roundCorners>0.05</roundCorners>
 		</image>
+		
+		<!-- favorites -->
+		<image name="gridtile.favorite">
+			<path>./../images/favorite.png</path>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<maxSize>0.4 0.4</maxSize>
+			<horizontalAlignment>center</horizontalAlignment>
+			<verticalAlignment>bottom</verticalAlignment>
+			<!--<reflexion>0.7 0.2</reflexion>-->
+		</image>
+		
 		<!-- default cartridge -->
 		<imagegrid name="gamegrid">
 			<gameImage>./../icons/cartridge-dark.png</gameImage>
