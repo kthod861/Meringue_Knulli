@@ -9,7 +9,7 @@
 			<horizontalAlignment>center</horizontalAlignment>
 			<verticalAlignment>center</verticalAlignment>
 			<scale>0.3 </scale>
-			<maxSize>0.8 0.3</maxSize>
+			<maxSize>0.8 0.35</maxSize>
 			<path>./_inc/systems/logos/${system.theme}.png</path>
 			<zIndex>4000</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
@@ -28,16 +28,16 @@
 			<origin>0 0.5</origin>
 			<size>0.7 ${fontSizeBody-small}</size>
 			<alignment>left</alignment>
-			<singleLineScroll>true</singleLineScroll>
 			<color>${fgColor}</color>
 			<zIndex>5000</zIndex>
 			<w>0.35</w>
+			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
 		</text>
 		<!-- release date-->
 		<datetime name="md_releasedate">
-			<pos>0.02 0.17</pos>
+			<pos>0.010 0.17</pos>
 			<origin>0 0.5</origin>
 			<size>0.1 0.035</size>
 			<format>%Y</format>
@@ -50,7 +50,7 @@
 		</datetime>
 		<!-- rating-->
 		<rating name="md_rating">
-			<pos>0.07 0.168</pos>
+			<pos>0.06 0.168</pos>
 			<origin>0 0.5</origin>
 			<size>0.05 0.03</size>
 			<color>FFFF00</color>
@@ -67,17 +67,17 @@
 			<color>dddddd</color>
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
-			<fontSize>0.022</fontSize>
+			<fontSize>0.02</fontSize>
 			<zIndex>4000</zIndex>
 		</text>
 		<text name="md_gametime">
-			<pos>0.90 0.17</pos>
+			<pos>0.89 0.171</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
+			<fontSize>0.02</fontSize>
 			<zIndex>4000</zIndex>
 		</text>
 		<!-- last played-->
@@ -88,40 +88,40 @@
 			<color>dddddd</color>
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
-			<fontSize>0.022</fontSize>
+			<fontSize>0.02</fontSize>
 			<zIndex>4000</zIndex>
 		</text>		
 		<datetime name="md_lastplayed">
-			<pos>0.88 0.14</pos>
+			<pos>0.87 0.14</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
+			<fontSize>0.02</fontSize>
 			<zIndex>4000</zIndex>
 		</datetime>
 
 
 		<!-- Background-->
-		<image name="background_color" extra="true">
+		<image name="background_boxart" extra="true">
 			<path>${background_path}</path>
 			<default>${default_background_path}</default>
-			<origin>.5 .5</origin>
-			<pos>0.5 .50</pos>
-			<size>1 1</size>
-			<opacity>0.3</opacity>
-			<zIndex>2</zIndex>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<size>${background_scale_gamelist}</size>
+			<zIndex>100</zIndex>
 			<storyboard repeatAt="100" >
 				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
 				<animation property="scale" from="1.005" to="1" duration="800" mode="easeIn" begin="800"/>
 			</storyboard>
 			<linearSmooth>true</linearSmooth>
+			<opacity>0.3</opacity>
 		</image>
 
 		<!-- Foreground-->
 		<image name="foreground_console" extra="static">
-			<path>${foreground_path}</path>
+			<path>./_inc/images/SystemForeground_TOP.png</path>
 			<origin>${origin_foreground}</origin>
 			<pos>0 0</pos>
 			<size>1 .6</size>
@@ -142,7 +142,7 @@
 			<centerSelection>false</centerSelection>
 			<scrollbarColor>FFFFFF</scrollbarColor>
 			<scrollbarSize>${v.ScrollBar}</scrollbarSize>
-			<autoLayoutSelectedZoom>1.15</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<imageSource>thumbnail</imageSource>
 			<scrollSound>./../systems/scroll.wav</scrollSound>

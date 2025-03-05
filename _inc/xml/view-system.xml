@@ -5,20 +5,34 @@
 	<view name="system">
 
 		<!-- Foreground-->
-		<image name="foreground_console" extra="static">
-			<path>${foreground_path}</path>
+		<image name="foreground_top" extra="static">
+			<path>./_inc/images/SystemForeground_TOP.png</path>
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<size>${foreground_scale}</size>
+			<zIndex>410</zIndex>
+		</image>
+		<image name="foreground_mid" extra="static">
+			<path>./_inc/images/SystemForeground_MID.png</path>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
+			<pos>${foreground_midpos}</pos>
+			<size>${foreground_invscale}</size>
+			<zIndex>409</zIndex>
+		</image>
+		<image name="foreground_bottom" extra="static">
+			<path>./_inc/images/SystemForeground_BOTTOM.png</path>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<size>${foreground_scale}</size>
 			<zIndex>410</zIndex>
 		</image>
 		<!-- Background-->
-		<image name="background_console" extra="true">
+		<image name="background_boxart" extra="true">
 			<path>${background_path}</path>
 			<default>${default_background_path}</default>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<size>${background_scale}</size>
 			<zIndex>100</zIndex>
 			<storyboard repeatAt="100" >
 				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
@@ -38,8 +52,8 @@
 			</storyboard>
 		</control>
 		<carousel name="systemcarousel">
-			<origin>0 0.5</origin>
-			<pos>0 0.13</pos>
+			<origin>0.5 0.5</origin>
+			<pos>${logo_pos}</pos>
 			<size>1 1</size>
 			<color>00000000</color>
 			<itemScale>1.80</itemScale>
