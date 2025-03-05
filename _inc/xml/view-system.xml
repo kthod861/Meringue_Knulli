@@ -12,9 +12,17 @@
 			<size>1 1</size>
 			<zIndex>410</zIndex>
 		</image>
+		<!-- Logo -->
 		<image name="logo">
 			<path>./_inc/systems/logos/${system.theme}.png</path>
 		</image>
+		<!-- Logo animation -->
+		<control name="logo,logoText" scale="1" >
+			<storyboard event="activate" repeatAt="100" >
+				<animation property="scale" from="1" to="1.02" duration="800" mode="easeOut"/>
+				<animation property="scale" from="1.02" to="1" duration="800" mode="easeIn" begin="800"/>
+			</storyboard>
+		</control>
 		<carousel name="systemcarousel">
 			<origin>0 0.5</origin>
 			<pos>0 0.13</pos>
@@ -29,6 +37,7 @@
 			<defaultTransition>fade &amp; slide</defaultTransition><!--fade &amp; -->
 			<zIndex>500</zIndex>
 		</carousel>
+		<!-- Controler -->
 		<image name="controler" extra="true">
 			<path>./_inc/systems/controllers/${system.theme}.png</path>
 			<default>./_inc/systems/controllers/_default.png</default>
@@ -87,12 +96,5 @@
 			<autoScrollDelay>0.01</autoScrollDelay>
 			<zIndex>600</zIndex>
 		</text>
-		<!-- Logo animation -->
-		<control name="logo,logoText" scale="1" >
-			<storyboard event="activate" repeatAt="100" >
-				<animation property="scale" from="1" to="1.02" duration="800" mode="easeOut"/>
-				<animation property="scale" from="1.02" to="1" duration="800" mode="easeIn" begin="800"/>
-			</storyboard>
-		</control>
 	</view>
 </theme>

@@ -50,7 +50,7 @@
 		</datetime>
 		<!-- rating-->
 		<rating name="md_rating">
-			<pos>0.08 0.168</pos>
+			<pos>0.07 0.168</pos>
 			<origin>0 0.5</origin>
 			<size>0.05 0.03</size>
 			<color>FFFF00</color>
@@ -150,16 +150,16 @@
 		</imagegrid>
 		
 		<!-- each game -->
-		<gridtile name="default"
-			backgroundColor="00000000"
-			backgroundEdgeColor="00000000"
-			backgroundCenterColor="00000000"
-			backgroundCornerSize="9 9"
-			selectionMode="image"
-			imageSizeMode="maxSize"
-			padding="2 2"
-			imageColor="ffffff"
-		/>
+		<gridtile name="default">
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundCornerSize>9 9</backgroundCornerSize>
+			<selectionMode>image</selectionMode>
+			<imageSizeMode>maxSize</imageSizeMode>
+			<padding>2 2</padding>
+			<imageColor>ffffff</imageColor>
+		</gridtile>
 		<!-- selected behavior-->
 		<gridtile name="selected">
 			<backgroundCenterColor>ffffff59</backgroundCenterColor>
