@@ -2,24 +2,17 @@
 
 An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/MeringuePersonal3407/) theme found on [this thread](https://www.reddit.com/r/ANBERNIC/comments/1ix9124/my_collection/).<br />
 
-Loved it and so asked him if recreate it from daijisho to Knulli / ES-DE was ok.<br />
-Here it is for the knulli version !<br />
-
-Support 4:3 and 16:9 (but may evolve if needed), with simple grid system behind.
-
-(Boxart grid is generated using a simple an dirty python script so they may be upgraded a lot during dev)
+Support 4:3 and 1:1 (but may evolve if needed), with simple grid system behind.
 
 Systems preview:<br />
 <img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="960" /><br />
 
 
 TODO: <br />
-- add missing systems<br />
-- add missing controlers<br />
+- still a lot of system/controller need replacement
 - Handle battery and wifi icons in a better way
 - Get better controler arts
 - Incorporate battery in the foreground
-- Make arts for knulli specific categories
 
 DONE: <br />
 - 16:9 <> 4:3 now switch automatically
