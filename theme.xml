@@ -10,7 +10,7 @@
 
 	<include>./_inc/xml/view-system.xml</include>
 	<include>./_inc/xml/view-grid.xml</include>
-	
+	<include>./_inc/xml/view-menu.xml</include>
 
 
 </theme>

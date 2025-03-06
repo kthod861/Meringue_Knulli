@@ -1,0 +1,66 @@
+
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <!-- Menu Settings -->
+  <view name="menu">
+    <menuText name="menutext">
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>${fontSizeBody}</fontSize>
+    </menuText>
+
+    <menuTextSmall name="menutextsmall">
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>${fontSizeCaption}</fontSize>
+    </menuTextSmall>
+
+    <menuGroup name="menugroup">
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>${fontSizeCaption}</fontSize>
+    </menuGroup>
+
+    <menuText name="menutitle">
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>${fontSizeH2}</fontSize>
+    </menuText>
+
+    <menuBackground name="menubg">
+      <fadePath>./../systems/fade.png</fadePath>
+      <size>1 1</size>
+    </menuBackground>
+
+    <menuButton name="menubutton">
+      <path>./../systems/button-normal.png</path>
+      <filledPath>./../systems/button-hover.png</filledPath>
+    </menuButton>
+
+    <menuSwitch name="menuswitch">
+      <pathOn>./../systems/switch-on.svg</pathOn>
+      <pathOff>./../systems/switch-off.svg</pathOff>
+    </menuSwitch>
+
+    <menuText name="menufooter">
+      <fontPath>${fontBold}</fontPath>
+      <fontSize>${fontSizeCaption}</fontSize>
+    </menuText>
+
+    <menuIcons name="menuicons">
+      <iconSystem>./../systems/icons/cog.svg</iconSystem>
+      <iconUpdates>./../systems/icons/update.svg</iconUpdates>
+      <iconControllers>./../systems/icons/gamepad-round.svg</iconControllers>
+      <iconGames>./../systems/icons/gamepad-square.svg</iconGames>
+      <iconUI>./../systems/icons/brush.svg</iconUI>
+      <iconSound>./../systems/icons/volume-high.svg</iconSound>
+      <iconNetwork>./../systems/icons/wifi-strength-3.svg</iconNetwork>
+      <iconScraper>./../systems/icons/image.svg</iconScraper>
+      <iconAdvanced>./../systems/icons/library-shelves.svg</iconAdvanced>
+      <iconQuit>./../systems/icons/exit-to-app.svg</iconQuit>
+      <iconRetroachievements>./../systems/icons/trophy.svg</iconRetroachievements>
+      <iconKodi>./../systems/icons/kodi.svg</iconKodi>
+      <iconRestart>./../systems/icons/restart.svg</iconRestart>
+      <iconShutdown>./../systems/icons/power.svg</iconShutdown>
+      <iconFastShutdown>./../systems/icons/power.svg</iconFastShutdown>
+    </menuIcons>
+  </view>
+
+</theme>

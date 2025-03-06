@@ -19,8 +19,13 @@
 		<percent.5>0D</percent.5>
 		<c.text>ffffff</c.text>
 		<c.textHeader>6ecaca</c.textHeader>
+		
 		<fontRegular>./../fonts/font.ttf</fontRegular>
+		<fontSizeBody>0.03125</fontSizeBody>
 		<fontSizeBody-small>0.03125</fontSizeBody-small>
+		<fontSizeCaption>0.028125</fontSizeCaption> 
+		<fontSizeH2>0.04375</fontSizeH2>
+		<fontBold>./../fonts/font-bold.ttf</fontBold>
 		
 		<v.gamelistGrid.size>1 0.85</v.gamelistGrid.size>
 		<v.gridAutoLayout if="${screen.width} &lt;= '641'">3 2</v.gridAutoLayout>
@@ -100,7 +105,8 @@
 			separator="2"
 			reverse="true"
 			size="0.58 0.045"
-			pos="0.4165 0"
+			origin = "0 0"
+			pos="-0.4 0.005"
 		>
 
 			<batteryText name="ss.batterytext"
@@ -122,17 +128,16 @@
 			<batteryIcon name="ss.battery"
 			
 				ifSubset="batterybar:yes"
-				incharge="./../systems/batteryIndicator/incharge.svg"
-				full="./../systems/batteryIndicator/full.svg"
-				at75="./../systems/batteryIndicator/75.svg"
-				at50="./../systems/batteryIndicator/50.svg"
-				at25="./../systems/batteryIndicator/25.svg"
-				empty="./../systems/batteryIndicator/empty.svg"
-				planemodeIcon="./../systems/batteryIndicator/planemode.png"
-				maxSize="1 1"
+				incharge="./../systems/batteryIndicator/incharge.png"
+				full="./../systems/batteryIndicator/full.png"
+				at75="./../systems/batteryIndicator/75.png"
+				at50="./../systems/batteryIndicator/50.png"
+				at25="./../systems/batteryIndicator/25.png"
+				empty="./../systems/batteryIndicator/empty.png"
+				maxSize="0.7 0.7"
 				linearSmooth="true"
 				color="${c.text}"
-				
+				pos="0 0.2"
 			/>
 			<text name="ss.separator2"
 				text="  "
