@@ -35,15 +35,6 @@
 		<v.ScrollBar>0.0035</v.ScrollBar>
 	</variables>
 
-	<!-- Move help away -->
-	<view name="system,grid">
-	<helpsystem name="help">
-		<textColor>${fgColor}</textColor>
-		<iconColor>${sectColor}</iconColor>
-		<pos>10 10</pos>
-	</helpsystem>
-	</view>
-
 	<!-- Menu tweaks -->
   <view name="menu">
     <menuText name="menutext">
@@ -81,89 +72,67 @@
     </menuTextEdit>
   </view>
 
-	<!-- MBattery and clock tweaks -->
+	<!-- Move help away -->
+	<view name="system,grid">
+		<helpsystem name="help">
+			<textColor>${fgColor}</textColor>
+			<iconColor>${sectColor}</iconColor>
+			<pos>10 10</pos>
+		</helpsystem>
+	</view>
+
+	<!-- Battery and clock tweaks -->
 	<view name="screen">
-		<batteryIndicator name="batteryIndicator">
-		<color>FFFFFF</color>
-		</batteryIndicator>
-		
-		<batteryIndicator name="batteryIndicator"
-			visible="false"
-		/>
-		
 		<controllerActivity name="controllerActivity">
 			<visible>false</visible>
 		</controllerActivity>
-
-		<text name="clock">
-			<pos>1 1</pos>
+		<text name="clock"> <!-- hide the original clock ?-->
+			<visible>false</visible>
 		</text>
-
-
-		<stackpanel name="batteryIndicatorExtra" extra="true"
-			orientation="horizontal"
-			separator="2"
-			reverse="true"
-			size="0.58 0.045"
-			origin = "0 0"
-			pos="-0.4 0.005"
-		>
-
-			<batteryText name="ss.batterytext"
-				fontPath="./../fonts/${fontRegular}"
-				color="${c.text}"
-				fontSize="0.035"
-				
-			/>
-
-			<text name="ss.separator1"
-			
-				text="  "
-				ifSubset="batterybar:yes"
-				fontPath="./../fonts/${fontRegular}"
-				fontSize="0.017"
-				color="${c.text}"
-			/>
-	
-			<batteryIcon name="ss.battery"
-			
-				ifSubset="batterybar:yes"
-				incharge="./../systems/batteryIndicator/incharge.png"
-				full="./../systems/batteryIndicator/full.png"
-				at75="./../systems/batteryIndicator/75.png"
-				at50="./../systems/batteryIndicator/50.png"
-				at25="./../systems/batteryIndicator/25.png"
-				empty="./../systems/batteryIndicator/empty.png"
-				maxSize="0.7 0.7"
-				linearSmooth="true"
-				color="${c.text}"
-				pos="0 0.2"
-			/>
-			<text name="ss.separator2"
-				text="  "
-				fontPath="./../fonts/${fontRegular}"
-				fontSize="0.017"
-				color="${c.text}"
-			/>
-		  
-			<networkIcon name="ss.network"
-				networkIcon="./../icons/Network.png"
-				planemodeIcon="./../icons/Planemode.png"
-				maxSize="1 1"
-				linearSmooth="true"
-				color="${c.text}"
-			/>
-	  
-		</stackpanel>
-		<stackpanel name="systemClockPanel" orientation="horizontal" size="0.58 0.045" pos="0.005 0.005">
-			<clock name="system-clock"
-				fontPath="./../fonts/${fontRegular}"
-				color="${c.text}"
-				fontSize="0.023"
-			/>
-			
-		</stackpanel>
-
+		<clock name="system-clock">
+			<origin>0 0</origin>
+			<pos>0.01 0.001</pos>
+			<size>1 1</size>
+			<alignment>left</alignment>
+			<fontPath>./../fonts/${fontRegular}</fontPath>
+			<color>777777FF</color>
+			<fontSize>0.023</fontSize>
+			<zIndex>666</zIndex>
+		</clock>
+		<batteryIcon name="batteryIcon">
+			<origin>0 0</origin>
+			<pos>0.115 0.01</pos>
+			<maxSize>0.04 0.04</maxSize>
+			<incharge>./../systems/batteryIndicator/incharge.png</incharge>
+			<full>./../systems/batteryIndicator/full.png</full>
+			<at75>./../systems/batteryIndicator/75.png</at75>
+			<at50>./../systems/batteryIndicator/50.png</at50>
+			<at25>./../systems/batteryIndicator/25.png</at25>
+			<empty>./../systems/batteryIndicator/empty.png</empty>
+			<linearSmooth>true</linearSmooth>
+			<color>777777FF</color>
+			<zIndex>666</zIndex>
+		</batteryIcon>
+		<networkIcon name="network">
+			<origin>0 0</origin>
+			<pos>0.075 0.005</pos>
+			<maxSize>0.04 0.04</maxSize>
+			<networkIcon>./../icons/Network.png</networkIcon>
+			<planemodeIcon>./../icons/Planemode.png</planemodeIcon>
+			<linearSmooth>true</linearSmooth>
+			<color>777777FF</color>
+			<zIndex>666</zIndex>
+		</networkIcon>
+		<batteryText name="batteryText">
+			<origin>0 0</origin>
+			<pos>0.165 0</pos>
+			<size>1 1</size>
+			<alignment>left</alignment>
+			<color>777777FF</color>
+			<fontSize>0.023</fontSize>
+			<fontPath>./../fonts/${fontRegular}</fontPath>
+			<zIndex>666</zIndex>
+		</batteryText>
 	</view>
 
 </theme>
