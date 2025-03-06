@@ -89,6 +89,9 @@
 		<text name="clock"> <!-- hide the original clock ?-->
 			<visible>false</visible>
 		</text>
+		<batteryIndicator name="batteryIndicator"><!-- hide the original battery....and wifi ?-->
+			<pos>10 10</pos>
+		</batteryIndicator>
 		<clock name="system-clock">
 			<origin>0 0</origin>
 			<pos>0.01 0.001</pos>
