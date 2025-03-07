@@ -1,4 +1,4 @@
-# (WIP)Meringue_ES_DE_Knulli theme
+# Meringue_ES_DE_Knulli theme
 
 An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/MeringuePersonal3407/) theme found on [this thread](https://www.reddit.com/r/ANBERNIC/comments/1ix9124/my_collection/).<br />
 
@@ -24,6 +24,7 @@ DONE: <br />
 - Full support of 1:1 and 4:3
 - Clock and battery icon/text rewrite
 - Full clock/batt/wifi refacto using stackpanel
+- Added as much as possible 'Meringue' user logo from the original theme
   
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
-At the moment everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
+At the moment almost everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
