@@ -34,9 +34,11 @@
 			<pos>0.5 1</pos>
 			<size>${background_scale}</size>
 			<zIndex>10</zIndex>
-			<storyboard repeatAt="100" >
-				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
-				<animation property="scale" from="1.005" to="1" duration="800" mode="easeIn" begin="800"/>
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.0025" duration="500" mode="easeIn"/>
+				<animation property="scale" from="1.0025" to="1.005" duration="500" mode="easeOut" begin="500"/>
+				<animation property="scale" from="1.005" to="1.0025" duration="500" mode="easeIn" begin="1000"/>
+				<animation property="scale" from="1.0025" to="1" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
 			<linearSmooth>true</linearSmooth>
 		</image>
@@ -46,9 +48,11 @@
 		</image>
 		<!-- Logo animation -->
 		<control name="logo,logoText" scale="1" >
-			<storyboard event="activate" repeatAt="100" >
-				<animation property="scale" from="1" to="1.02" duration="800" mode="easeOut"/>
-				<animation property="scale" from="1.02" to="1" duration="800" mode="easeIn" begin="800"/>
+			<storyboard event="activate" repeat="forever">
+				<animation property="scale" from="1.04" to="1.02" duration="500" mode="easeIn"/>
+				<animation property="scale" from="1.02" to="1" duration="500" mode="easeOut" begin="500"/>
+				<animation property="scale" from="1" to="1.02" duration="500" mode="easeIn" begin="1000"/>
+				<animation property="scale" from="1.02" to="1.04" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
 		</control>
 		<carousel name="systemcarousel">

@@ -111,9 +111,11 @@
 			<pos>0.5 1</pos>
 			<size>${background_scale_gamelist}</size>
 			<zIndex>10</zIndex>
-			<storyboard repeatAt="100" >
-				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
-				<animation property="scale" from="1.005" to="1" duration="800" mode="easeIn" begin="800"/>
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.0025" duration="500" mode="easeIn"/>
+				<animation property="scale" from="1.0025" to="1.005" duration="500" mode="easeOut" begin="500"/>
+				<animation property="scale" from="1.005" to="1.0025" duration="500" mode="easeIn" begin="1000"/>
+				<animation property="scale" from="1.0025" to="1" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0.3</opacity>
@@ -189,12 +191,18 @@
 		<!-- favorites -->
 		<image name="gridtile.favorite">
 			<path>./../images/favorite.png</path>
-			<origin>0.5 1</origin>
-			<pos>0.5 1</pos>
-			<maxSize>0.4 0.4</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.8 0.8</pos>
+			<maxSize>0.3 0.3</maxSize>
 			<horizontalAlignment>center</horizontalAlignment>
 			<verticalAlignment>bottom</verticalAlignment>
 			<!--<reflexion>0.7 0.2</reflexion>-->
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.05" duration="500" mode="easeIn"/>
+				<animation property="scale" from="1.05" to="1.1" duration="500" mode="easeOut" begin="500"/>
+				<animation property="scale" from="1.1" to="1.05" duration="500" mode="easeIn" begin="1000"/>
+				<animation property="scale" from="1.05" to="1" duration="500" mode="easeOut" begin="1500"/>
+			</storyboard>
 		</image>
 		<ninepatch name="gridtile.background:selected"
 			animateColor="4075F9"
