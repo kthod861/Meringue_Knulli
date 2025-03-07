@@ -127,12 +127,12 @@
 			<size>1 .6</size>
 			<opacity>1</opacity>
 			<clipRect>${clipRect_foreground}</clipRect>
-			<zIndex>500</zIndex>
+			<zIndex>900</zIndex>
 		</image>
 
 		<!--actual game grid -->
 		<imagegrid name="gamegrid">
-			<zIndex>1001</zIndex>
+			<zIndex>899</zIndex>
 			<pos>0 0.15</pos>
 			<size>${v.gamelistGrid.size}</size>
 			<margin>0.02 0.02</margin>
