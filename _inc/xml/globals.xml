@@ -94,7 +94,7 @@
 		</batteryIndicator>
 		<clock name="system-clock">
 			<origin>0 0</origin>
-			<pos>0.01 0.001</pos>
+			<pos>0.01 0.003</pos>
 			<size>1 1</size>
 			<alignment>left</alignment>
 			<fontPath>./../fonts/${fontRegular}</fontPath>
@@ -102,9 +102,19 @@
 			<fontSize>0.023</fontSize>
 			<zIndex>666</zIndex>
 		</clock>
+		<networkIcon name="network">
+			<origin>0 0</origin>
+			<pos>0.125 0.005</pos>
+			<maxSize>0.04 0.04</maxSize>
+			<networkIcon>./../icons/Network.png</networkIcon>
+			<planemodeIcon>./../icons/Planemode.png</planemodeIcon>
+			<linearSmooth>true</linearSmooth>
+			<color>777777FF</color>
+			<zIndex>666</zIndex>
+		</networkIcon>
 		<batteryIcon name="batteryIcon">
 			<origin>0 0</origin>
-			<pos>0.115 0.01</pos>
+			<pos>0.16 0.012</pos>
 			<maxSize>0.04 0.04</maxSize>
 			<incharge>./../systems/batteryIndicator/incharge.png</incharge>
 			<full>./../systems/batteryIndicator/full.png</full>
@@ -116,19 +126,9 @@
 			<color>777777FF</color>
 			<zIndex>666</zIndex>
 		</batteryIcon>
-		<networkIcon name="network">
-			<origin>0 0</origin>
-			<pos>0.075 0.005</pos>
-			<maxSize>0.04 0.04</maxSize>
-			<networkIcon>./../icons/Network.png</networkIcon>
-			<planemodeIcon>./../icons/Planemode.png</planemodeIcon>
-			<linearSmooth>true</linearSmooth>
-			<color>777777FF</color>
-			<zIndex>666</zIndex>
-		</networkIcon>
 		<batteryText name="batteryText">
 			<origin>0 0</origin>
-			<pos>0.165 0</pos>
+			<pos>0.205 0.002</pos>
 			<size>1 1</size>
 			<alignment>left</alignment>
 			<color>777777FF</color>
