@@ -22,6 +22,7 @@ DONE: <br />
 - Removed 16:9 assets
 - Full support of 1:1 and 4:3
 - Clock and battery icon/text rewrite
+- Full clock/batt/wifi refacto using stackpanel
   
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
 At the moment everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
