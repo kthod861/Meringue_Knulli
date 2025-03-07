@@ -92,6 +92,8 @@
 		<batteryIndicator name="batteryIndicator"><!-- hide the original battery....and wifi ?-->
 			<pos>10 10</pos>
 		</batteryIndicator>
+	</view>
+	<view name="system,grid">
 		<clock name="system-clock">
 			<origin>0 0</origin>
 			<pos>0.01 0.003</pos>
@@ -100,7 +102,7 @@
 			<fontPath>./../fonts/${fontRegular}</fontPath>
 			<color>777777FF</color>
 			<fontSize>0.023</fontSize>
-			<zIndex>666</zIndex>
+			<zIndex>999</zIndex>
 		</clock>
 		<networkIcon name="network">
 			<origin>0 0</origin>
@@ -110,7 +112,7 @@
 			<planemodeIcon>./../icons/Planemode.png</planemodeIcon>
 			<linearSmooth>true</linearSmooth>
 			<color>777777FF</color>
-			<zIndex>666</zIndex>
+			<zIndex>999</zIndex>
 		</networkIcon>
 		<batteryIcon name="batteryIcon">
 			<origin>0 0</origin>
@@ -124,7 +126,7 @@
 			<empty>./../systems/batteryIndicator/empty.png</empty>
 			<linearSmooth>true</linearSmooth>
 			<color>777777FF</color>
-			<zIndex>666</zIndex>
+			<zIndex>999</zIndex>
 		</batteryIcon>
 		<batteryText name="batteryText">
 			<origin>0 0</origin>
@@ -134,7 +136,7 @@
 			<color>777777FF</color>
 			<fontSize>0.023</fontSize>
 			<fontPath>./../fonts/${fontRegular}</fontPath>
-			<zIndex>666</zIndex>
+			<zIndex>999</zIndex>
 		</batteryText>
 	</view>
 

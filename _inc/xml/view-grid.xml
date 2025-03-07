@@ -127,7 +127,7 @@
 			<size>1 .6</size>
 			<opacity>1</opacity>
 			<clipRect>${clipRect_foreground}</clipRect>
-			<zIndex>3000</zIndex>
+			<zIndex>500</zIndex>
 		</image>
 
 		<!--actual game grid -->
