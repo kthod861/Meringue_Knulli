@@ -9,7 +9,7 @@
 			<horizontalAlignment>center</horizontalAlignment>
 			<verticalAlignment>center</verticalAlignment>
 			<scale>0.3 </scale>
-			<maxSize>0.8 0.35</maxSize>
+			<maxSize>1.5 0.33</maxSize>
 			<path>./_inc/systems/logos/${system.theme}.png</path>
 			<zIndex>16</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
@@ -30,7 +30,7 @@
 			<alignment>left</alignment>
 			<color>${fgColor}</color>
 			<zIndex>16</zIndex>
-			<w>0.35</w>
+			<w>0.25</w>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
