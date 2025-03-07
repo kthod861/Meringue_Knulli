@@ -19,6 +19,7 @@
 				<animation property="opacity" from="1" to="1" begin="300" duration="100" mode="easeOut"/>
 				<animation property="scale" from="0" to="0.3" begin="300" duration="200" mode="easeOut"/>
 			</storyboard>
+			<shared>true</shared>
 		</image>
 		<!-- game name-->
 		<text name="md_name">

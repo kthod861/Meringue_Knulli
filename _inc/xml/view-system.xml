@@ -45,6 +45,7 @@
 		<!-- Logo -->
 		<image name="logo">
 			<path>./_inc/systems/logos/${system.theme}.png</path>
+			<shared>true</shared>
 		</image>
 		<!-- Logo animation -->
 		<control name="logo,logoText" scale="1" >
@@ -79,8 +80,8 @@
 			<opacity>0</opacity>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="100" duration="100" mode="easeOut"/>
-				<animation property="scale" from="0.5" to="1" begin="100" duration="200" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="120" duration="120" mode="easeOut"/>
+				<animation property="scale" from="0.5" to="1" begin="120" duration="220" mode="easeOut"/>
 			</storyboard>
 			<zIndex>13</zIndex>
 		</image>
