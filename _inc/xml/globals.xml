@@ -82,62 +82,64 @@
 	</view>
 
 	<!-- Battery and clock tweaks -->
-	<view name="screen">
-		<controllerActivity name="controllerActivity">
-			<visible>false</visible>
 		</controllerActivity>
 		<text name="clock"> <!-- hide the original clock ?-->
 			<visible>false</visible>
 		</text>
-		<batteryIndicator name="batteryIndicator"><!-- hide the original battery....and wifi ?-->
-			<pos>10 10</pos>
-		</batteryIndicator>
+   <view name="screen">
+      <!-- Start: Resets -->
+      <controllerActivity name="controllerActivity">
+         <visible>false</visible>
+      </controllerActivity>
+      <batteryIndicator name="batteryIndicator">
+         <visible>false</visible>
+      </batteryIndicator>
+      <text name="clock">
+         <pos>1 1</pos>
+      </text>
+      <!-- End: Resets -->
 	</view>
 	<view name="system,grid">
-		<clock name="system-clock">
-			<origin>0 0</origin>
-			<pos>0.01 0.003</pos>
-			<size>1 1</size>
-			<alignment>left</alignment>
-			<fontPath>./../fonts/${fontRegular}</fontPath>
-			<color>777777FF</color>
-			<fontSize>0.023</fontSize>
-			<zIndex>999</zIndex>
-		</clock>
-		<networkIcon name="network">
-			<origin>0 0</origin>
-			<pos>0.125 0.005</pos>
-			<maxSize>0.04 0.04</maxSize>
-			<networkIcon>./../icons/Network.png</networkIcon>
-			<planemodeIcon>./../icons/Planemode.png</planemodeIcon>
-			<linearSmooth>true</linearSmooth>
-			<color>777777FF</color>
-			<zIndex>999</zIndex>
-		</networkIcon>
-		<batteryIcon name="batteryIcon">
-			<origin>0 0</origin>
-			<pos>0.16 0.012</pos>
-			<maxSize>0.04 0.04</maxSize>
-			<incharge>./../systems/batteryIndicator/incharge.png</incharge>
-			<full>./../systems/batteryIndicator/full.png</full>
-			<at75>./../systems/batteryIndicator/75.png</at75>
-			<at50>./../systems/batteryIndicator/50.png</at50>
-			<at25>./../systems/batteryIndicator/25.png</at25>
-			<empty>./../systems/batteryIndicator/empty.png</empty>
-			<linearSmooth>true</linearSmooth>
-			<color>777777FF</color>
-			<zIndex>999</zIndex>
-		</batteryIcon>
-		<batteryText name="batteryText">
-			<origin>0 0</origin>
-			<pos>0.205 0.002</pos>
-			<size>1 1</size>
-			<alignment>left</alignment>
-			<color>777777FF</color>
-			<fontSize>0.023</fontSize>
-			<fontPath>./../fonts/${fontRegular}</fontPath>
-			<zIndex>999</zIndex>
-		</batteryText>
+		<stackpanel name="system-indicators" extra="true">
+			<h>0.025</h>
+			<w>0.96875</w>
+			<separator>0.015625</separator>
+			<pos>0.01 00</pos><!-- 0 20 -->
+			<orientation>horizontal</orientation>
+			<reverse>false</reverse>
+			<zIndex> 20 </zIndex>
+			
+			<clock name="system-clock">
+				<color>777777FF</color>
+				<fontPath>./../fonts/${fontRegular}</fontPath>
+				<fontSize>0.023</fontSize>
+			</clock>
+			
+			<networkIcon name="system-network-icon">
+				<maxSize>1 1</maxSize>
+				<color>777777FF</color>
+				<networkIcon>./../icons/Network.png</networkIcon>
+				<planemodeIcon>./../icons/Planemode.png</planemodeIcon>
+			</networkIcon>
+		 
+			<batteryIcon name="system-battery-icon">
+				<maxSize>1 1</maxSize>
+				<color>777777FF</color>
+				<incharge>./../batteryIndicator/incharge.png</incharge>
+				<full>./../batteryIndicator/full.png</full>
+				<at75>./../batteryIndicator/75.png</at75>
+				<at50>./../batteryIndicator/50.png</at50>
+				<at25>./../batteryIndicator/25.png</at25>
+				<empty>./../batteryIndicator/empty.png</empty>
+			</batteryIcon>
+
+			<batteryText name="system-battery-text">
+				<color>777777FF</color>
+				<fontPath>./../fonts/${fontRegular}</fontPath>
+				<fontSize>0.023</fontSize>
+			</batteryText>
+		 
+		</stackpanel>
 	</view>
 
 </theme>

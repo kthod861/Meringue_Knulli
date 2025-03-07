@@ -10,21 +10,21 @@
 			<origin>0.5 0</origin>
 			<pos>0.5 0</pos>
 			<size>${foreground_scale}</size>
-			<zIndex>410</zIndex>
+			<zIndex>15</zIndex>
 		</image>
 		<image name="foreground_mid" extra="static">
 			<path>./_inc/images/SystemForeground_MID.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>${foreground_midpos}</pos>
 			<size>${foreground_invscale}</size>
-			<zIndex>409</zIndex>
+			<zIndex>15</zIndex>
 		</image>
 		<image name="foreground_bottom" extra="static">
 			<path>./_inc/images/SystemForeground_BOTTOM.png</path>
 			<origin>0.5 1</origin>
 			<pos>0.5 1</pos>
 			<size>${foreground_scale}</size>
-			<zIndex>410</zIndex>
+			<zIndex>15</zIndex>
 		</image>
 		<!-- Background-->
 		<image name="background_boxart" extra="true">
@@ -33,7 +33,7 @@
 			<origin>0.5 1</origin>
 			<pos>0.5 1</pos>
 			<size>${background_scale}</size>
-			<zIndex>100</zIndex>
+			<zIndex>10</zIndex>
 			<storyboard repeatAt="100" >
 				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
 				<animation property="scale" from="1.005" to="1" duration="800" mode="easeIn" begin="800"/>
@@ -63,7 +63,7 @@
 			<systemInfoDelay>100</systemInfoDelay>
 			<scaledLogoSpacing>0.4</scaledLogoSpacing>
 			<defaultTransition>fade &amp; slide</defaultTransition><!--fade &amp; -->
-			<zIndex>500</zIndex>
+			<zIndex>16</zIndex>
 		</carousel>
 		<!-- Controler -->
 		<image name="controler" extra="true">
@@ -78,7 +78,7 @@
 				<animation property="opacity" from="0" to="1" begin="100" duration="100" mode="easeOut"/>
 				<animation property="scale" from="0.5" to="1" begin="100" duration="200" mode="easeOut"/>
 			</storyboard>
-			<zIndex>400</zIndex>
+			<zIndex>13</zIndex>
 		</image>
 		<!-- System view Infos-->
 		<text name="systemInfo" >
@@ -90,7 +90,7 @@
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.02</fontSize>
 			<letterCase>capitalize</letterCase>
-			<zIndex>600</zIndex>
+			<zIndex>16</zIndex>
 		</text>
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
@@ -108,7 +108,7 @@
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
-			<zIndex>600</zIndex>
+			<zIndex>16</zIndex>
 		</text>
 	</view>
 </theme>

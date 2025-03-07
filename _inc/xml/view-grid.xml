@@ -11,7 +11,7 @@
 			<scale>0.3 </scale>
 			<maxSize>0.8 0.35</maxSize>
 			<path>./_inc/systems/logos/${system.theme}.png</path>
-			<zIndex>4000</zIndex>
+			<zIndex>16</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
@@ -29,7 +29,7 @@
 			<size>0.7 ${fontSizeBody-small}</size>
 			<alignment>left</alignment>
 			<color>${fgColor}</color>
-			<zIndex>5000</zIndex>
+			<zIndex>16</zIndex>
 			<w>0.35</w>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
@@ -46,7 +46,7 @@
 			<alignment>left</alignment>
 			<fontSize>0.025</fontSize>
 			<value>...</value>
-			<zIndex>4000</zIndex>
+			<zIndex>16</zIndex>
 		</datetime>
 		<!-- rating-->
 		<rating name="md_rating">
@@ -57,7 +57,7 @@
 			<unfilledColor>808080</unfilledColor>
 			<unfilledPath>:/star_filled.svg</unfilledPath>
 			<horizontalAlignment>left</horizontalAlignment>
-			<zIndex>4000</zIndex>
+			<zIndex>16</zIndex>
 		</rating>
 		<!-- play time -->
 		<text name="md_lbl_gametime">
@@ -68,7 +68,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<zIndex>4000</zIndex>
+			<zIndex>16</zIndex>
 		</text>
 		<text name="md_gametime">
 			<pos>0.89 0.171</pos>
@@ -78,7 +78,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<zIndex>4000</zIndex>
+			<zIndex>16</zIndex>
 		</text>
 		<!-- last played-->
 		<text name="md_lbl_lastplayed">
@@ -89,7 +89,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<zIndex>4000</zIndex>
+			<zIndex>16</zIndex>
 		</text>		
 		<datetime name="md_lastplayed">
 			<pos>0.87 0.14</pos>
@@ -99,7 +99,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
-			<zIndex>4000</zIndex>
+			<zIndex>16</zIndex>
 		</datetime>
 
 
@@ -110,7 +110,7 @@
 			<origin>0.5 1</origin>
 			<pos>0.5 1</pos>
 			<size>${background_scale_gamelist}</size>
-			<zIndex>100</zIndex>
+			<zIndex>10</zIndex>
 			<storyboard repeatAt="100" >
 				<animation property="scale" from="1" to="1.005" duration="800" mode="easeOut"/>
 				<animation property="scale" from="1.005" to="1" duration="800" mode="easeIn" begin="800"/>
@@ -127,12 +127,12 @@
 			<size>1 .6</size>
 			<opacity>1</opacity>
 			<clipRect>${clipRect_foreground}</clipRect>
-			<zIndex>900</zIndex>
+			<zIndex>15</zIndex>
 		</image>
 
 		<!--actual game grid -->
 		<imagegrid name="gamegrid">
-			<zIndex>899</zIndex>
+			<zIndex>13</zIndex>
 			<pos>0 0.15</pos>
 			<size>${v.gamelistGrid.size}</size>
 			<margin>0.02 0.02</margin>
