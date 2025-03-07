@@ -27,4 +27,4 @@ DONE: <br />
 - Added as much as possible 'Meringue' user logo from the original theme
   
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
-At the moment everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
+At the moment almost everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
