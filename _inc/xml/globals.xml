@@ -82,10 +82,6 @@
 	</view>
 
 	<!-- Battery and clock tweaks -->
-		</controllerActivity>
-		<text name="clock"> <!-- hide the original clock ?-->
-			<visible>false</visible>
-		</text>
    <view name="screen">
       <!-- Start: Resets -->
       <controllerActivity name="controllerActivity">
