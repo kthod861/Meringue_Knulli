@@ -36,6 +36,23 @@
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
 		</text>
+		<!-- genre-->
+		<text name="gamelist-game-genre" extra="true">
+			<pos>0.010 0.14</pos>
+			<origin>0 0.5</origin>
+			<size>0.7 ${fontSizeBody-small}</size>
+			<alignment>left</alignment>
+			<text>{game:genre}</text>
+			<fontPath>${fontRegular}</fontPath>
+			<color>dddddd</color>
+			<alignment>left</alignment>
+			<fontSize>0.02</fontSize>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScroll>horizontal</autoScroll>
+			<lineSpacing>1</lineSpacing>
+			<visible>true</visible>
+			<zIndex>16</zIndex>
+		</text>
 		<!-- release date-->
 		<datetime name="md_releasedate">
 			<pos>0.010 0.17</pos>
@@ -45,19 +62,20 @@
 			<color>dddddd</color>
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
+			<fontSize>0.02</fontSize>
+			<fontPath>${fontRegular}</fontPath>
 			<value>...</value>
 			<zIndex>16</zIndex>
 		</datetime>
 		<!-- rating-->
 		<rating name="md_rating">
-			<pos>0.06 0.168</pos>
+			<pos>0.15 0.168</pos>
 			<origin>0 0.5</origin>
 			<size>0.05 0.03</size>
 			<color>FFFF00</color>
 			<unfilledColor>808080</unfilledColor>
 			<unfilledPath>:/star_filled.svg</unfilledPath>
-			<horizontalAlignment>left</horizontalAlignment>
+			<horizontalAlignment>right</horizontalAlignment>
 			<zIndex>16</zIndex>
 		</rating>
 		<!-- play time -->
@@ -69,6 +87,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
+			<fontPath>${fontRegular}</fontPath>
 			<zIndex>16</zIndex>
 		</text>
 		<text name="md_gametime">
@@ -79,6 +98,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
+			<fontPath>${fontRegular}</fontPath>
 			<zIndex>16</zIndex>
 		</text>
 		<!-- last played-->
@@ -90,6 +110,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
+			<fontPath>${fontRegular}</fontPath>
 			<zIndex>16</zIndex>
 		</text>		
 		<datetime name="md_lastplayed">
@@ -100,6 +121,7 @@
 			<forceUppercase>0</forceUppercase>
 			<alignment>left</alignment>
 			<fontSize>0.02</fontSize>
+			<fontPath>${fontRegular}</fontPath>
 			<zIndex>16</zIndex>
 		</datetime>
 
