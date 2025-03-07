@@ -11,6 +11,7 @@ Systems preview:<br />
 TODO: <br />
 - still a lot of system/controller need replacement
 - Get better controler arts
+- Optimisations needed
 
 DONE: <br />
 - 16:9 <> 4:3 now switch automatically
