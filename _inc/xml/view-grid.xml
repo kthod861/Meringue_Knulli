@@ -129,7 +129,20 @@
 			<clipRect>${clipRect_foreground}</clipRect>
 			<zIndex>15</zIndex>
 		</image>
-
+		<image name="foreground_mid" extra="static">
+			<path>./_inc/images/SystemForeground_MID.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>${foreground_midpos}</pos>
+			<size>${foreground_invscale}</size>
+			<zIndex>15</zIndex>
+		</image>
+		<image name="foreground_bottom" extra="static">
+			<path>./_inc/images/SystemForeground_BOTTOM.png</path>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<size>${foreground_scale}</size>
+			<zIndex>15</zIndex>
+		</image>
 		<!--actual game grid -->
 		<imagegrid name="gamegrid">
 			<zIndex>13</zIndex>
@@ -146,7 +159,7 @@
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<imageSource>thumbnail</imageSource>
 			<scrollSound>./../systems/scroll.wav</scrollSound>
-			<scrollDirection>horizontal</scrollDirection>
+			<scrollDirection>vertical</scrollDirection>
 		</imagegrid>
 		
 		<!-- each game -->
@@ -154,10 +167,10 @@
 			<backgroundColor>00000000</backgroundColor>
 			<backgroundEdgeColor>00000000</backgroundEdgeColor>
 			<backgroundCenterColor>00000000</backgroundCenterColor>
-			<backgroundCornerSize>9 9</backgroundCornerSize>
+			<backgroundCornerSize>7 7</backgroundCornerSize>
 			<selectionMode>image</selectionMode>
 			<imageSizeMode>maxSize</imageSizeMode>
-			<padding>2 2</padding>
+			<padding>4 4</padding>
 			<imageColor>ffffff</imageColor>
 		</gridtile>
 		<!-- selected behavior-->
@@ -170,7 +183,7 @@
 		<!-- each game tile-->
 		<image name="gridtile.image">
 			<linearSmooth>true</linearSmooth>
-			<roundCorners>0.05</roundCorners>
+			<roundCorners>0.03</roundCorners>
 		</image>
 		
 		<!-- favorites -->
@@ -183,7 +196,10 @@
 			<verticalAlignment>bottom</verticalAlignment>
 			<!--<reflexion>0.7 0.2</reflexion>-->
 		</image>
-		
+		<ninepatch name="gridtile.background:selected"
+			animateColor="4075F9"
+			animateColorTime="300"
+		/>
 		<!-- default cartridge -->
 		<imagegrid name="gamegrid">
 			<gameImage>./../icons/cartridge-dark.png</gameImage>
