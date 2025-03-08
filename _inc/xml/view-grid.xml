@@ -91,7 +91,7 @@
 			<zIndex>16</zIndex>
 		</text>
 		<text name="md_gametime">
-			<pos>0.89 0.171</pos>
+			<pos>0.90 0.171</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
@@ -114,7 +114,7 @@
 			<zIndex>16</zIndex>
 		</text>		
 		<datetime name="md_lastplayed">
-			<pos>0.87 0.14</pos>
+			<pos>0.88 0.14</pos>
 			<origin>0 0.5</origin>
 			<size>0.11 0.035</size>
 			<color>dddddd</color>
@@ -154,13 +154,7 @@
 			<clipRect>${clipRect_foreground}</clipRect>
 			<zIndex>15</zIndex>
 		</image>
-		<image name="foreground_mid" extra="static">
-			<path>./_inc/images/SystemForeground_MID.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>${foreground_midpos}</pos>
-			<size>${foreground_invscale}</size>
-			<zIndex>15</zIndex>
-		</image>
+
 		<image name="foreground_bottom" extra="static">
 			<path>./_inc/images/SystemForeground_BOTTOM.png</path>
 			<origin>0.5 1</origin>
