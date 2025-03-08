@@ -31,18 +31,18 @@
 			<alignment>left</alignment>
 			<color>${fgColor}</color>
 			<zIndex>16</zIndex>
-			<w>0.25</w>
+			<w>0.24</w>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
 		</text>
-		<!-- genre-->
-		<text name="gamelist-game-genre" extra="true">
+		<!-- game publisher-->
+		<text name="gamelist-game-publisher" extra="true">
 			<pos>0.010 0.14</pos>
 			<origin>0 0.5</origin>
 			<size>0.7 ${fontSizeBody-small}</size>
 			<alignment>left</alignment>
-			<text>{game:genre}</text>
+			<text>{game:publisher}</text>
 			<fontPath>${fontRegular}</fontPath>
 			<color>dddddd</color>
 			<alignment>left</alignment>

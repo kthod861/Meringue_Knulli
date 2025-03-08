@@ -100,7 +100,7 @@
 			<h>0.025</h>
 			<w>0.96875</w>
 			<separator>0.015625</separator>
-			<pos>0.01 00</pos><!-- 0 20 -->
+			<pos>0.01 0.01</pos><!-- 0 20 -->
 			<orientation>horizontal</orientation>
 			<reverse>false</reverse>
 			<zIndex> 20 </zIndex>
