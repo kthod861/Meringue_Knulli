@@ -79,52 +79,34 @@
 			<horizontalAlignment>right</horizontalAlignment>
 			<zIndex>16</zIndex>
 		</rating>
-		<!-- play time -->
-		<text name="md_lbl_gametime">
-			<pos>0.80 0.171</pos>
-			<origin>0 0.5</origin>
-			<size>0.11 0.035</size>
-			<color>dddddd</color>
-			<forceUppercase>0</forceUppercase>
-			<alignment>left</alignment>
-			<fontSize>0.02</fontSize>
-			<fontPath>${fontRegular}</fontPath>
-			<zIndex>16</zIndex>
-		</text>
-		<text name="md_gametime">
-			<pos>0.90 0.171</pos>
-			<origin>0 0.5</origin>
-			<size>0.11 0.035</size>
-			<color>dddddd</color>
-			<forceUppercase>0</forceUppercase>
-			<alignment>left</alignment>
-			<fontSize>0.02</fontSize>
-			<fontPath>${fontRegular}</fontPath>
-			<zIndex>16</zIndex>
-		</text>
-		<!-- last played-->
-		<text name="md_lbl_lastplayed">
-			<pos>0.78 0.14</pos>
-			<origin>0 0.5</origin>
-			<size>0.11 0.035</size>
-			<color>dddddd</color>
-			<forceUppercase>0</forceUppercase>
-			<alignment>left</alignment>
-			<fontSize>0.02</fontSize>
-			<fontPath>${fontRegular}</fontPath>
-			<zIndex>16</zIndex>
-		</text>		
-		<datetime name="md_lastplayed">
-			<pos>0.88 0.14</pos>
-			<origin>0 0.5</origin>
-			<size>0.11 0.035</size>
-			<color>dddddd</color>
-			<forceUppercase>0</forceUppercase>
-			<alignment>left</alignment>
-			<fontSize>0.02</fontSize>
-			<fontPath>${fontRegular}</fontPath>
-			<zIndex>16</zIndex>
-		</datetime>
+		<!-- stack info -->
+		<stackpanel name="lastplayed_gametime" extra="true">
+			<separator>0</separator>
+			<pos>${stack_pos_info}</pos>
+			<w>0.2</w>
+			<h>0.09</h>
+			<orientation>vertical</orientation>
+			<reverse>false</reverse>
+			<zIndex> 20 </zIndex>
+			<!-- last played-->
+			<text name="systemInfoEx" extra="true">
+				<text>Last played : {binding:lastPlayedDate}</text>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>${stack_fontSize_info}</fontSize>
+				<color>dddddd</color>
+				<h>0.5</h>
+			</text>
+			<!-- play time-->
+			<text name="systemInfoEx" extra="true">
+				<text>Game time  : {binding:gameTime}</text>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>${stack_fontSize_info}</fontSize>
+				<color>dddddd</color>
+				<h>0.5</h>
+			</text>
+		
+		</stackpanel>
+
 		<!-- Background-->
 		<image name="background_boxart" extra="true">
 			<path>${background_path}</path>
