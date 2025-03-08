@@ -4,11 +4,11 @@
 	<view name="grid">
 		<!-- System logo -->
 		<image name="logo" extra="static">
-			<pos>0.5 0.06</pos>
+			<pos>0.5 0.07</pos>
 			<origin>0.5 0.5</origin>
 			<horizontalAlignment>center</horizontalAlignment>
 			<verticalAlignment>center</verticalAlignment>
-			<scale>0.3 </scale>
+			<scale>0.35 </scale>
 			<maxSize>1.5 0.33</maxSize>
 			<path>./_inc/systems/logos/${system.theme}.png</path>
 			<zIndex>16</zIndex>
@@ -16,10 +16,9 @@
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<storyboard>
-				<animation property="opacity" from="1" to="1" begin="300" duration="100" mode="easeOut"/>
-				<animation property="scale" from="0" to="0.3" begin="300" duration="200" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="100" mode="easeOut"/>
+				<animation property="scale" from="0" to="0.35" begin="300" duration="200" mode="easeOut"/>
 			</storyboard>
-			<shared>true</shared>
 		</image>
 		<!-- game name-->
 		<text name="md_name">
@@ -32,6 +31,8 @@
 			<color>${fgColor}</color>
 			<zIndex>16</zIndex>
 			<w>0.24</w>
+			<glowSize>1</glowSize>
+			<glowColor>ffffff26</glowColor>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
@@ -71,7 +72,7 @@
 		<rating name="md_rating">
 			<pos>0.15 0.168</pos>
 			<origin>0 0.5</origin>
-			<size>0.05 0.03</size>
+			<size>0.05 0.028</size>
 			<color>FFFF00</color>
 			<unfilledColor>808080</unfilledColor>
 			<unfilledPath>:/star_filled.svg</unfilledPath>
@@ -140,6 +141,7 @@
 			</storyboard>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0.3</opacity>
+			<saturation>1.5</saturation>
 		</image>
 
 		<!-- Foreground-->

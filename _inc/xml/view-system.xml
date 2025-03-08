@@ -49,6 +49,7 @@
 		<image name="logo">
 			<path>./_inc/systems/logos/${system.theme}.png</path>
 			<shared>true</shared>
+			<linearSmooth>true</linearSmooth>
 		</image>
 		<!-- Logo animation -->
 		<control name="logo,logoText" scale="1" >
@@ -64,12 +65,11 @@
 			<pos>${logo_pos}</pos>
 			<size>1 1</size>
 			<color>00000000</color>
-			<itemScale>1.80</itemScale>
 			<minLogoOpacity>0</minLogoOpacity>
-			<logoScale>1.4</logoScale>
+			<logoScale>1.6</logoScale>
 			<transitionSpeed>800</transitionSpeed>
 			<systemInfoDelay>100</systemInfoDelay>
-			<scaledLogoSpacing>0.4</scaledLogoSpacing>
+			<scaledLogoSpacing>1</scaledLogoSpacing>
 			<defaultTransition>fade &amp; slide</defaultTransition><!--fade &amp; -->
 			<zIndex>16</zIndex>
 		</carousel>
@@ -83,8 +83,8 @@
 			<opacity>0</opacity>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="120" duration="120" mode="easeOut"/>
-				<animation property="scale" from="0.5" to="1" begin="120" duration="220" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="180" duration="120" mode="easeOut"/>
+				<animation property="scale" from="0.5" to="1" begin="180" duration="220" mode="easeOut"/>
 			</storyboard>
 			<zIndex>13</zIndex>
 		</image>
@@ -116,7 +116,9 @@
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
-			<zIndex>16</zIndex>
+			<glowSize>0.5</glowSize>
+			<glowColor>ffffff26</glowColor>
+			<zIndex>25</zIndex>
 		</text>
 	</view>
 </theme>
