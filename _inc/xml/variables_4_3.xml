@@ -5,14 +5,21 @@
 		<background_path>./_inc/systems/background_4_3/${system.theme}.jpg</background_path>
 		<default_background_path>./_inc/systems/background_4_3/_default.jpg</default_background_path>
 		
-		<foreground_scale>1 1</foreground_scale>
+		<stack_foreground_pos>0 0</stack_foreground_pos>
+		<stack_foreground_h>1</stack_foreground_h>
+		<stack_foreground_w>1</stack_foreground_w>
+		
+		<system_stack_top_h>0.45</system_stack_top_h>
+		<system_stack_mid_h>0.5</system_stack_mid_h>
+		<system_stack_bottom_h>0.05</system_stack_bottom_h>
+		
+		<gamegrid_stack_top_h>0.22</gamegrid_stack_top_h>
+		<gamegrid_stack_mid_h>0.73</gamegrid_stack_mid_h>
+		<gamegrid_stack_bottom_h>0.05</gamegrid_stack_bottom_h>
+		
 		<background_scale>1 1</background_scale>
 		<background_scale_gamelist>1 1</background_scale_gamelist>
-		<foreground_invscale>1 1</foreground_invscale>
-		<foreground_midpos>0.5 0.5</foreground_midpos>
 		
-		<origin_foreground>0 0.07</origin_foreground>
-		<clipRect_foreground>0 0 1 0.223</clipRect_foreground>
 		
 		<logo_pos>0.5 0.13</logo_pos>
 		<controller_maxSize>.7 .6</controller_maxSize>

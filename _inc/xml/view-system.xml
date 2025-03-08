@@ -5,27 +5,29 @@
 	<view name="system">
 
 		<!-- Foreground-->
-		<image name="foreground_top" extra="static">
-			<path>./_inc/images/SystemForeground_TOP.png</path>
-			<origin>0.5 0</origin>
-			<pos>0.5 0</pos>
-			<size>${foreground_scale}</size>
-			<zIndex>15</zIndex>
-		</image>
-		<image name="foreground_mid" extra="static">
-			<path>./_inc/images/SystemForeground_MID.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>${foreground_midpos}</pos>
-			<size>${foreground_invscale}</size>
-			<zIndex>15</zIndex>
-		</image>
-		<image name="foreground_bottom" extra="static">
-			<path>./_inc/images/SystemForeground_BOTTOM.png</path>
-			<origin>0.5 1</origin>
-			<pos>0.5 1</pos>
-			<size>${foreground_scale}</size>
-			<zIndex>15</zIndex>
-		</image>
+		<stackpanel name="foreground" extra="static">
+			<pos>${stack_foreground_pos}</pos>
+			<h>${stack_foreground_h}</h>
+			<w>${stack_foreground_w}</w>
+			<separator>0.0</separator>
+			<orientation>vertical</orientation>
+			<zIndex> 15 </zIndex>
+			<image name="foreground_top">
+				<path>./_inc/images/SystemForeground_TOP.png</path>
+				<h>${system_stack_top_h}</h>
+				<linearSmooth>true</linearSmooth>
+			</image>
+			
+			<image name="foreground_mid">
+				<path>./_inc/images/SystemForeground_MID.png</path>
+				<h>${system_stack_mid_h}</h>
+			</image>
+			
+			<image name="foreground_bottom">
+				<path>./_inc/images/SystemForeground_BOTTOM.png</path>
+				<h>${system_stack_bottom_h}</h>
+			</image>
+		</stackpanel>
 		<!-- Background-->
 		<image name="background_boxart" extra="true">
 			<path>${background_path}</path>
@@ -41,6 +43,7 @@
 				<animation property="scale" from="1.0025" to="1" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
 			<linearSmooth>true</linearSmooth>
+			<visible>true</visible>
 		</image>
 		<!-- Logo -->
 		<image name="logo">

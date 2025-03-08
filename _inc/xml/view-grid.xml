@@ -124,8 +124,6 @@
 			<fontPath>${fontRegular}</fontPath>
 			<zIndex>16</zIndex>
 		</datetime>
-
-
 		<!-- Background-->
 		<image name="background_boxart" extra="true">
 			<path>${background_path}</path>
@@ -145,23 +143,29 @@
 		</image>
 
 		<!-- Foreground-->
-		<image name="foreground_console" extra="static">
-			<path>./_inc/images/SystemForeground_TOP.png</path>
-			<origin>${origin_foreground}</origin>
-			<pos>0 0</pos>
-			<size>1 .6</size>
-			<opacity>1</opacity>
-			<clipRect>${clipRect_foreground}</clipRect>
-			<zIndex>15</zIndex>
-		</image>
+		<stackpanel name="foreground" extra="static">
+			<pos>${stack_foreground_pos}</pos>
+			<h>${stack_foreground_h}</h>
+			<w>${stack_foreground_w}</w>
+			<separator>0.0</separator>
+			<orientation>vertical</orientation>
+			<zIndex> 15 </zIndex>
+			<image name="foreground_top">
+				<path>./_inc/images/SystemForeground_TOP.png</path>
+				<h>${gamegrid_stack_top_h}</h>
+			</image>
+			
+			<image name="foreground_mid">
+				<path>./_inc/images/SystemForeground_MID.png</path>
+				<h>${gamegrid_stack_mid_h}</h>
+			</image>
+			
+			<image name="foreground_bottom">
+				<path>./_inc/images/SystemForeground_BOTTOM.png</path>
+				<h>${gamegrid_stack_bottom_h}</h>
+			</image>
+		</stackpanel>
 
-		<image name="foreground_bottom" extra="static">
-			<path>./_inc/images/SystemForeground_BOTTOM.png</path>
-			<origin>0.5 1</origin>
-			<pos>0.5 1</pos>
-			<size>${foreground_scale}</size>
-			<zIndex>15</zIndex>
-		</image>
 		<!--actual game grid -->
 		<imagegrid name="gamegrid">
 			<zIndex>13</zIndex>
