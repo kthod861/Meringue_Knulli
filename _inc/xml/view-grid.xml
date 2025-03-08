@@ -90,7 +90,7 @@
 			<zIndex> 20 </zIndex>
 			<!-- last played-->
 			<text name="systemInfoEx" extra="true">
-				<text>Last played : {binding:lastPlayedDate}</text>
+				<text>Last played : {game:lastplayed}</text>
 				<fontPath>${fontRegular}</fontPath>
 				<fontSize>${stack_fontSize_info}</fontSize>
 				<color>dddddd</color>
@@ -98,7 +98,7 @@
 			</text>
 			<!-- play time-->
 			<text name="systemInfoEx" extra="true">
-				<text>Game time  : {binding:gameTime}</text>
+				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : Never"</text>
 				<fontPath>${fontRegular}</fontPath>
 				<fontSize>${stack_fontSize_info}</fontSize>
 				<color>dddddd</color>
