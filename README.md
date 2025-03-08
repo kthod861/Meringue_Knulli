@@ -5,7 +5,7 @@ An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/Me
 Support 4:3, 1:1, 16:9 (probably more), with simple grid system behind.
 
 Systems preview:<br />
-<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="960" /><br />
+<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="480" /><br />
 
 
 TODO: <br />
