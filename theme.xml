@@ -3,6 +3,7 @@
 
 	<include>./_inc/xml/variables_4_3.xml</include>
 	<include if="{screen.ratio} == '1/1'">./_inc/xml/variables_1_1.xml</include>
+	<include if="{screen.ratio} == '16/9'">./_inc/xml/variables_16_9.xml</include>
 	
 	<include>./_inc/xml/globals.xml</include>
 	<include>./_inc/systems/metadata-global/_default.xml</include>
