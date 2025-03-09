@@ -13,18 +13,18 @@
 			<orientation>vertical</orientation>
 			<zIndex> 15 </zIndex>
 			<image name="foreground_top">
-				<path>./_inc/images/SystemForeground_TOP.png</path>
+				<path>${foreground_top_path}</path>
 				<h>${system_stack_top_h}</h>
 				<linearSmooth>true</linearSmooth>
 			</image>
 			
 			<image name="foreground_mid">
-				<path>./_inc/images/SystemForeground_MID.png</path>
+				<path>${foreground_mid_path}</path>
 				<h>${system_stack_mid_h}</h>
 			</image>
 			
 			<image name="foreground_bottom">
-				<path>./_inc/images/SystemForeground_BOTTOM.png</path>
+				<path>${foreground_bottom_path}</path>
 				<h>${system_stack_bottom_h}</h>
 			</image>
 		</stackpanel>
@@ -97,7 +97,6 @@
 			<color>ADADAD</color>
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.02</fontSize>
-			<letterCase>capitalize</letterCase>
 			<zIndex>16</zIndex>
 		</text>
 		<!-- Manufacturer Infos-->
