@@ -6,8 +6,6 @@
 	<include if="{screen.ratio} == '16/9'">./_inc/xml/variables_16_9.xml</include>
 	
 	<include>./_inc/xml/globals.xml</include>
-	<include>./_inc/systems/metadata-global/_default.xml</include>
-	<include>./_inc/systems/metadata-global/${system.theme}.xml</include>
 
 	<include>./_inc/xml/view-system.xml</include>
 	<include>./_inc/xml/view-grid.xml</include>

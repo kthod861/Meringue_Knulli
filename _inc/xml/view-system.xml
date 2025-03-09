@@ -109,7 +109,7 @@
 			<color>ADADAD</color>
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.02</fontSize>
-			<text>${systemManufacturer}  ${systemReleaseDateFormated}</text>
+			<text>{system:manufacturer}  {system:releaseYear}</text>
 			<opacity>0.8</opacity>
 			<w>0.5</w>
 			<singleLineScroll>true</singleLineScroll>
