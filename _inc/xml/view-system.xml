@@ -47,7 +47,7 @@
 		</image>
 		<!-- Logo -->
 		<image name="logo">
-			<path>./_inc/systems/logos/${system.theme}.png</path>
+			<path>./_inc/systems/logos/${system.theme}.webp</path>
 			<shared>true</shared>
 			<linearSmooth>true</linearSmooth>
 		</image>
@@ -75,8 +75,8 @@
 		</carousel>
 		<!-- Controler -->
 		<image name="controler" extra="true">
-			<path>./_inc/systems/controllers/${system.theme}.png</path>
-			<default>./_inc/systems/controllers/_default.png</default>
+			<path>./_inc/systems/controllers/${system.theme}.webp</path>
+			<default>./_inc/systems/controllers/_default.webp</default>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.61</pos>
 			<maxSize>${controller_maxSize}</maxSize>
