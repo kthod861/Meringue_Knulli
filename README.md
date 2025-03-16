@@ -2,12 +2,13 @@
 
 An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/MeringuePersonal3407/) theme found on [this thread](https://www.reddit.com/r/ANBERNIC/comments/1ix9124/my_collection/).<br />
 
+Compatible with [Knulli](https://knulli.org/) (tested), [Retrobat](https://www.retrobat.org/accueil-fr/) (tested), [Batocera](https://batocera.org/) (not tested).<br />
 Support 4:3,1:1,16:9 aspect ratios with simple game grid.<br />
 
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
 At the moment almost everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)<br>
 
-All tiled backgrounds images are generated using [those tools](https://github.com/kthod861/Boxart_Project)
+All tiled backgrounds images are generated using [those tools](https://github.com/kthod861/Boxart_Project)<br>
 
 
 TODO: <br />
