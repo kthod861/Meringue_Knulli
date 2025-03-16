@@ -9,8 +9,6 @@ At the moment almost everything comes from [libretro-thumbnails](https://github.
 
 All tiled backgrounds images are generated using [those tools](https://github.com/kthod861/Boxart_Project)
 
-<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="480" /><br />
-
 
 TODO: <br />
 - Add 16:9 high res backgrounds ?
@@ -36,3 +34,5 @@ DONE: <br />
   
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .
+
+<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="480" /><br />
