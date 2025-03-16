@@ -2,8 +2,8 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables>
-		<background_path>./_inc/systems/background_4_3/${system.theme}.jpg</background_path>
-		<default_background_path>./_inc/systems/background_4_3/_default.jpg</default_background_path>
+		<background_path>./_inc/systems/background_4_3/${system.theme}.webp</background_path>
+		<default_background_path>./_inc/systems/background_4_3/_default.webp</default_background_path>
 		
 		<foreground_top_path>./_inc/images/SystemForeground_TOP_16_9.png</foreground_top_path>
 		<foreground_mid_path>./_inc/images/SystemForeground_MID_16_9.png</foreground_mid_path>
