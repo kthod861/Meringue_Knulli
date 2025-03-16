@@ -13,7 +13,6 @@ All tiled backgrounds images are generated using [those tools](https://github.co
 
 
 TODO: <br />
-- Optimisations
 - Add 16:9 high res backgrounds ?
 
 DONE: <br />
@@ -33,6 +32,7 @@ DONE: <br />
 - More stackpanel for release year, rating etc
 - Removed as much md_ as possible
 - Most of the backgrounds have been added / cleaned / conformed
+- Optimisation done going from 158 Mo to 52 Mo
   
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .
