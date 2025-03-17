@@ -5,9 +5,9 @@
 		<background_path>./_inc/systems/background_4_3/${system.theme}.webp</background_path>
 		<default_background_path>./_inc/systems/background_4_3/_default.webp</default_background_path>
 		
-		<foreground_top_path>./_inc/images/SystemForeground_TOP.png</foreground_top_path>
-		<foreground_mid_path>./_inc/images/SystemForeground_MID.png</foreground_mid_path>
-		<foreground_bottom_path>./_inc/images/SystemForeground_BOTTOM.png</foreground_bottom_path>
+		<foreground_top_path>./_inc/images/SystemForeground_TOP.webp</foreground_top_path>
+		<foreground_mid_path>./_inc/images/SystemForeground_MID.webp</foreground_mid_path>
+		<foreground_bottom_path>./_inc/images/SystemForeground_BOTTOM.webp</foreground_bottom_path>
 		
 		<stack_foreground_pos>0 0</stack_foreground_pos>
 		<stack_foreground_h>1</stack_foreground_h>
