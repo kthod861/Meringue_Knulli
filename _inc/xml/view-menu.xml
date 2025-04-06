@@ -45,21 +45,21 @@
     </menuText>
 
     <menuIcons name="menuicons">
-      <iconSystem>./../systems/icons/cog.svg</iconSystem>
-      <iconUpdates>./../systems/icons/update.svg</iconUpdates>
-      <iconControllers>./../systems/icons/gamepad-round.svg</iconControllers>
-      <iconGames>./../systems/icons/gamepad-square.svg</iconGames>
-      <iconUI>./../systems/icons/brush.svg</iconUI>
-      <iconSound>./../systems/icons/volume-high.svg</iconSound>
-      <iconNetwork>./../systems/icons/wifi-strength-3.svg</iconNetwork>
-      <iconScraper>./../systems/icons/image.svg</iconScraper>
-      <iconAdvanced>./../systems/icons/library-shelves.svg</iconAdvanced>
-      <iconQuit>./../systems/icons/exit-to-app.svg</iconQuit>
-      <iconRetroachievements>./../systems/icons/trophy.svg</iconRetroachievements>
-      <iconKodi>./../systems/icons/kodi.svg</iconKodi>
-      <iconRestart>./../systems/icons/restart.svg</iconRestart>
-      <iconShutdown>./../systems/icons/power.svg</iconShutdown>
-      <iconFastShutdown>./../systems/icons/power.svg</iconFastShutdown>
+      <iconSystem>./../icons/cog.svg</iconSystem>
+      <iconUpdates>./../icons/update.svg</iconUpdates>
+      <iconControllers>./../icons/gamepad-round.svg</iconControllers>
+      <iconGames>./../icons/gamepad-square.svg</iconGames>
+      <iconUI>./../icons/brush.svg</iconUI>
+      <iconSound>./../icons/volume-high.svg</iconSound>
+      <iconNetwork>./../icons/wifi-strength-3.svg</iconNetwork>
+      <iconScraper>./../icons/image.svg</iconScraper>
+      <iconAdvanced>./../icons/library-shelves.svg</iconAdvanced>
+      <iconQuit>./../icons/exit-to-app.svg</iconQuit>
+      <iconRetroachievements>./../icons/trophy.svg</iconRetroachievements>
+      <iconKodi>./../icons/kodi.svg</iconKodi>
+      <iconRestart>./../icons/restart.svg</iconRestart>
+      <iconShutdown>./../icons/power.svg</iconShutdown>
+      <iconFastShutdown>./../icons/power.svg</iconFastShutdown>
     </menuIcons>
   </view>
 

@@ -10,7 +10,7 @@
 			<verticalAlignment>center</verticalAlignment>
 			<scale>0.35 </scale>
 			<maxSize>1.5 0.33</maxSize>
-			<path>./_inc/systems/logos/${system.theme}.webp</path>
+			<path>./../systems/logos/${system.theme}.webp</path>
 			<zIndex>16</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
 			<linearSmooth>true</linearSmooth>
@@ -168,7 +168,6 @@
 			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<imageSource>thumbnail</imageSource>
-			<scrollSound>./../systems/scroll.wav</scrollSound>
 			<scrollDirection>vertical</scrollDirection>
 		</imagegrid>
 		
