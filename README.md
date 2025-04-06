@@ -12,7 +12,7 @@ All tiled backgrounds images are generated using [those tools](https://github.co
 
 
 TODO: <br />
-- Add 16:9 high res backgrounds ?
+- ..
 
 DONE: <br />
 - 16:9 <> 4:3 now switch automatically
