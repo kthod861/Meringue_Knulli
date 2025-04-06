@@ -32,6 +32,9 @@ DONE: <br />
 - Removed as much md_ as possible
 - Most of the backgrounds have been added / cleaned / conformed
 - Optimisation done going from 158 Mo to 52 Mo
+- For some reasons webp format for controller was buggy so back to png file format
+- 16:9 background added
+- some file path were wrong
   
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .
