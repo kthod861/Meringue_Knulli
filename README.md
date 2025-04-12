@@ -39,4 +39,4 @@ DONE: <br />
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .
 
-<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/main/_inc/screenshot.jpg" width="480" /><br />
+<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/master/_inc/screenshot.jpg" width="480" /><br />
