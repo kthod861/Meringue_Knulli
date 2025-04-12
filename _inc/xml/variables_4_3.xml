@@ -24,9 +24,12 @@
 		<background_scale>1 1</background_scale>
 		<background_scale_gamelist>1 1</background_scale_gamelist>
 		
-		
 		<logo_pos>0.5 0.13</logo_pos>
-		<controller_maxSize>.6 .6</controller_maxSize>
+		<logo_min_size>0.90</logo_min_size>
+		<logo_mid_size>0.92</logo_mid_size>
+		<logo_max_size>0.94</logo_max_size>
+		
+		<controller_maxSize>.6 .5</controller_maxSize>
 		<sysinfo_pos>0.39 0.22</sysinfo_pos>
 		
 		<manufacturer_pos>0.5 0.15</manufacturer_pos>

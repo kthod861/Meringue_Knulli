@@ -54,10 +54,10 @@
 		<!-- Logo animation -->
 		<control name="logo,logoText" scale="1" >
 			<storyboard event="activate" repeat="forever">
-				<animation property="scale" from="0.94" to="0.92" duration="500" mode="easeIn"/>
-				<animation property="scale" from="0.92" to="0.9" duration="500" mode="easeOut" begin="500"/>
-				<animation property="scale" from="0.9" to="0.92" duration="500" mode="easeIn" begin="1000"/>
-				<animation property="scale" from="0.92" to="0.94" duration="500" mode="easeOut" begin="1500"/>
+				<animation property="scale" from="${logo_max_size}" to="${logo_mid_size}" duration="500" mode="easeIn"/>
+				<animation property="scale" from="${logo_mid_size}" to="${logo_min_size}" duration="500" mode="easeOut" begin="500"/>
+				<animation property="scale" from="${logo_min_size}" to="${logo_mid_size}" duration="500" mode="easeIn" begin="1000"/>
+				<animation property="scale" from="${logo_mid_size}" to="${logo_max_size}" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
 		</control>
 		<carousel name="systemcarousel">
