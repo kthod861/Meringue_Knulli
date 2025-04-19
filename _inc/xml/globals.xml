@@ -1,7 +1,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="1.4" />
+		<include name="version" displayName="1.5" />
 	</subset>
 	<variables>
 		<mainColor>4075F9</mainColor>
@@ -38,41 +38,41 @@
 	</variables>
 
 	<!-- Menu tweaks -->
-  <view name="menu">
-    <menuText name="menutext">
-      <selectedColor>${onMainColor}</selectedColor>
-      <selectorColor>${mainColor}</selectorColor>
-      <color>${fgColor}</color>
-      <separatorColor>${fgColor}${percent.5}</separatorColor>
-    </menuText>
+	<view name="menu">
+		<menuText name="menutext">
+			<selectedColor>${onMainColor}</selectedColor>
+			<selectorColor>${mainColor}</selectorColor>
+			<color>${fgColor}</color>
+			<separatorColor>${fgColor}${percent.5}</separatorColor>
+		</menuText>
 
-    <menuTextSmall name="menutextsmall">
-      <color>${sectColor}</color>
-    </menuTextSmall>
+		<menuTextSmall name="menutextsmall">
+			<color>${sectColor}</color>
+		</menuTextSmall>
 
-    <menuGroup name="menugroup">
-      <color>${sectColor}</color>
-      <separatorColor>${sectColor}${percent.60}</separatorColor>
-      <backgroundColor>${sectColor}${percent.10}</backgroundColor>
-    </menuGroup>
+		<menuGroup name="menugroup">
+			<color>${sectColor}</color>
+			<separatorColor>${sectColor}${percent.60}</separatorColor>
+			<backgroundColor>${sectColor}${percent.10}</backgroundColor>
+		</menuGroup>
 
-    <menuBackground name="menubg">
-      <color>${bgColor}</color>
-    </menuBackground>
+		<menuBackground name="menubg">
+			<color>${bgColor}</color>
+		</menuBackground>
 
-    <menuText name="menufooter">
-      <color>${fgColor}${percent.80}</color>
-    </menuText>
+		<menuText name="menufooter">
+			<color>${fgColor}${percent.80}</color>
+		</menuText>
 
-    <menuText name="menutitle">
-      <color>${fgColor}</color>
-    </menuText>
+		<menuText name="menutitle">
+			<color>${fgColor}</color>
+		</menuText>
 
-    <menuTextEdit name="menutextedit">
-      <inactive>./../systems/input_inactive-dark.svg</inactive>
-      <active>./../systems/input_active-dark.svg</active>
-    </menuTextEdit>
-  </view>
+		<menuTextEdit name="menutextedit">
+			<inactive>./../systems/input_inactive-dark.svg</inactive>
+			<active>./../systems/input_active-dark.svg</active>
+		</menuTextEdit>
+	</view>
 
 	<!-- Move help away -->
 	<view name="system,grid">

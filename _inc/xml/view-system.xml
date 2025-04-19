@@ -78,7 +78,7 @@
 			<path>./../systems/controllers/${system.theme}.png</path>
 			<default>./../systems/controllers/_default.png</default>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.61</pos>
+			<pos>${controller_pos}</pos>
 			<maxSize>${controller_maxSize}</maxSize>
 			<opacity>0</opacity>
 			<linearSmooth>true</linearSmooth>

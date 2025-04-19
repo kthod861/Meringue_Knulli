@@ -29,7 +29,8 @@
 		<logo_mid_size>0.92</logo_mid_size>
 		<logo_max_size>0.94</logo_max_size>
 		
-		<controller_maxSize>.5 .4</controller_maxSize>
+		<controller_pos>0.5 0.61</controller_pos>
+		<controller_maxSize>.4 .55</controller_maxSize>
 		<sysinfo_pos>0.39 0.22</sysinfo_pos>
 		
 		<manufacturer_pos>0.5 0.145</manufacturer_pos>
