@@ -3,7 +3,7 @@
 An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/MeringuePersonal3407/) theme found on [this thread](https://www.reddit.com/r/ANBERNIC/comments/1ix9124/my_collection/).<br />
 
 Compatible with [Knulli](https://knulli.org/) (tested), [Retrobat](https://www.retrobat.org/accueil-fr/) (tested), [Batocera](https://batocera.org/) (not tested).<br />
-Support 4:3, 1:1, 16:9 aspect ratios with simple game grid.<br />
+Support 4:3, 3:2, 1:1, 16:9 aspect ratios with simple game grid.<br />
 
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
 At the moment almost everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)<br>
@@ -35,6 +35,8 @@ DONE: <br />
 - For some reasons webp format for controller was buggy so back to png file format
 - 16:9 background added
 - some file path were wrong
+- 3:2 support added
+- a lot of controllers and background updates
   
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .
