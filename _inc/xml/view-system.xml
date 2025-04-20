@@ -37,10 +37,12 @@
 			<size>${background_scale}</size>
 			<zIndex>10</zIndex>
 			<storyboard repeat="forever">
+			
 				<animation property="scale" from="1" to="1.0025" duration="500" mode="easeIn"/>
 				<animation property="scale" from="1.0025" to="1.005" duration="500" mode="easeOut" begin="500"/>
 				<animation property="scale" from="1.005" to="1.0025" duration="500" mode="easeIn" begin="1000"/>
 				<animation property="scale" from="1.0025" to="1" duration="500" mode="easeOut" begin="1500"/>
+				
 			</storyboard>
 			<linearSmooth>true</linearSmooth>
 			<visible>true</visible>
@@ -48,7 +50,7 @@
 		<!-- Logo -->
 		<image name="logo">
 			<path>./../systems/logos/${system.theme}.webp</path>
-			<shared>true</shared>
+			<!--<shared>true</shared>-->
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="activate" repeat="forever">
 				<animation property="scale" from="${logo_max_size}" to="${logo_mid_size}" duration="500" mode="easeIn"/>

@@ -1,7 +1,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="1.5" />
+		<include name="version" displayName="1.6" />
 	</subset>
 	<variables>
 		<mainColor>4075F9</mainColor>
