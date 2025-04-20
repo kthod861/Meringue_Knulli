@@ -50,16 +50,13 @@
 			<path>./../systems/logos/${system.theme}.webp</path>
 			<shared>true</shared>
 			<linearSmooth>true</linearSmooth>
-		</image>
-		<!-- Logo animation -->
-		<control name="logo,logoText" scale="1" >
 			<storyboard event="activate" repeat="forever">
 				<animation property="scale" from="${logo_max_size}" to="${logo_mid_size}" duration="500" mode="easeIn"/>
 				<animation property="scale" from="${logo_mid_size}" to="${logo_min_size}" duration="500" mode="easeOut" begin="500"/>
 				<animation property="scale" from="${logo_min_size}" to="${logo_mid_size}" duration="500" mode="easeIn" begin="1000"/>
 				<animation property="scale" from="${logo_mid_size}" to="${logo_max_size}" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
-		</control>
+		</image>
 		<carousel name="systemcarousel">
 			<origin>0.5 0.5</origin>
 			<pos>${logo_pos}</pos>
