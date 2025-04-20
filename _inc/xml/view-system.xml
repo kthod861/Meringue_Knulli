@@ -81,9 +81,18 @@
 			<maxSize>${controller_maxSize}</maxSize>
 			<opacity>0</opacity>
 			<linearSmooth>true</linearSmooth>
-			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="180" duration="120" mode="easeOut"/>
-				<animation property="scale" from="0.5" to="1" begin="180" duration="220" mode="easeOut"/>
+			<storyboard ifSubset="controllers_animations:simple">
+				<animation property="opacity" from="0" to="1" begin="50" duration="120" mode="easeOut"/>
+				<animation property="scale" from="0.5" to="1" begin="50" duration="220" mode="easeOut"/>
+			</storyboard>
+			<storyboard ifSubset="controllers_animations:bump">
+				<animation property="opacity" from="0" to="1" begin="50" duration="350" mode="easeOut"/>
+				<animation property="scale" from="0.5" to="1" begin="50" duration="500" mode="Bump"/>
+			</storyboard>
+			<storyboard ifSubset="controllers_animations:swoop">
+				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+				<animation property="scale" from="0.8" to="1" duration="350" mode="easeIn"/>
+				<animation property="y" from="0.9" duration="500" mode="Bump"/>
 			</storyboard>
 			<zIndex>13</zIndex>
 		</image>
@@ -95,7 +104,7 @@
 			<backgroundColor>00000000</backgroundColor>
 			<color>ADADAD</color>
 			<fontPath>${fontRegular}</fontPath>
-			<fontSize>0.02</fontSize>
+			<fontSize>0.025</fontSize>
 			<zIndex>16</zIndex>
 		</text>
 		<!-- Manufacturer Infos-->

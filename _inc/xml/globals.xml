@@ -3,6 +3,11 @@
 	<subset name="theme_version" displayName="Theme version">
 		<include name="version" displayName="1.6" />
 	</subset>
+	<subset name="controllers_animations" displayName="Controllers animations">
+		<include name="simple" displayName="Simple" />
+		<include name="bump" displayName="Bump" />
+		<include name="swoop" displayName="Swoop" />	
+	</subset>
 	<variables>
 		<mainColor>4075F9</mainColor>
 		<onMainColor>1D1B16</onMainColor>
