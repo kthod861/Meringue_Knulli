@@ -1,0 +1,36 @@
+<!--
+  Theme: Albedo
+  Author: giovaboy
+-->
+
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="splash">
+    <splash name="splash">
+      <backgroundColor>000000</backgroundColor>
+    </splash>
+    <image name="background">
+      <!-- Leave default for better OS/device portability -->
+    </image>
+    <image name="progressbar">
+      <color>000000</color>
+      <origin>0.5 1</origin>
+      <pos>0.5 1</pos>
+      <maxSize>1 0.01</maxSize>
+      <minSize>1 0.01</minSize>
+    </image>
+    <image name="progressbar:active">
+      <color>94A0FF</color>
+      <tile>true</tile>
+    </image>
+    <text name="label">
+      <alignment>center</alignment>
+      <fontPath>./_inc/fonts/font.ttf</fontPath>
+      <fontSize>0.0375</fontSize> <!-- 12-->
+      <color>ffffff</color>
+      <origin>0.5 1</origin>
+      <pos>0.5 0.95</pos>
+    </text>
+  </view>
+</theme>
