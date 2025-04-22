@@ -96,7 +96,7 @@
 			</storyboard>
 			<zIndex>13</zIndex>
 		</image>
-		<!-- System view Infos-->
+		<!-- System view Info disabled-->
 		<text name="systemInfo" >
 			<origin>0 0</origin>
 			<pos>${sysinfo_pos}</pos>
@@ -105,8 +105,9 @@
 			<color>ADADAD</color>
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.025</fontSize>
-			<zIndex>16</zIndex>
+			<zIndex>0</zIndex>
 		</text>
+		
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
 			<origin>0.5 0</origin>
@@ -127,5 +128,62 @@
 			<glowColor>ffffff26</glowColor>
 			<zIndex>25</zIndex>
 		</text>
+			
+		<!-- Total games-->
+		<text name="TotalGames" extra="static">
+			<origin>0 0</origin>
+			<pos>0.83 ${stack_system_pos_infoY}</pos>
+			<!--<size>1 0.22</size>-->
+			<alignment>center</alignment>
+			<backgroundColor>00000000</backgroundColor>
+			<color>ADADAD</color>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>0.025</fontSize>
+			<text>{system:total} Games</text>
+			<emptyTextDefaults>0</emptyTextDefaults>
+			<opacity>0.8</opacity>
+			<glowSize>0.5</glowSize>
+			<glowColor>ffffff26</glowColor>
+			<zIndex>25</zIndex>
+		</text>
+		
+		<stackpanel name="Infos" extra="static">
+			<pos>0.04 ${stack_system_pos_infoY}</pos>
+			<h>0.07</h>
+			<w>0.2</w>
+			<separator>0.0</separator>
+			<orientation>vertical</orientation>
+			<zIndex> 25 </zIndex>
+			<!-- Game played-->
+			<text name="GamePlayed">
+				<h>0.5</h>
+				<alignment>left</alignment>
+				<backgroundColor>00000000</backgroundColor>
+				<color>ADADAD</color>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>0.02</fontSize>
+				<text>{system:gamesPlayed} Played</text>
+				<emptyTextDefaults>0</emptyTextDefaults>
+				<opacity>0.8</opacity>
+				<glowSize>0.5</glowSize>
+				<glowColor>ffffff26</glowColor>
+			</text>
+			<!-- Favorites-->
+			<text name="Favorites">
+				<h>0.5</h>
+				<alignment>left</alignment>
+				<backgroundColor>00000000</backgroundColor>
+				<color>ADADAD</color>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>0.02</fontSize>
+				<text>{system:favorites} Favorites</text>
+				<emptyTextDefaults>0</emptyTextDefaults>
+				<opacity>0.8</opacity>
+				<glowSize>0.5</glowSize>
+				<glowColor>ffffff26</glowColor>
+			</text>
+		</stackpanel>
+			
+
 	</view>
 </theme>

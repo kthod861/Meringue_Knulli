@@ -1,7 +1,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="1.6" />
+		<include name="version" displayName="1.7" />
 	</subset>
 	<subset name="controllers_animations" displayName="Controllers animations">
 		<include name="simple" displayName="Simple" />

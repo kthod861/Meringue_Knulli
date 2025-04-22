@@ -48,7 +48,7 @@
 			<fontPath>${fontRegular}</fontPath>
 			<color>dddddd</color>
 			<alignment>left</alignment>
-			<fontSize>${stack_fontSize_info}</fontSize>
+			<fontSize>${stack_grid_fontSize_info}</fontSize>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
@@ -68,7 +68,7 @@
 			<text name="releaseyear" extra="true">
 				<text>{game:releaseyear}</text>
 				<color>dddddd</color>
-				<fontSize>${stack_fontSize_info}</fontSize>
+				<fontSize>${stack_grid_fontSize_info}</fontSize>
 				<fontPath>${fontRegular}</fontPath>
 				<w>0.2</w>
 			</text>
@@ -85,7 +85,7 @@
 		<!-- stack info -->
 		<stackpanel name="lastplayed_gametime" extra="true">
 			<separator>0</separator>
-			<pos>${stack_pos_info}</pos>
+			<pos>${stack_grid_pos_info}</pos>
 			<w>0.2</w>
 			<h>0.09</h>
 			<orientation>vertical</orientation>
@@ -95,7 +95,7 @@
 			<text name="systemInfoEx" extra="true">
 				<text>Last played : {game:lastplayed}</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_fontSize_info}</fontSize>
+				<fontSize>${stack_grid_fontSize_info}</fontSize>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>
@@ -103,7 +103,7 @@
 			<text name="systemInfoEx" extra="true">
 				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : Never"</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_fontSize_info}</fontSize>
+				<fontSize>${stack_grid_fontSize_info}</fontSize>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>

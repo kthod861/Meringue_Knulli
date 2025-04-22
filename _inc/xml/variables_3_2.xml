@@ -34,7 +34,10 @@
 		<sysinfo_pos>0.39 0.22</sysinfo_pos>
 		
 		<manufacturer_pos>0.5 0.15</manufacturer_pos>
-		<stack_fontSize_info>0.02</stack_fontSize_info>
-		<stack_pos_info>0.795 0.12</stack_pos_info>
+		
+		<stack_grid_fontSize_info>0.02</stack_grid_fontSize_info>
+		<stack_grid_pos_info>0.795 0.12</stack_grid_pos_info>
+
+		<stack_system_pos_infoY>0.32</stack_system_pos_infoY>
 	</variables>
 </theme>
