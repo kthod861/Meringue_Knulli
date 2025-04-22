@@ -39,5 +39,6 @@
 		<stack_grid_pos_info>0.795 0.138</stack_grid_pos_info>
 
 		<stack_system_pos_infoY>0.24</stack_system_pos_infoY>
+		<stack_system_fontSize_info>0.02</stack_system_fontSize_info>
 	</variables>
 </theme>

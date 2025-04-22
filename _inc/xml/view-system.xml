@@ -149,7 +149,7 @@
 		
 		<stackpanel name="Infos" extra="static">
 			<pos>0.04 ${stack_system_pos_infoY}</pos>
-			<h>0.07</h>
+			<h>0.1</h>
 			<w>0.2</w>
 			<separator>0.0</separator>
 			<orientation>vertical</orientation>
@@ -161,7 +161,7 @@
 				<backgroundColor>00000000</backgroundColor>
 				<color>ADADAD</color>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>0.02</fontSize>
+				<fontSize>${stack_system_fontSize_info}</fontSize>
 				<text>{system:gamesPlayed} Played</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
 				<opacity>0.8</opacity>
@@ -175,7 +175,7 @@
 				<backgroundColor>00000000</backgroundColor>
 				<color>ADADAD</color>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>0.02</fontSize>
+				<fontSize>${stack_system_fontSize_info}</fontSize>
 				<text>{system:favorites} Favorites</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
 				<opacity>0.8</opacity>
