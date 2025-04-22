@@ -34,9 +34,11 @@ DONE: <br />
 - Optimisation done going from 158 Mo to 52 Mo
 - For some reasons webp format for controller was buggy so back to png file format
 - 16:9 background added
-- some file path were wrong
+- Some file path were wrong
 - 3:2 support added
-- a lot of controllers and background updates
+- A lot of controllers and background updates
+- Different controllers animations available in the settings
+- More infos on the system view
   
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .
