@@ -9,9 +9,8 @@
 		<include name="swoop" displayName="Swoop" />	
 	</subset>
 	<subset name="theme_style" displayName="Theme style">
-		<include name="old" displayName="Original" />
 		<include name="neo" displayName="Brushed" />
-
+		<include name="old" displayName="Original" />
 	</subset>
 	<variables>
 		<mainColor>4075F9</mainColor>
