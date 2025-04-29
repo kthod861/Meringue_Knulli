@@ -6,16 +6,21 @@
 		<default_background_path>./../systems/background_4_3/_default.webp</default_background_path>
 		
 		<foreground_top_path>./../images/SystemForeground_TOP.webp</foreground_top_path>
-		<foreground_mid_path>./../images/SystemForeground_MID.webp</foreground_mid_path>
-		<foreground_bottom_path>./../images/SystemForeground_BOTTOM.webp</foreground_bottom_path>
+		<neo_foreground_top_path>./../images/NEO_SystemForeground_TOP_1_1.webp</neo_foreground_top_path>
+		<neo_gridforeground_top_path>./../images/NEO_GridForeground_TOP_1_1.webp</neo_gridforeground_top_path>
+		
+		<neo_back_top_path>./../images/BCK_Header.webp</neo_back_top_path>
+		
+		<foreground_mid_path>./../images/SystemForeground_MID_1_1.webp</foreground_mid_path>
+		<foreground_bottom_path>./../images/SystemForeground_BOTTOM_1_1.webp</foreground_bottom_path>
 		
 		<stack_foreground_pos>0 0</stack_foreground_pos>
 		<stack_foreground_h>1</stack_foreground_h>
 		<stack_foreground_w>1</stack_foreground_w>
 		
-		<system_stack_top_h>0.35</system_stack_top_h>
-		<system_stack_mid_h>0.6</system_stack_mid_h>
-		<system_stack_bottom_h>0.05</system_stack_bottom_h>
+		<system_stack_top_h>0.3313</system_stack_top_h>
+		<system_stack_mid_h>0.6417</system_stack_mid_h>
+		<system_stack_bottom_h>0.0271</system_stack_bottom_h>
 		
 		<gamegrid_stack_top_h>0.22</gamegrid_stack_top_h>
 		<gamegrid_stack_mid_h>0.73</gamegrid_stack_mid_h>
@@ -24,21 +29,23 @@
 		<background_scale>1.05 0.78</background_scale>
 		<background_scale_gamelist>1.2 0.9</background_scale_gamelist>
 		
-		<logo_pos>0.5 0.095</logo_pos>
-		<logo_min_size>0.72</logo_min_size>
-		<logo_mid_size>0.74</logo_mid_size>
-		<logo_max_size>0.76</logo_max_size>
+		<logo_pos>0.5 0.105</logo_pos>
+		<logo_min_size>0.62</logo_min_size>
+		<logo_mid_size>0.64</logo_mid_size>
+		<logo_max_size>0.66</logo_max_size>
 		
 		<controller_pos>0.5 0.61</controller_pos>
 		<controller_maxSize>.6 .6</controller_maxSize>
 		<sysinfo_pos>0.39 0.14</sysinfo_pos>
 		
-		<manufacturer_pos>0.5 0.085</manufacturer_pos>
+		<manufacturer_pos>0.5 0.0835</manufacturer_pos>
 		
-		<stack_grid_fontSize_info>0.018</stack_grid_fontSize_info>
-		<stack_grid_pos_info>0.795 0.138</stack_grid_pos_info>
+		<stack_grid_info_fontSize>0.018</stack_grid_info_fontSize>
+		<stack_grid_info_pos>0.79 0.138</stack_grid_info_pos>
 
-		<stack_system_pos_infoY>0.24</stack_system_pos_infoY>
-		<stack_system_fontSize_info>0.02</stack_system_fontSize_info>
+		<stack_system_info_pos>0 0.185</stack_system_info_pos>
+		<stack_system_info_fontsize>0.02</stack_system_info_fontsize>
+		
+		<totalgame_pos>0.86 0.2</totalgame_pos>
 	</variables>
 </theme>

@@ -13,7 +13,8 @@
 			<orientation>vertical</orientation>
 			<zIndex> 15 </zIndex>
 			<image name="foreground_top">
-				<path>${foreground_top_path}</path>
+				<path ifSubset="theme_style:neo">${neo_foreground_top_path}</path>
+				<path ifSubset="theme_style:old">${foreground_top_path}</path>
 				<h>${system_stack_top_h}</h>
 				<linearSmooth>true</linearSmooth>
 			</image>
@@ -28,6 +29,15 @@
 				<h>${system_stack_bottom_h}</h>
 			</image>
 		</stackpanel>
+		<image name="bckground_top" extra="static" ifSubset="theme_style:neo">
+			<path>${neo_back_top_path}</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>${background_scale}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>12</zIndex>
+		</image>
+		
 		<!-- Background-->
 		<image name="background_boxart" extra="true">
 			<path>${background_path}</path>
@@ -70,7 +80,8 @@
 			<systemInfoDelay>100</systemInfoDelay>
 			<scaledLogoSpacing>1</scaledLogoSpacing>
 			<defaultTransition>fade &amp; slide</defaultTransition><!--fade &amp; -->
-			<zIndex>16</zIndex>
+			<zIndex ifSubset="theme_style:neo">13</zIndex>
+			<zIndex ifSubset="theme_style:old">16</zIndex>
 		</carousel>
 		<!-- Controler -->
 		<image name="controler" extra="true">
@@ -115,7 +126,7 @@
 			<size>1 0.22</size>
 			<alignment>center</alignment>
 			<backgroundColor>00000000</backgroundColor>
-			<color>ADADAD</color>
+			<color>ffffff</color>
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.02</fontSize>
 			<text>{system:manufacturer}  {system:releaseYear}</text>
@@ -132,37 +143,41 @@
 		<!-- Total games-->
 		<text name="TotalGames" extra="static">
 			<origin>0 0</origin>
-			<pos>0.83 ${stack_system_pos_infoY}</pos>
+			<pos>${totalgame_pos}</pos>
 			<!--<size>1 0.22</size>-->
 			<alignment>center</alignment>
 			<backgroundColor>00000000</backgroundColor>
-			<color>ADADAD</color>
+			<color>ffffff</color>
 			<fontPath>${fontRegular}</fontPath>
 			<fontSize>0.025</fontSize>
-			<text>{system:total} Games</text>
+			<text ifSubset="theme_style:neo">{system:total} Games &#x2014;&#x2014;&#x2014;&#x2014;</text>
+			<text ifSubset="theme_style:old">{system:total} Games</text>
 			<emptyTextDefaults>0</emptyTextDefaults>
 			<opacity>0.8</opacity>
 			<glowSize>0.5</glowSize>
 			<glowColor>ffffff26</glowColor>
-			<zIndex>25</zIndex>
+			<zIndex ifSubset="theme_style:neo">13</zIndex>
+			<zIndex ifSubset="theme_style:old">16</zIndex>
 		</text>
 		
 		<stackpanel name="Infos" extra="static">
-			<pos>0.04 ${stack_system_pos_infoY}</pos>
-			<h>0.1</h>
+			<pos>${stack_system_info_pos}</pos>
+			<h>0.12</h>
 			<w>0.2</w>
-			<separator>0.0</separator>
+			<separator>0.000</separator>
 			<orientation>vertical</orientation>
-			<zIndex> 25 </zIndex>
+			<zIndex ifSubset="theme_style:neo">13</zIndex>
+			<zIndex ifSubset="theme_style:old">16</zIndex>
 			<!-- Game played-->
 			<text name="GamePlayed">
 				<h>0.5</h>
 				<alignment>left</alignment>
 				<backgroundColor>00000000</backgroundColor>
-				<color>ADADAD</color>
+				<color>ffffff</color>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_system_fontSize_info}</fontSize>
-				<text>{system:gamesPlayed} Played</text>
+				<fontSize>${stack_system_info_fontsize}</fontSize>
+				<text ifSubset="theme_style:neo">&#x2014;&#x2014; {system:gamesPlayed} Played</text>
+				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:gamesPlayed} Played</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
 				<opacity>0.8</opacity>
 				<glowSize>0.5</glowSize>
@@ -173,10 +188,11 @@
 				<h>0.5</h>
 				<alignment>left</alignment>
 				<backgroundColor>00000000</backgroundColor>
-				<color>ADADAD</color>
+				<color>ffffff</color>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_system_fontSize_info}</fontSize>
-				<text>{system:favorites} Favorites</text>
+				<fontSize>${stack_system_info_fontsize}</fontSize>
+				<text ifSubset="theme_style:neo">&#x2014;&#x2014; {system:favorites} Favorites</text>
+				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:favorites} Favorites</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
 				<opacity>0.8</opacity>
 				<glowSize>0.5</glowSize>

@@ -1,12 +1,17 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="1.7" />
+		<include name="version" displayName="1.8" />
 	</subset>
 	<subset name="controllers_animations" displayName="Controllers animations">
 		<include name="simple" displayName="Simple" />
 		<include name="bump" displayName="Bump" />
 		<include name="swoop" displayName="Swoop" />	
+	</subset>
+	<subset name="theme_style" displayName="Theme style">
+		<include name="old" displayName="Original" />
+		<include name="neo" displayName="Brushed" />
+
 	</subset>
 	<variables>
 		<mainColor>4075F9</mainColor>
@@ -34,12 +39,12 @@
 		<fontSizeH2>0.04375</fontSizeH2>
 		<fontBold>./../fonts/font-bold.ttf</fontBold>
 		
-		<v.gamelistGrid.size>1 0.85</v.gamelistGrid.size>
-		<v.gridAutoLayout if="${screen.width} &lt;= '641'">3 2</v.gridAutoLayout>
-		<v.gridAutoLayout if="${screen.width} &gt; '641' &amp;&amp; ${screen.width} &lt;= '721'">4 3</v.gridAutoLayout>
-		<v.gridAutoLayout if="${screen.width} &gt; '721' &amp;&amp; ${screen.width} &lt;= '1281'">6 3</v.gridAutoLayout>
-		<v.gridAutoLayout if="${screen.width} &gt; '1281'">5 3</v.gridAutoLayout>
-		<v.ScrollBar>0.0035</v.ScrollBar>
+		<gamelistGrid_size>1 0.85</gamelistGrid_size>
+		<vgridLayout if="${screen.width} &lt;= '641'">3 2</vgridLayout>
+		<vgridLayout if="${screen.width} &gt; '641' &amp;&amp; ${screen.width} &lt;= '721'">4 3</vgridLayout>
+		<vgridLayout if="${screen.width} &gt; '721' &amp;&amp; ${screen.width} &lt;= '1281'">6 3</vgridLayout>
+		<vgridLayout if="${screen.width} &gt; '1281'">5 3</vgridLayout>
+		<vScrollBar>0.0035</vScrollBar>
 	</variables>
 
 	<!-- Menu tweaks -->

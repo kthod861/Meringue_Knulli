@@ -48,7 +48,7 @@
 			<fontPath>${fontRegular}</fontPath>
 			<color>dddddd</color>
 			<alignment>left</alignment>
-			<fontSize>${stack_grid_fontSize_info}</fontSize>
+			<fontSize>${stack_grid_info_fontSize}</fontSize>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
@@ -68,9 +68,9 @@
 			<text name="releaseyear" extra="true">
 				<text>{game:releaseyear}</text>
 				<color>dddddd</color>
-				<fontSize>${stack_grid_fontSize_info}</fontSize>
+				<fontSize>${stack_grid_info_fontSize}</fontSize>
 				<fontPath>${fontRegular}</fontPath>
-				<w>0.2</w>
+				<w>0.27</w>
 			</text>
 			<!-- rating-->
 			<rating name="rating" extra="true">
@@ -85,8 +85,8 @@
 		<!-- stack info -->
 		<stackpanel name="lastplayed_gametime" extra="true">
 			<separator>0</separator>
-			<pos>${stack_grid_pos_info}</pos>
-			<w>0.2</w>
+			<pos>${stack_grid_info_pos}</pos>
+			<w>0.21</w>
 			<h>0.09</h>
 			<orientation>vertical</orientation>
 			<reverse>false</reverse>
@@ -95,7 +95,7 @@
 			<text name="systemInfoEx" extra="true">
 				<text>Last played : {game:lastplayed}</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_grid_fontSize_info}</fontSize>
+				<fontSize>${stack_grid_info_fontSize}</fontSize>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>
@@ -103,7 +103,7 @@
 			<text name="systemInfoEx" extra="true">
 				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : Never"</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_grid_fontSize_info}</fontSize>
+				<fontSize>${stack_grid_info_fontSize}</fontSize>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>
@@ -138,7 +138,8 @@
 			<orientation>vertical</orientation>
 			<zIndex> 15 </zIndex>
 			<image name="foreground_top">
-				<path>${foreground_top_path}</path>
+				<path ifSubset="theme_style:neo">${neo_gridforeground_top_path}</path>
+				<path ifSubset="theme_style:old">${foreground_top_path}</path>
 				<h>${gamegrid_stack_top_h}</h>
 			</image>
 			
@@ -157,14 +158,14 @@
 		<imagegrid name="gamegrid">
 			<zIndex>13</zIndex>
 			<pos>0 0.15</pos>
-			<size>${v.gamelistGrid.size}</size>
+			<size>${gamelistGrid_size}</size>
 			<margin>0.02 0.02</margin>
 			<padding>0.02 0.02 0.02 0.02</padding>
-			<autoLayout>${v.gridAutoLayout}</autoLayout>
+			<autoLayout>${vgridLayout}</autoLayout>
 			<animateSelection>true</animateSelection>
 			<centerSelection>false</centerSelection>
 			<scrollbarColor>FFFFFF</scrollbarColor>
-			<scrollbarSize>${v.ScrollBar}</scrollbarSize>
+			<scrollbarSize>${vScrollBar}</scrollbarSize>
 			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<imageSource>thumbnail</imageSource>

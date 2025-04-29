@@ -3,7 +3,10 @@
 An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/MeringuePersonal3407/) theme found on [this thread](https://www.reddit.com/r/ANBERNIC/comments/1ix9124/my_collection/).<br />
 
 Compatible with [Knulli](https://knulli.org/) (tested), [Retrobat](https://www.retrobat.org/accueil-fr/) (tested), [Batocera](https://batocera.org/) (not tested).<br />
+
 Support 4:3, 3:2, 1:1, 16:9 aspect ratios with simple game grid.<br />
+
+Controllers animations and theme style available in the theme settings.<br />
 
 If by any chance you've a system folder with enough good looking boxarts and are willing to share, please ping me !<br />
 At the moment almost everything comes from [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)<br>
@@ -37,10 +40,12 @@ DONE: <br />
 - Some file path were wrong
 - 3:2 support added
 - A lot of controllers and background updates
-- Different controllers animations available in the settings
+- Different controllers animations available in the theme settings
 - More infos on the system view
-  
+- Images assets for 1:1 aspect ratio
+- Theme variation added : "Brushed" ( optional in the theme settings )
 
-Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .
+Big up to "Meringue", "Ant", "SymBuzzer", "Shadow" and more for the help they've provided here and there .<br>
+Thanks to "Chrizzo" for the [custom background] (https://github.com/chrizzo-hb/knulli-bootlogo/tree/main/knulli)<br>
 
 <img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/master/_inc/screenshot.jpg" width="480" /><br />
