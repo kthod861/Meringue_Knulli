@@ -4,34 +4,34 @@
 	<view name="grid">
 		<!-- System logo -->
 		<image name="logo" extra="static">
-			<pos>0.5 0.07</pos>
+			<pos>${grid_logo_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<horizontalAlignment>center</horizontalAlignment>
 			<verticalAlignment>center</verticalAlignment>
-			<scale>0.35 </scale>
-			<maxSize>1.5 0.33</maxSize>
+			<scale>${grid_logo_scale}</scale>
+			<maxSize>${grid_logo_maxSize}</maxSize>
 			<path>./../systems/logos/${system.theme}.webp</path>
 			<zIndex>16</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="300" duration="100" mode="easeOut"/>
-				<animation property="scale" from="0" to="0.35" begin="300" duration="200" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" begin="150" duration="100" mode="easeOut"/>
+				<animation property="scale" from="0" to="0.35" begin="150" duration="200" mode="easeOut"/>
 			</storyboard>
 		</image>
 		<!-- game name-->
 		<text name="md_name">
-			<fontSize>0.025</fontSize>
+			<fontSize>0.02</fontSize>
 			<fontPath>${fontRegular}</fontPath>
-			<pos>0.010 0.095</pos>
-			<origin>0 0.5</origin>
+			<pos>${game_name_pos}</pos>
+			<origin>0.5 0.5</origin>
 			<size>0.7 ${fontSizeBody-small}</size>
-			<alignment>left</alignment>
+			<alignment>center</alignment>
 			<color>${fgColor}</color>
 			<zIndex>16</zIndex>
-			<w>0.24</w>
-			<glowSize>1</glowSize>
+			<w>0.5</w>
+			<glowSize>0.5</glowSize>
 			<glowColor>ffffff26</glowColor>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
@@ -39,7 +39,7 @@
 		</text>
 		<!-- game publisher-->
 		<text name="game-publisher" extra="true">
-			<pos>0.010 0.14</pos>
+			<pos>${grid_publisher_pos}</pos>
 			<origin>0 0.5</origin>
 			<w>0.22</w>
 			<size>0.7 ${fontSizeBody-small}</size>
@@ -48,7 +48,7 @@
 			<fontPath>${fontRegular}</fontPath>
 			<color>dddddd</color>
 			<alignment>left</alignment>
-			<fontSize>${stack_grid_info_fontSize}</fontSize>
+			<fontSize>${grid_stack_info_fontSize}</fontSize>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
@@ -58,7 +58,7 @@
 		
 		<stackpanel name="release_rating" extra="true">
 			<separator>0</separator>
-			<pos>0.01 0.165</pos>
+			<pos>${grid_stack_rating_pos}</pos>
 			<w>0.2</w>
 			<h>0.025</h>
 			<orientation>horizontal</orientation>
@@ -68,7 +68,7 @@
 			<text name="releaseyear" extra="true">
 				<text>{game:releaseyear}</text>
 				<color>dddddd</color>
-				<fontSize>${stack_grid_info_fontSize}</fontSize>
+				<fontSize>${grid_stack_info_fontSize}</fontSize>
 				<fontPath>${fontRegular}</fontPath>
 				<w>0.27</w>
 			</text>
@@ -85,9 +85,9 @@
 		<!-- stack info -->
 		<stackpanel name="lastplayed_gametime" extra="true">
 			<separator>0</separator>
-			<pos>${stack_grid_info_pos}</pos>
+			<pos>${grid_stack_info_pos}</pos>
 			<w>0.21</w>
-			<h>0.09</h>
+			<h>0.065</h>
 			<orientation>vertical</orientation>
 			<reverse>false</reverse>
 			<zIndex> 20 </zIndex>
@@ -95,7 +95,7 @@
 			<text name="systemInfoEx" extra="true">
 				<text>Last played : {game:lastplayed}</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_grid_info_fontSize}</fontSize>
+				<fontSize>${grid_stack_info_fontSize}</fontSize>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>
@@ -103,7 +103,7 @@
 			<text name="systemInfoEx" extra="true">
 				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : Never"</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_grid_info_fontSize}</fontSize>
+				<fontSize>${grid_stack_info_fontSize}</fontSize>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>

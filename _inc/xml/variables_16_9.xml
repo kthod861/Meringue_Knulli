@@ -2,49 +2,67 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables>
+		<!--Background-->
 		<background_path>./../systems/background_16_9/${system.theme}.webp</background_path>
 		<default_background_path>./../systems/background_16_9/_default.webp</default_background_path>
+		<background_scale>1 1</background_scale>
+		<background_scale_gamelist>1 1</background_scale_gamelist>
 		
+		<!--Old-->
 		<foreground_top_path>./../images/SystemForeground_TOP_16_9.webp</foreground_top_path>
+		<foreground_mid_path>./../images/SystemForeground_MID_16_9.webp</foreground_mid_path>
+		<foreground_bottom_path>./../images/SystemForeground_BOTTOM_16_9.webp</foreground_bottom_path>
+		
+		<!--Brushed-->
 		<neo_foreground_top_path>./../images/NEO_SystemForeground_TOP_16_9.webp</neo_foreground_top_path>
 		<neo_gridforeground_top_path>./../images/NEO_GridForeground_TOP_16_9.webp</neo_gridforeground_top_path>
 		
 		<neo_back_top_path>./../images/BCK_Header_16_9.webp</neo_back_top_path>
 		
-		<foreground_mid_path>./../images/SystemForeground_MID_16_9.webp</foreground_mid_path>
-		<foreground_bottom_path>./../images/SystemForeground_BOTTOM_16_9.webp</foreground_bottom_path>
-		
+		<!--Global stack module-->
 		<stack_foreground_pos>0 0</stack_foreground_pos>
 		<stack_foreground_h>1</stack_foreground_h>
 		<stack_foreground_w>1</stack_foreground_w>
 		
+		<!--System stack settings-->
 		<system_stack_top_h>0.475</system_stack_top_h>
 		<system_stack_mid_h>0.491</system_stack_mid_h>
 		<system_stack_bottom_h>0.0352</system_stack_bottom_h>
 		
-		<gamegrid_stack_top_h>0.22</gamegrid_stack_top_h>
-		<gamegrid_stack_mid_h>0.73</gamegrid_stack_mid_h>
-		<gamegrid_stack_bottom_h>0.05</gamegrid_stack_bottom_h>
+		<!--Grid stack settings-->
+		<gamegrid_stack_top_h>0.25</gamegrid_stack_top_h>
+		<gamegrid_stack_mid_h>0.715</gamegrid_stack_mid_h>
+		<gamegrid_stack_bottom_h>0.0352</gamegrid_stack_bottom_h>
 		
-		<background_scale>1 1</background_scale>
-		<background_scale_gamelist>1 1</background_scale_gamelist>
 		
+		<!--Logo-->
 		<logo_pos>0.5 0.133</logo_pos>
-		<logo_min_size>0.76</logo_min_size>
-		<logo_mid_size>0.78</logo_mid_size>
-		<logo_max_size>0.8</logo_max_size>
+		<logo_scale>1.1</logo_scale>
+		<logo_min_size>0.98</logo_min_size>
+		<logo_mid_size>1</logo_mid_size>
+		<logo_max_size>1.02</logo_max_size>
 		
+		<grid_logo_pos>0.5 0.055</grid_logo_pos>
+		<grid_logo_scale>0.35 </grid_logo_scale>
+		<grid_logo_maxSize>1 0.25</grid_logo_maxSize>
+		
+		<!--Controller-->
 		<controller_pos>0.5 0.61</controller_pos>
 		<controller_maxSize>.4 .55</controller_maxSize>
-		<sysinfo_pos>0.39 0.22</sysinfo_pos>
 		
+		<!--Infos-->
+		<game_name_pos>0.5 0.114</game_name_pos>
+		<sysinfo_pos>0.39 0.22</sysinfo_pos>
 		<manufacturer_pos>0.5 0.16</manufacturer_pos>
 		
-		<stack_grid_info_fontSize>0.021</stack_grid_info_fontSize>
-		<stack_grid_info_pos>0.81 0.13</stack_grid_info_pos>
+		<grid_publisher_pos>0.010 0.14</grid_publisher_pos>
+		<grid_stack_rating_pos>0.01 0.165</grid_stack_rating_pos>
+		
+		<grid_stack_info_fontSize>0.021</grid_stack_info_fontSize>
+		<grid_stack_info_pos>0.81 0.13</grid_stack_info_pos>
 
-		<stack_system_info_pos>0 0.275</stack_system_info_pos>
-		<stack_system_info_fontsize>0.02</stack_system_info_fontsize>
+		<system_stack_info_pos>0 0.275</system_stack_info_pos>
+		<system_stack_info_fontsize>0.02</system_stack_info_fontsize>
 		
 		<totalgame_pos>0.9 0.285</totalgame_pos>
 	</variables>

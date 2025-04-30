@@ -75,10 +75,10 @@
 			<size>1 1</size>
 			<color>00000000</color>
 			<minLogoOpacity>0</minLogoOpacity>
-			<logoScale>1.6</logoScale>
+			<logoScale>${logo_scale}</logoScale>
 			<transitionSpeed>800</transitionSpeed>
 			<systemInfoDelay>100</systemInfoDelay>
-			<scaledLogoSpacing>1</scaledLogoSpacing>
+			<scaledLogoSpacing>.5</scaledLogoSpacing>
 			<defaultTransition>fade &amp; slide</defaultTransition><!--fade &amp; -->
 			<zIndex ifSubset="theme_style:neo">13</zIndex>
 			<zIndex ifSubset="theme_style:old">16</zIndex>
@@ -161,7 +161,7 @@
 		</text>
 		
 		<stackpanel name="Infos" extra="static">
-			<pos>${stack_system_info_pos}</pos>
+			<pos>${system_stack_info_pos}</pos>
 			<h>0.12</h>
 			<w>0.2</w>
 			<separator>0.000</separator>
@@ -175,7 +175,7 @@
 				<backgroundColor>00000000</backgroundColor>
 				<color>ffffff</color>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_system_info_fontsize}</fontSize>
+				<fontSize>${system_stack_info_fontsize}</fontSize>
 				<text ifSubset="theme_style:neo">&#x2014;&#x2014; {system:gamesPlayed} Played</text>
 				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:gamesPlayed} Played</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
@@ -190,7 +190,7 @@
 				<backgroundColor>00000000</backgroundColor>
 				<color>ffffff</color>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${stack_system_info_fontsize}</fontSize>
+				<fontSize>${system_stack_info_fontsize}</fontSize>
 				<text ifSubset="theme_style:neo">&#x2014;&#x2014; {system:favorites} Favorites</text>
 				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:favorites} Favorites</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
