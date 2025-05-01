@@ -31,8 +31,8 @@
 		
 		<!--Grid stack settings-->
 		<gamegrid_stack_top_h>0.225</gamegrid_stack_top_h>
-		<gamegrid_stack_mid_h>0.725</gamegrid_stack_mid_h>
-		<gamegrid_stack_bottom_h>0.05</gamegrid_stack_bottom_h>
+		<gamegrid_stack_mid_h>0.7481</gamegrid_stack_mid_h>
+		<gamegrid_stack_bottom_h>0.0271</gamegrid_stack_bottom_h>
 		
 		
 		<!--Logo-->

@@ -118,7 +118,7 @@
 			<pos>0.5 1</pos>
 			<size>${background_scale_gamelist}</size>
 			<zIndex>10</zIndex>
-			<storyboard repeat="forever">
+			<storyboard repeat="forever"  ifSubset="breathing:on">
 				<animation property="scale" from="1" to="1.0025" duration="500" mode="easeIn"/>
 				<animation property="scale" from="1.0025" to="1.005" duration="500" mode="easeOut" begin="500"/>
 				<animation property="scale" from="1.005" to="1.0025" duration="500" mode="easeIn" begin="1000"/>
