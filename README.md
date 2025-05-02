@@ -50,7 +50,7 @@ DONE: <br />
 
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow", "Snapouille" and more for the help they've provided here and there .<br>
-Thanks to "Chrizzo" for the [custom background](https://github.com/chrizzo-hb/knulli-bootlogo/tree/main/knulli)<br>
+Thanks to "Chrizzo" for the [custom default background](https://github.com/chrizzo-hb/knulli-bootlogo/tree/main/knulli)<br>
 
 <img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/master/_inc/screenshot.jpg" width="480" /><br />
 
