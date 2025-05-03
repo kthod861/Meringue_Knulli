@@ -36,6 +36,9 @@
 			<size>${background_scale}</size>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>12</zIndex>
+			<storyboard>
+				<animation property="x" from="0.0" to="-0.2" duration="300" mode="easeOut"/>
+			</storyboard>
 		</image>
 		
 		<!-- Background-->
@@ -154,7 +157,7 @@
 			<opacity>0.8</opacity>
 			<glowSize>0.5</glowSize>
 			<glowColor>ffffff26</glowColor>
-			<zIndex ifSubset="theme_style:neo">13</zIndex>
+			<zIndex ifSubset="theme_style:neo">16</zIndex>
 			<zIndex ifSubset="theme_style:old">16</zIndex>
 		</text>
 		
@@ -164,7 +167,7 @@
 			<w>0.2</w>
 			<separator>0.000</separator>
 			<orientation>vertical</orientation>
-			<zIndex ifSubset="theme_style:neo">13</zIndex>
+			<zIndex ifSubset="theme_style:neo">16</zIndex>
 			<zIndex ifSubset="theme_style:old">16</zIndex>
 			<!-- Game played-->
 			<text name="GamePlayed">

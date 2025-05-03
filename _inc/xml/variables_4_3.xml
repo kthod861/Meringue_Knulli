@@ -61,9 +61,9 @@
 		<grid_stack_info_fontSize>0.02</grid_stack_info_fontSize>
 		<grid_stack_info_pos>0.798 0.12</grid_stack_info_pos>
 
-		<system_stack_info_pos>0 0.242</system_stack_info_pos>
+		<system_stack_info_pos>0 0.25</system_stack_info_pos>
 		<system_stack_info_fontsize>0.022</system_stack_info_fontsize>
 		
-		<totalgame_pos>0.86 0.255</totalgame_pos>
+		<totalgame_pos>0.86 0.265</totalgame_pos>
 	</variables>
 </theme>
