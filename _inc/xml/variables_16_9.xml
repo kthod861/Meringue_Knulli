@@ -36,7 +36,7 @@
 		
 		
 		<!--Logo-->
-		<logo_pos>0.5 0.133</logo_pos>
+		<logo_pos>0.5 0.1333</logo_pos>
 		<logo_scale>1.1</logo_scale>
 		<logo_min_size>0.98</logo_min_size>
 		<logo_mid_size>1</logo_mid_size>

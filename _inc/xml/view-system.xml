@@ -177,7 +177,7 @@
 				<color>ffffff</color>
 				<fontPath>${fontRegular}</fontPath>
 				<fontSize>${system_stack_info_fontsize}</fontSize>
-				<text ifSubset="theme_style:neo">&#x2014;&#x2014; {system:gamesPlayed} Played</text>
+				<text ifSubset="theme_style:neo">&#x2014; {system:gamesPlayed} Played</text>
 				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:gamesPlayed} Played</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
 				<opacity>0.8</opacity>
@@ -192,7 +192,7 @@
 				<color>ffffff</color>
 				<fontPath>${fontRegular}</fontPath>
 				<fontSize>${system_stack_info_fontsize}</fontSize>
-				<text ifSubset="theme_style:neo">&#x2014;&#x2014; {system:favorites} Favorites</text>
+				<text ifSubset="theme_style:neo">&#x2014; {system:favorites} Favorites</text>
 				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:favorites} Favorites</text>
 				<emptyTextDefaults>0</emptyTextDefaults>
 				<opacity>0.8</opacity>
