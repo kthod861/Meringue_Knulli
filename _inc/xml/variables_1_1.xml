@@ -3,13 +3,12 @@
 	<formatVersion>7</formatVersion>
 	<variables>
 		<!--Background-->
-		<background_path>./../systems/background_4_3/${system.theme}.webp</background_path>
-		<default_background_path>./../systems/background_4_3/_default.webp</default_background_path>
-		<background_scale>1.05 0.78</background_scale>
+		<background_path>./../systems/background/${system.theme}.webp</background_path>
+		<default_background_path>./../systems/background/_default.webp</default_background_path>
+		<background_scale>2 1</background_scale>
 		<background_scale_gamelist>1.2 0.9</background_scale_gamelist>
 		
 		<!--Old-->
-		<foreground_top_path>./../images/SystemForeground_TOP.webp</foreground_top_path>
 		<foreground_mid_path>./../images/SystemForeground_MID_1_1.webp</foreground_mid_path>
 		<foreground_bottom_path>./../images/SystemForeground_BOTTOM_1_1.webp</foreground_bottom_path>
 		
@@ -17,8 +16,8 @@
 		<neo_foreground_top_path>./../images/NEO_SystemForeground_TOP_1_1.webp</neo_foreground_top_path>
 		<neo_gridforeground_top_path>./../images/NEO_GridForeground_TOP_1_1.webp</neo_gridforeground_top_path>
 		
-		<neo_back_top_path>./../images/BCK_Header.webp</neo_back_top_path>
-		
+		<neo_back_top_path>./../images/BCK_Header_1_1.webp</neo_back_top_path>
+		<BCK_scale>1 1</BCK_scale>
 		<!--Global stack module-->
 		<stack_foreground_pos>0 0</stack_foreground_pos>
 		<stack_foreground_h>1</stack_foreground_h>
@@ -52,18 +51,21 @@
 		
 		<!--Infos-->
 		<game_name_pos>0.5 0.118</game_name_pos>
+		<game_name_fontSize ifSubset="font_size:small">0.02</game_name_fontSize>
+		<game_name_fontSize ifSubset="font_size:large">0.03</game_name_fontSize>
 		<sysinfo_pos>0.39 0.14</sysinfo_pos>
 		<manufacturer_pos>0.5 0.0835</manufacturer_pos>
 		
 		<grid_publisher_pos>0.010 0.14</grid_publisher_pos>
-		<grid_stack_rating_pos>0.01 0.162</grid_stack_rating_pos>
+		<grid_stack_rating_pos>0.01 0.158</grid_stack_rating_pos>
 		
 		<grid_stack_info_fontSize>0.018</grid_stack_info_fontSize>
 		<grid_stack_info_pos>0.79 0.13</grid_stack_info_pos>
 
-		<system_stack_info_pos>0 0.185</system_stack_info_pos>
-		<system_stack_info_fontsize>0.02</system_stack_info_fontsize>
+		<system_info_pos>0.01 0.2215</system_info_pos>
+		<system_info_fontsize ifSubset="font_size:large">0.03</system_info_fontsize>
+		<system_info_fontsize ifSubset="font_size:small">0.018</system_info_fontsize>
 		
-		<totalgame_pos>0.86 0.2</totalgame_pos>
+		<system_totalgame_pos>0.99 0.2215</system_totalgame_pos>
 	</variables>
 </theme>

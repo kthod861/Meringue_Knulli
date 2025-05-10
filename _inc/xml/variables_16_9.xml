@@ -3,13 +3,12 @@
 	<formatVersion>7</formatVersion>
 	<variables>
 		<!--Background-->
-		<background_path>./../systems/background_16_9/${system.theme}.webp</background_path>
-		<default_background_path>./../systems/background_16_9/_default.webp</default_background_path>
+		<background_path>./../systems/background/${system.theme}.webp</background_path>
+		<default_background_path>./../systems/background/_default.webp</default_background_path>
 		<background_scale>1 1</background_scale>
 		<background_scale_gamelist>1 1</background_scale_gamelist>
 		
 		<!--Old-->
-		<foreground_top_path>./../images/SystemForeground_TOP_16_9.webp</foreground_top_path>
 		<foreground_mid_path>./../images/SystemForeground_MID_16_9.webp</foreground_mid_path>
 		<foreground_bottom_path>./../images/SystemForeground_BOTTOM_16_9.webp</foreground_bottom_path>
 		
@@ -18,7 +17,7 @@
 		<neo_gridforeground_top_path>./../images/NEO_GridForeground_TOP_16_9.webp</neo_gridforeground_top_path>
 		
 		<neo_back_top_path>./../images/BCK_Header_16_9.webp</neo_back_top_path>
-		
+		<BCK_scale>1 1</BCK_scale>
 		<!--Global stack module-->
 		<stack_foreground_pos>0 0</stack_foreground_pos>
 		<stack_foreground_h>1</stack_foreground_h>
@@ -52,8 +51,10 @@
 		
 		<!--Infos-->
 		<game_name_pos>0.5 0.114</game_name_pos>
+		<game_name_fontSize ifSubset="font_size:small">0.02</game_name_fontSize>
+		<game_name_fontSize ifSubset="font_size:large">0.03</game_name_fontSize>
 		<sysinfo_pos>0.39 0.22</sysinfo_pos>
-		<manufacturer_pos>0.5 0.16</manufacturer_pos>
+		<manufacturer_pos>0.5 0.27</manufacturer_pos>
 		
 		<grid_publisher_pos>0.010 0.14</grid_publisher_pos>
 		<grid_stack_rating_pos>0.01 0.165</grid_stack_rating_pos>
@@ -61,9 +62,10 @@
 		<grid_stack_info_fontSize>0.021</grid_stack_info_fontSize>
 		<grid_stack_info_pos>0.81 0.13</grid_stack_info_pos>
 
-		<system_stack_info_pos>0 0.275</system_stack_info_pos>
-		<system_stack_info_fontsize>0.02</system_stack_info_fontsize>
+		<system_info_pos>0.01 0.305</system_info_pos>
+		<system_info_fontsize ifSubset="font_size:large">0.032</system_info_fontsize>
+		<system_info_fontsize ifSubset="font_size:small">0.018</system_info_fontsize>
 		
-		<totalgame_pos>0.9 0.285</totalgame_pos>
+		<system_totalgame_pos>0.99 0.305</system_totalgame_pos>
 	</variables>
 </theme>

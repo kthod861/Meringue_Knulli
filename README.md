@@ -1,21 +1,19 @@
 # Meringue Knulli theme
 
-An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/MeringuePersonal3407/) theme found on [this thread](https://www.reddit.com/r/ANBERNIC/comments/1ix9124/my_collection/).<br />
 
 Compatible with [Knulli](https://knulli.org/) (tested), [Retrobat](https://www.retrobat.org/accueil-fr/) (tested), [Batocera](https://batocera.org/) (not tested).<br />
 
-Support 4:3, 3:2, 1:1, 16:9 aspect ratios with simple game grid.<br />
+<img src="https://github.com/kthod861/Meringue_ES_DE_Knulli/blob/master/_inc/screenshot.jpg" width="480" /><br />
 
+Aspect ratio : 1:1 / 4:3 / 3:2 / 16:9 / 16:10 / 21:9 and more<br />
+Gamelist view : Grid only with tiles sizes variant options small/medium/lage/extra large<br />
+Font size : small/medium/large<br />
 Controllers animations and theme style available in the theme settings.<br />
-
 Background and logo breathing animations can be disabled in the theme settings.<br />
 
 
 TODO: <br />
-- Cleanup files names and veriables
-- Secure the old version ( not brushed )
-- Add translation ?
-- Custom splash ?
+- ..
 
 DONE: <br />
 - Game names in the gamelist view is now centered to avoid rolling text ( thx to Snapouille )
@@ -47,6 +45,9 @@ DONE: <br />
 - Foreground upgrade/polish with some bevel
 - controlers get animated on show
 - 16:9 <> 4:3 now switch automatically
+
+
+An interpretation of [Primal (MeringuePersonnal)](https://www.reddit.com/user/MeringuePersonal3407/) theme found on [this thread](https://www.reddit.com/r/ANBERNIC/comments/1ix9124/my_collection/).<br />
 
 
 Big up to "Meringue", "Ant", "SymBuzzer", "Shadow", "Snapouille" and more for the help they've provided here and there .<br>

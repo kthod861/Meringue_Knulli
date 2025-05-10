@@ -22,11 +22,11 @@
 		</image>
 		<!-- game name-->
 		<text name="md_name">
-			<fontSize>0.02</fontSize>
+			<fontSize>${game_name_fontSize}</fontSize>
 			<fontPath>${fontRegular}</fontPath>
 			<pos>${game_name_pos}</pos>
 			<origin>0.5 0.5</origin>
-			<size>0.7 ${fontSizeBody-small}</size>
+			<size>0.7 ${game_name_fontSize}</size>
 			<alignment>center</alignment>
 			<color>${fgColor}</color>
 			<zIndex>16</zIndex>
@@ -87,7 +87,7 @@
 			<separator>0</separator>
 			<pos>${grid_stack_info_pos}</pos>
 			<w>0.21</w>
-			<h>0.065</h>
+			<h>0.08</h>
 			<orientation>vertical</orientation>
 			<reverse>false</reverse>
 			<zIndex> 20 </zIndex>
@@ -138,8 +138,7 @@
 			<orientation>vertical</orientation>
 			<zIndex> 15 </zIndex>
 			<image name="foreground_top">
-				<path ifSubset="theme_style:neo">${neo_gridforeground_top_path}</path>
-				<path ifSubset="theme_style:old">${foreground_top_path}</path>
+				<path>${neo_gridforeground_top_path}</path>
 				<h>${gamegrid_stack_top_h}</h>
 			</image>
 			
@@ -159,9 +158,11 @@
 			<zIndex>13</zIndex>
 			<pos>0 0.15</pos>
 			<size>${gamelistGrid_size}</size>
-			<margin>0.02 0.02</margin>
-			<padding>0.02 0.02 0.02 0.02</padding>
-			<autoLayout>${vgridLayout}</autoLayout>
+			<margin>0.01 0.01</margin>
+			<padding>0.01 0.01 0.01 0.01</padding>
+			<autoLayout ifSubset="gamegrid_size:small">${GridLayout_small}</autoLayout>
+			<autoLayout ifSubset="gamegrid_size:medium">${GridLayout_medium}</autoLayout>
+			<autoLayout ifSubset="gamegrid_size:large">${GridLayout_large}</autoLayout>
 			<animateSelection>true</animateSelection>
 			<centerSelection>false</centerSelection>
 			<scrollbarColor>FFFFFF</scrollbarColor>

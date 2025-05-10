@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+	<variables>
+		<GridLayout_small>7 3</GridLayout_small>
+		<GridLayout_medium>5 2</GridLayout_medium>
+		<GridLayout_large>3 1</GridLayout_large>
+	</variables>
+</theme>

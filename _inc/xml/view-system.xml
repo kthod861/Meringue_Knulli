@@ -13,8 +13,7 @@
 			<orientation>vertical</orientation>
 			<zIndex> 15 </zIndex>
 			<image name="foreground_top">
-				<path ifSubset="theme_style:neo">${neo_foreground_top_path}</path>
-				<path ifSubset="theme_style:old">${foreground_top_path}</path>
+				<path>${neo_foreground_top_path}</path>
 				<h>${system_stack_top_h}</h>
 				<linearSmooth>true</linearSmooth>
 			</image>
@@ -29,11 +28,11 @@
 				<h>${system_stack_bottom_h}</h>
 			</image>
 		</stackpanel>
-		<image name="bckground_top" extra="static" ifSubset="theme_style:neo">
+		<image name="bckground_top" extra="static">
 			<path>${neo_back_top_path}</path>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
-			<size>${background_scale}</size>
+			<size>${BCK_scale}</size>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>12</zIndex>
 			<storyboard>
@@ -81,8 +80,7 @@
 			<systemInfoDelay>100</systemInfoDelay>
 			<scaledLogoSpacing>.5</scaledLogoSpacing>
 			<defaultTransition>fade &amp; slide</defaultTransition><!--fade &amp; -->
-			<zIndex ifSubset="theme_style:neo">13</zIndex>
-			<zIndex ifSubset="theme_style:old">16</zIndex>
+			<zIndex>13</zIndex>
 		</carousel>
 		<!-- Controler -->
 		<image name="controler" extra="true">
@@ -95,7 +93,7 @@
 			<linearSmooth>true</linearSmooth>
 			<storyboard ifSubset="controllers_animations:simple">
 				<animation property="opacity" from="0" to="1" begin="50" duration="120" mode="easeOut"/>
-				<animation property="scale" from="0.5" to="1" begin="50" duration="220" mode="easeOut"/>
+				<animation property="scale" from="0.5" to="1" begin="50" duration="120" mode="easeOut"/>
 			</storyboard>
 			<storyboard ifSubset="controllers_animations:bump">
 				<animation property="opacity" from="0" to="1" begin="50" duration="350" mode="easeOut"/>
@@ -122,9 +120,9 @@
 		
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
-			<origin>0.5 0</origin>
+			<origin>0.5 0.5</origin>
 			<pos>${manufacturer_pos}</pos>
-			<size>1 0.22</size>
+			<!--<size>1 0.22</size>-->
 			<alignment>center</alignment>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ffffff</color>
@@ -143,64 +141,38 @@
 			
 		<!-- Total games-->
 		<text name="TotalGames" extra="static">
-			<origin>0 0</origin>
-			<pos>${totalgame_pos}</pos>
+			<origin>1 0.5</origin>
+			<pos>${system_totalgame_pos}</pos>
 			<!--<size>1 0.22</size>-->
-			<alignment>center</alignment>
+			<alignment>right</alignment>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ffffff</color>
 			<fontPath>${fontRegular}</fontPath>
-			<fontSize>0.025</fontSize>
-			<text ifSubset="theme_style:neo">{system:total} Games &#x2014;&#x2014;&#x2014;&#x2014;</text>
-			<text ifSubset="theme_style:old">{system:total} Games</text>
+			<fontSize>${system_info_fontsize}</fontSize>
+			<text>{system:total} Games</text>
 			<emptyTextDefaults>0</emptyTextDefaults>
 			<opacity>0.8</opacity>
 			<glowSize>0.5</glowSize>
 			<glowColor>ffffff26</glowColor>
-			<zIndex ifSubset="theme_style:neo">16</zIndex>
-			<zIndex ifSubset="theme_style:old">16</zIndex>
+			<zIndex>16</zIndex>
 		</text>
-		
-		<stackpanel name="Infos" extra="static">
-			<pos>${system_stack_info_pos}</pos>
-			<h>0.12</h>
-			<w>0.2</w>
-			<separator>0.000</separator>
-			<orientation>vertical</orientation>
-			<zIndex ifSubset="theme_style:neo">16</zIndex>
-			<zIndex ifSubset="theme_style:old">16</zIndex>
-			<!-- Game played-->
-			<text name="GamePlayed">
-				<h>0.5</h>
-				<alignment>left</alignment>
-				<backgroundColor>00000000</backgroundColor>
-				<color>ffffff</color>
-				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${system_stack_info_fontsize}</fontSize>
-				<text ifSubset="theme_style:neo">&#x2014; {system:gamesPlayed} Played</text>
-				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:gamesPlayed} Played</text>
-				<emptyTextDefaults>0</emptyTextDefaults>
-				<opacity>0.8</opacity>
-				<glowSize>0.5</glowSize>
-				<glowColor>ffffff26</glowColor>
-			</text>
-			<!-- Favorites-->
-			<text name="Favorites">
-				<h>0.5</h>
-				<alignment>left</alignment>
-				<backgroundColor>00000000</backgroundColor>
-				<color>ffffff</color>
-				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${system_stack_info_fontsize}</fontSize>
-				<text ifSubset="theme_style:neo">&#x2014; {system:favorites} Favorites</text>
-				<text ifSubset="theme_style:old">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{system:favorites} Favorites</text>
-				<emptyTextDefaults>0</emptyTextDefaults>
-				<opacity>0.8</opacity>
-				<glowSize>0.5</glowSize>
-				<glowColor>ffffff26</glowColor>
-			</text>
-		</stackpanel>
-			
+
+		<text name="Infos" extra="static">
+			<origin>0 0.5</origin>
+			<pos>${system_info_pos}</pos>
+			<!--<size>1 0.22</size>-->
+			<alignment>left</alignment>
+			<backgroundColor>00000000</backgroundColor>
+			<color>ffffff</color>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${system_info_fontsize}</fontSize>
+			<text>{system:gamesPlayed} Played&#10;{system:favorites} Favorites</text>
+			<emptyTextDefaults>0</emptyTextDefaults>
+			<opacity>0.8</opacity>
+			<glowSize>0.5</glowSize>
+			<glowColor>ffffff26</glowColor>
+			<zIndex>16</zIndex>
+		</text>
 
 	</view>
 </theme>

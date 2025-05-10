@@ -1,9 +1,14 @@
 <theme>
 	<formatVersion>7</formatVersion>
-	
-	<subset name="theme_style" displayName="Theme style">
-		<include name="neo" displayName="Brushed" />
-		<include name="old" displayName="Original" />
+
+	<subset name="font_size" displayName="Font size">
+		<include name="large" displayName="Large" />
+		<include name="small" displayName="Small" />
+	</subset>
+	<subset name="gamegrid_size" displayName="GameList grid size">
+		<include name="medium" displayName="Medium" />
+		<include name="small" displayName="Small" />
+		<include name="large" displayName="Large" />
 	</subset>
 	<subset name="breathing" displayName="Breathing animations">
 		<include name="on" displayName="On" />
@@ -15,9 +20,9 @@
 		<include name="swoop" displayName="Swoop" />	
 	</subset>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="1.9" />
+		<include name="version" displayName="2.0" />
 	</subset>
-	
+
 	<variables>
 		<mainColor>4075F9</mainColor>
 		<onMainColor>1D1B16</onMainColor>
@@ -45,10 +50,6 @@
 		<fontBold>./../fonts/font-bold.ttf</fontBold>
 		
 		<gamelistGrid_size>1 0.85</gamelistGrid_size>
-		<vgridLayout>3 2</vgridLayout>
-		<vgridLayout if="{screen.ratio} == '4/3'">3 2</vgridLayout>
-		<vgridLayout if="{screen.ratio} == '1/1'">3 3</vgridLayout>
-		<vgridLayout if="{screen.ratio} == '16/9'">6 3</vgridLayout>
 		<vScrollBar>0.0035</vScrollBar>
 	</variables>
 
