@@ -3,6 +3,7 @@
 
 	<subset name="font_size" displayName="Font size">
 		<include name="large" displayName="Large" />
+		<include name="medium" displayName="Medium" />		
 		<include name="small" displayName="Small" />
 	</subset>
 	<subset name="gamegrid_size" displayName="GameList grid size">
@@ -93,9 +94,13 @@
 	<!-- Move help away -->
 	<view name="system,grid">
 		<helpsystem name="help">
-			<textColor>${fgColor}</textColor>
-			<iconColor>${sectColor}</iconColor>
-			<pos>10 10</pos>
+			<origin>0.5 1</origin>
+			<pos>0.5 0.99</pos>
+			<textColor>ffffff</textColor>
+			<iconColor>ffffff</iconColor>
+			<opacity>0.7</opacity>
+			<fontPath>${font_path}</fontPath>
+			<fontSize>0.02</fontSize> 
 		</helpsystem>
 	</view>
 

@@ -3,36 +3,22 @@
 <formatVersion>7</formatVersion>
 
 	<view name="system">
-
 		<!-- Foreground-->
-		<stackpanel name="foreground" extra="static">
-			<pos>${stack_foreground_pos}</pos>
-			<h>${stack_foreground_h}</h>
-			<w>${stack_foreground_w}</w>
-			<separator>0.0</separator>
-			<orientation>vertical</orientation>
-			<zIndex> 15 </zIndex>
-			<image name="foreground_top">
-				<path>${neo_foreground_top_path}</path>
-				<h>${system_stack_top_h}</h>
-				<linearSmooth>true</linearSmooth>
-			</image>
-			
-			<image name="foreground_mid">
-				<path>${foreground_mid_path}</path>
-				<h>${system_stack_mid_h}</h>
-			</image>
-			
-			<image name="foreground_bottom">
-				<path>${foreground_bottom_path}</path>
-				<h>${system_stack_bottom_h}</h>
-			</image>
-		</stackpanel>
+		<image name="FG" extra="true">
+			<path>${system_fg}</path>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<size>1 1</size>
+			<zIndex>15</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<visible>true</visible>
+		</image>
+		
 		<image name="bckground_top" extra="static">
-			<path>${neo_back_top_path}</path>
+			<path>${system_fg_brushed}</path>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
-			<size>${BCK_scale}</size>
+			<size>1 1</size>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>12</zIndex>
 			<storyboard>
@@ -46,7 +32,7 @@
 			<default>${default_background_path}</default>
 			<origin>0.5 1</origin>
 			<pos>0.5 1</pos>
-			<size>${background_scale}</size>
+			<size>${system_background_scale}</size>
 			<zIndex>10</zIndex>
 			<storyboard repeat="forever"  ifSubset="breathing:on">
 				<animation property="scale" from="1" to="1.0025" duration="500" mode="easeIn"/>
@@ -63,19 +49,19 @@
 			<!--<shared>true</shared>-->
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="activate" repeat="forever" ifSubset="breathing:on">
-				<animation property="scale" from="${logo_max_size}" to="${logo_mid_size}" duration="500" mode="easeIn"/>
-				<animation property="scale" from="${logo_mid_size}" to="${logo_min_size}" duration="500" mode="easeOut" begin="500"/>
-				<animation property="scale" from="${logo_min_size}" to="${logo_mid_size}" duration="500" mode="easeIn" begin="1000"/>
-				<animation property="scale" from="${logo_mid_size}" to="${logo_max_size}" duration="500" mode="easeOut" begin="1500"/>
+				<animation property="scale" from="${system_logo_max_size}" to="${system_logo_mid_size}" duration="500" mode="easeIn"/>
+				<animation property="scale" from="${system_logo_mid_size}" to="${system_logo_min_size}" duration="500" mode="easeOut" begin="500"/>
+				<animation property="scale" from="${system_logo_min_size}" to="${system_logo_mid_size}" duration="500" mode="easeIn" begin="1000"/>
+				<animation property="scale" from="${system_logo_mid_size}" to="${system_logo_max_size}" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
 		</image>
 		<carousel name="systemcarousel">
 			<origin>0.5 0.5</origin>
-			<pos>${logo_pos}</pos>
+			<pos>${sytem_logo_pos}</pos>
 			<size>1 1</size>
 			<color>00000000</color>
 			<minLogoOpacity>0</minLogoOpacity>
-			<logoScale>${logo_scale}</logoScale>
+			<logoScale>${system_logo_scale}</logoScale>
 			<transitionSpeed>800</transitionSpeed>
 			<systemInfoDelay>100</systemInfoDelay>
 			<scaledLogoSpacing>.5</scaledLogoSpacing>
@@ -87,8 +73,8 @@
 			<path>./../systems/controllers/${system.theme}.png</path>
 			<default>./../systems/controllers/_default.png</default>
 			<origin>0.5 0.5</origin>
-			<pos>${controller_pos}</pos>
-			<maxSize>${controller_maxSize}</maxSize>
+			<pos>${system_controller_pos}</pos>
+			<maxSize>${system_controller_maxSize}</maxSize>
 			<opacity>0</opacity>
 			<linearSmooth>true</linearSmooth>
 			<storyboard ifSubset="controllers_animations:simple">
@@ -109,7 +95,7 @@
 		<!-- System view Info disabled-->
 		<text name="systemInfo" >
 			<origin>0 0</origin>
-			<pos>${sysinfo_pos}</pos>
+			<pos>${system_sysinfo_pos}</pos>
 			<size>1 0.22</size>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ADADAD</color>
@@ -121,7 +107,7 @@
 		<!-- Manufacturer Infos-->
 		<text name="Manufacturer" extra="static">
 			<origin>0.5 0.5</origin>
-			<pos>${manufacturer_pos}</pos>
+			<pos>${system_manufacturer_pos}</pos>
 			<!--<size>1 0.22</size>-->
 			<alignment>center</alignment>
 			<backgroundColor>00000000</backgroundColor>

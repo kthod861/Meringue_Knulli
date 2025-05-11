@@ -4,12 +4,12 @@
 	<view name="grid">
 		<!-- System logo -->
 		<image name="logo" extra="static">
-			<pos>${grid_logo_pos}</pos>
-			<origin>0.5 0.5</origin>
+			<pos>${gamelist_logo_pos}</pos>
+			<origin>0.5 0</origin>
 			<horizontalAlignment>center</horizontalAlignment>
 			<verticalAlignment>center</verticalAlignment>
-			<scale>${grid_logo_scale}</scale>
-			<maxSize>${grid_logo_maxSize}</maxSize>
+			<scale>${gamelist_logo_scale}</scale>
+			<maxSize>${gamelist_logo_maxSize}</maxSize>
 			<path>./../systems/logos/${system.theme}.webp</path>
 			<zIndex>16</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
@@ -17,20 +17,23 @@
 			<opacity>0</opacity>
 			<storyboard>
 				<animation property="opacity" from="0" to="1" begin="150" duration="100" mode="easeOut"/>
-				<animation property="scale" from="0" to="0.35" begin="150" duration="200" mode="easeOut"/>
+				<animation property="scale" from="0" to="${gamelist_logo_scale}" begin="150" duration="200" mode="easeOut"/>
 			</storyboard>
 		</image>
 		<!-- game name-->
 		<text name="md_name">
-			<fontSize>${game_name_fontSize}</fontSize>
+			<origin>0.5 1</origin>
+			<size>0.5 0.05</size>
+			<pos>${gamelist_game_name_pos}</pos>
+			<!--<verticalAlignment>top</verticalAlignment>-->
+			
+			<fontSize>${gamelist_game_name_fontSize}</fontSize>
 			<fontPath>${fontRegular}</fontPath>
-			<pos>${game_name_pos}</pos>
-			<origin>0.5 0.5</origin>
-			<size>0.7 ${game_name_fontSize}</size>
-			<alignment>center</alignment>
+			
+			<!--<alignment>center</alignment>-->
 			<color>${fgColor}</color>
 			<zIndex>16</zIndex>
-			<w>0.5</w>
+			
 			<glowSize>0.5</glowSize>
 			<glowColor>ffffff26</glowColor>
 			<singleLineScroll>true</singleLineScroll>
@@ -39,7 +42,7 @@
 		</text>
 		<!-- game publisher-->
 		<text name="game-publisher" extra="true">
-			<pos>${grid_publisher_pos}</pos>
+			<pos>${gamelist_publisher_pos}</pos>
 			<origin>0 0.5</origin>
 			<w>0.22</w>
 			<size>0.7 ${fontSizeBody-small}</size>
@@ -48,7 +51,7 @@
 			<fontPath>${fontRegular}</fontPath>
 			<color>dddddd</color>
 			<alignment>left</alignment>
-			<fontSize>${grid_stack_info_fontSize}</fontSize>
+			<fontSize>${gamelist_stack_info_fontSize}</fontSize>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
@@ -58,7 +61,7 @@
 		
 		<stackpanel name="release_rating" extra="true">
 			<separator>0</separator>
-			<pos>${grid_stack_rating_pos}</pos>
+			<pos>${gamelist_stack_rating_pos}</pos>
 			<w>0.2</w>
 			<h>0.025</h>
 			<orientation>horizontal</orientation>
@@ -68,7 +71,7 @@
 			<text name="releaseyear" extra="true">
 				<text>{game:releaseyear}</text>
 				<color>dddddd</color>
-				<fontSize>${grid_stack_info_fontSize}</fontSize>
+				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
 				<fontPath>${fontRegular}</fontPath>
 				<w>0.27</w>
 			</text>
@@ -85,8 +88,8 @@
 		<!-- stack info -->
 		<stackpanel name="lastplayed_gametime" extra="true">
 			<separator>0</separator>
-			<pos>${grid_stack_info_pos}</pos>
-			<w>0.21</w>
+			<pos>${gamelist_stack_info_pos}</pos>
+			<w>0.22</w>
 			<h>0.08</h>
 			<orientation>vertical</orientation>
 			<reverse>false</reverse>
@@ -95,7 +98,8 @@
 			<text name="systemInfoEx" extra="true">
 				<text>Last played : {game:lastplayed}</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${grid_stack_info_fontSize}</fontSize>
+				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
+				<alignment>right</alignment>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>
@@ -103,7 +107,8 @@
 			<text name="systemInfoEx" extra="true">
 				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : Never"</text>
 				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${grid_stack_info_fontSize}</fontSize>
+				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
+				<alignment>right</alignment>
 				<color>dddddd</color>
 				<h>0.5</h>
 			</text>
@@ -116,7 +121,7 @@
 			<default>${default_background_path}</default>
 			<origin>0.5 1</origin>
 			<pos>0.5 1</pos>
-			<size>${background_scale_gamelist}</size>
+			<size>${gamelist_background_scale}</size>
 			<zIndex>10</zIndex>
 			<storyboard repeat="forever"  ifSubset="breathing:on">
 				<animation property="scale" from="1" to="1.0025" duration="500" mode="easeIn"/>
@@ -130,29 +135,16 @@
 		</image>
 
 		<!-- Foreground-->
-		<stackpanel name="foreground" extra="static">
-			<pos>${stack_foreground_pos}</pos>
-			<h>${stack_foreground_h}</h>
-			<w>${stack_foreground_w}</w>
-			<separator>0.0</separator>
-			<orientation>vertical</orientation>
-			<zIndex> 15 </zIndex>
-			<image name="foreground_top">
-				<path>${neo_gridforeground_top_path}</path>
-				<h>${gamegrid_stack_top_h}</h>
-			</image>
-			
-			<image name="foreground_mid">
-				<path>${foreground_mid_path}</path>
-				<h>${gamegrid_stack_mid_h}</h>
-			</image>
-			
-			<image name="foreground_bottom">
-				<path>${foreground_bottom_path}</path>
-				<h>${gamegrid_stack_bottom_h}</h>
-			</image>
-		</stackpanel>
-
+		<image name="FG" extra="true">
+			<path>${gamelist_fg}</path>
+			<origin>0.5 1</origin>
+			<pos>0.5 1</pos>
+			<size>1 1</size>
+			<zIndex>15</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<visible>true</visible>
+		</image>
+		
 		<!--actual game grid -->
 		<imagegrid name="gamegrid">
 			<zIndex>13</zIndex>

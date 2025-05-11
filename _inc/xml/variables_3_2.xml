@@ -5,66 +5,48 @@
 		<!--Background-->
 		<background_path>./../systems/background/${system.theme}.webp</background_path>
 		<default_background_path>./../systems/background/_default.webp</default_background_path>
-		<background_scale>1.185 1</background_scale>
-		<background_scale_gamelist>1 1</background_scale_gamelist>
+		<system_background_scale>1.185 1</system_background_scale>
+		<gamelist_background_scale>1 1</gamelist_background_scale>
 		
-		<!--Old-->
-		<foreground_mid_path>./../images/SystemForeground_MID.webp</foreground_mid_path>
-		<foreground_bottom_path>./../images/SystemForeground_BOTTOM.webp</foreground_bottom_path>
-		
-		<!--Brushed-->
-		<neo_foreground_top_path>./../images/NEO_SystemForeground_TOP.webp</neo_foreground_top_path>
-		<neo_gridforeground_top_path>./../images/NEO_GridForeground_TOP.webp</neo_gridforeground_top_path>
-		
-		<neo_back_top_path>./../images/BCK_Header.webp</neo_back_top_path>
-		<BCK_scale>1 1</BCK_scale>
-		<!--Global stack module-->
-		<stack_foreground_pos>0 0</stack_foreground_pos>
-		<stack_foreground_h>1</stack_foreground_h>
-		<stack_foreground_w>1</stack_foreground_w>
-		
-		<!--System stack settings-->
-		<system_stack_top_h>0.4417</system_stack_top_h>
-		<system_stack_mid_h>0.5231</system_stack_mid_h>
-		<system_stack_bottom_h>0.0352</system_stack_bottom_h>
-		
-		<!--Grid stack settings-->
-		<gamegrid_stack_top_h>0.2703</gamegrid_stack_top_h>
-		<gamegrid_stack_mid_h>0.6736</gamegrid_stack_mid_h>
-		<gamegrid_stack_bottom_h>0.0563</gamegrid_stack_bottom_h>
-		
+		<system_fg>./_inc/images/System_FG_4_3.webp</system_fg>
+		<system_fg_brushed>./../images/BCK_Header_4_3.webp</system_fg_brushed>
+		<gamelist_fg>./_inc/images/Gamelist_FG_4_3.webp</gamelist_fg>
 		
 		<!--Logo-->
-		<logo_pos>0.5 0.1347</logo_pos>
-		<logo_scale>1.</logo_scale>
-		<logo_min_size>0.98</logo_min_size>
-		<logo_mid_size>1</logo_mid_size>
-		<logo_max_size>1.02</logo_max_size>
+		<sytem_logo_pos>0.5 0.1347</sytem_logo_pos>
+		<system_logo_scale>1.</system_logo_scale>
+		<system_logo_min_size>0.98</system_logo_min_size>
+		<system_logo_mid_size>1</system_logo_mid_size>
+		<system_logo_max_size>1.02</system_logo_max_size>
 		
-		<grid_logo_pos>0.5 0.0625</grid_logo_pos>
-		<grid_logo_scale>0.4</grid_logo_scale>
-		<grid_logo_maxSize>1 0.29</grid_logo_maxSize>
+		<gamelist_logo_pos>0.5 0.01</gamelist_logo_pos>
+		<gamelist_logo_scale ifSubset="font_size:small">0.26</gamelist_logo_scale>
+		<gamelist_logo_scale ifSubset="font_size:medium">0.25 </gamelist_logo_scale>
+		<gamelist_logo_scale ifSubset="font_size:large">0.24 </gamelist_logo_scale>
+		<gamelist_logo_maxSize>1 0.29</gamelist_logo_maxSize>
 		
 		<!--Controller-->
-		<controller_pos>0.5 0.65</controller_pos>
-		<controller_maxSize>.5 .6</controller_maxSize>
+		<system_controller_pos>0.5 0.65</system_controller_pos>
+		<system_controller_maxSize>.5 .6</system_controller_maxSize>
 		
 		<!--Infos-->
-		<game_name_pos>0.5 0.128</game_name_pos>
-		<game_name_fontSize ifSubset="font_size:small">0.02</game_name_fontSize>
-		<game_name_fontSize ifSubset="font_size:large">0.03</game_name_fontSize>
-		<sysinfo_pos>0.39 0.22</sysinfo_pos>
-		<manufacturer_pos>0.5 0.257</manufacturer_pos>
+		<gamelist_game_name_pos>0.5 0.128</gamelist_game_name_pos>
+		<gamelist_game_name_fontSize ifSubset="font_size:small">0.02</gamelist_game_name_fontSize>
+		<gamelist_game_name_fontSize ifSubset="font_size:medium">0.03</gamelist_game_name_fontSize>
+		<gamelist_game_name_fontSize ifSubset="font_size:large">0.035</gamelist_game_name_fontSize>
+		<system_sysinfo_pos>0.39 0.22</system_sysinfo_pos>
+		<system_manufacturer_pos>0.5 0.257</system_manufacturer_pos>
 		
-		<grid_publisher_pos>0.010 0.15</grid_publisher_pos>
-		<grid_stack_rating_pos>0.01 0.168</grid_stack_rating_pos>
+		<gamelist_publisher_pos>0.010 0.14</gamelist_publisher_pos>
+		<gamelist_stack_rating_pos>0.01 0.158</gamelist_stack_rating_pos>
 		
-		<grid_stack_info_fontSize>0.02</grid_stack_info_fontSize>
-		<grid_stack_info_pos>0.798 0.13</grid_stack_info_pos>
+		<gamelist_stack_info_fontSize>0.02</gamelist_stack_info_fontSize>
+		<gamelist_stack_info_pos>0.77 0.12</gamelist_stack_info_pos>
 
 		<system_info_pos>0.01 0.28</system_info_pos>
 		
 		<system_info_fontsize ifSubset="font_size:large">0.029</system_info_fontsize>
+		<system_info_fontsize ifSubset="font_size:medium">0.021</system_info_fontsize>
 		<system_info_fontsize ifSubset="font_size:small">0.018</system_info_fontsize>
 		
 		<system_totalgame_pos>0.99 0.28</system_totalgame_pos>
