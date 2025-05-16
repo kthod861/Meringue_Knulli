@@ -11,7 +11,7 @@
 
     <menuTextSmall name="menutextsmall">
       <fontPath>${fontRegular}</fontPath>
-      <fontSize>${fontSizeCaption}</fontSize>
+      <fontSize>${fontSizeBody-small}</fontSize>
     </menuTextSmall>
 
     <menuGroup name="menugroup">

@@ -45,7 +45,7 @@
 		
 		<fontRegular>./../fonts/font.ttf</fontRegular>
 		<fontSizeBody>0.03125</fontSizeBody>
-		<fontSizeBody-small>0.03125</fontSizeBody-small>
+		<fontSizeBody-small>0.015</fontSizeBody-small>
 		<fontSizeCaption>0.028125</fontSizeCaption> 
 		<fontSizeH2>0.04375</fontSizeH2>
 		<fontBold>./../fonts/font-bold.ttf</fontBold>
