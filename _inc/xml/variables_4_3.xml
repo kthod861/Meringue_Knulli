@@ -3,14 +3,14 @@
 	<formatVersion>7</formatVersion>
 	<variables>
 		<!--Background-->
-		<background_path>./../systems/background/${system.theme}.webp</background_path>
-		<default_background_path>./../systems/background/_default.webp</default_background_path>
+		<background_path>./../systems/background/${system.theme}.jpg</background_path>
+		<default_background_path>./../systems/background/_default.jpg</default_background_path>
 		<system_background_scale>1.3333 1</system_background_scale>
 		<gamelist_background_scale>1.3333 1</gamelist_background_scale>
 		
-		<system_fg>./_inc/images/System_FG_4_3.webp</system_fg>
-		<system_fg_brushed>./../images/BCK_Header_4_3.webp</system_fg_brushed>
-		<gamelist_fg>./_inc/images/Gamelist_FG_4_3.webp</gamelist_fg>
+		<system_fg>./_inc/images/System_FG_4_3.png</system_fg>
+		<system_fg_brushed>./../images/BCK_Header_4_3.png</system_fg_brushed>
+		<gamelist_fg>./_inc/images/Gamelist_FG_4_3.png</gamelist_fg>
 		
 		<!--Logo-->
 		<sytem_logo_pos>0.5 0.1347</sytem_logo_pos>

@@ -10,7 +10,7 @@
 			<verticalAlignment>center</verticalAlignment>
 			<scale>${gamelist_logo_scale}</scale>
 			<maxSize>${gamelist_logo_maxSize}</maxSize>
-			<path>./../systems/logos/${system.theme}.webp</path>
+			<path>./../systems/logos/${system.theme}.png</path>
 			<zIndex>16</zIndex>
 			<!--<reflexion>0.3 0.1</reflexion>-->
 			<linearSmooth>true</linearSmooth>

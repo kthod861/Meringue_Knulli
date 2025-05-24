@@ -45,7 +45,7 @@
 		</image>
 		<!-- Logo -->
 		<image name="logo">
-			<path>./../systems/logos/${system.theme}.webp</path>
+			<path>./../systems/logos/${system.theme}.png</path>
 			<!--<shared>true</shared>-->
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="activate" repeat="forever" ifSubset="breathing:on">

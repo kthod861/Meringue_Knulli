@@ -21,7 +21,7 @@
 		<include name="swoop" displayName="Swoop" />	
 	</subset>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="2.0" />
+		<include name="version" displayName="2.1" />
 	</subset>
 
 	<variables>
