@@ -14,7 +14,8 @@
 		
 		<!--Logo-->
 		<sytem_logo_pos>0.5 0.1333</sytem_logo_pos>
-		<system_logo_scale>1.1</system_logo_scale>
+		<system_logo_scale>1</system_logo_scale>
+		<system_logoSize>.28 .15</system_logoSize>
 		<system_logo_min_size>0.98</system_logo_min_size>
 		<system_logo_mid_size>1</system_logo_mid_size>
 		<system_logo_max_size>1.02</system_logo_max_size>

@@ -46,7 +46,6 @@
 		<!-- Logo -->
 		<image name="logo">
 			<path>./../systems/logos/${system.theme}.png</path>
-			<!--<shared>true</shared>-->
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="activate" repeat="forever" ifSubset="breathing:on">
 				<animation property="scale" from="${system_logo_max_size}" to="${system_logo_mid_size}" duration="500" mode="easeIn"/>
@@ -61,6 +60,7 @@
 			<size>1 1</size>
 			<color>00000000</color>
 			<minLogoOpacity>0</minLogoOpacity>
+			<logoSize>${system_logoSize}</logoSize>
 			<logoScale>${system_logo_scale}</logoScale>
 			<transitionSpeed>800</transitionSpeed>
 			<systemInfoDelay>100</systemInfoDelay>
