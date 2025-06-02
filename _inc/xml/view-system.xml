@@ -21,6 +21,8 @@
 			<size>1 1</size>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>12</zIndex>
+			<!--<opacity>0.8</opacity>-->
+			<color ifSubset="glass:on">000000BF</color>
 			<storyboard>
 				<animation property="x" from="0.0" to="-0.2" duration="300" mode="easeOut"/>
 			</storyboard>

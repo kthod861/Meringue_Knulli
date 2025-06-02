@@ -162,7 +162,8 @@
 			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
 			<scrollbarAlignment>right</scrollbarAlignment>
 			<imageSource>thumbnail</imageSource>
-			<scrollDirection>vertical</scrollDirection>
+			<scrollDirection ifSubset="gamelist_orientation:vertical">vertical</scrollDirection>
+			<scrollDirection ifSubset="gamelist_orientation:horizontal">horizontal</scrollDirection>
 		</imagegrid>
 		
 		<!-- each game -->
