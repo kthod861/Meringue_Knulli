@@ -16,8 +16,8 @@
 		<include name="vertical" displayName="Vertical" />
 	</subset>
 	<subset name="glass" displayName="System view glass">
-		<include name="off" displayName="Off" />
 		<include name="on" displayName="On" />
+		<include name="off" displayName="Off" />
 	</subset>
 	<subset name="breathing" displayName="Breathing animations">
 		<include name="on" displayName="On" />
@@ -29,7 +29,7 @@
 		<include name="swoop" displayName="Swoop" />	
 	</subset>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="2.3" />
+		<include name="version" displayName="2.4" />
 	</subset>
 
 	<variables>
