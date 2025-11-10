@@ -51,13 +51,13 @@
 		<c.text>ffffff</c.text>
 		<c.textHeader>6ecaca</c.textHeader>
 		
-		<fontRegular>./../fonts/font.ttf</fontRegular>
+		<fontRegular>./../fonts/5by7.ttf</fontRegular>
 		<fontSizeBody>0.03125</fontSizeBody>
 		<fontSizeBody-small>0.015</fontSizeBody-small>
 		<fontSizeCaption>0.028125</fontSizeCaption> 
 		<fontSizeH2>0.04375</fontSizeH2>
-		<fontBold>./../fonts/font-bold.ttf</fontBold>
-		
+		<fontBold>./../fonts/5by7.ttf</fontBold>
+		<font_path>./../fonts/5by7.ttf</font_path>
 		<gamelistGrid_size>1 0.85</gamelistGrid_size>
 		<vScrollBar>0.0035</vScrollBar>
 	</variables>
@@ -108,7 +108,7 @@
 			<iconColor>ffffff</iconColor>
 			<opacity>0.7</opacity>
 			<fontPath>${font_path}</fontPath>
-			<fontSize>0.02</fontSize> 
+			<fontSize>0.018</fontSize> 
 		</helpsystem>
 	</view>
 
@@ -123,6 +123,7 @@
       </batteryIndicator>
       <text name="clock">
          <pos>1 1</pos>
+		 <fontPath>./../fonts/${fontRegular}</fontPath>
       </text>
       <!-- End: Resets -->
 	</view>

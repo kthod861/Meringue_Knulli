@@ -34,7 +34,7 @@
 			<color>${fgColor}</color>
 			<zIndex>16</zIndex>
 			
-			<glowSize>0.5</glowSize>
+			<glowSize>0.9</glowSize>
 			<glowColor>ffffff26</glowColor>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
@@ -96,7 +96,7 @@
 			<zIndex> 20 </zIndex>
 			<!-- last played-->
 			<text name="systemInfoEx" extra="true">
-				<text>Last played : {game:lastplayed}</text>
+				<text>{game:lastplayed} > 0 ? "Last played  : "+elapsed( {game:lastplayed} ) : "Last played  : Never"</text>
 				<fontPath>${fontRegular}</fontPath>
 				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
 				<alignment>right</alignment>
@@ -105,7 +105,7 @@
 			</text>
 			<!-- play time-->
 			<text name="systemInfoEx" extra="true">
-				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : Never"</text>
+				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : None"</text>
 				<fontPath>${fontRegular}</fontPath>
 				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
 				<alignment>right</alignment>

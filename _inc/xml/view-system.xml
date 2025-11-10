@@ -139,8 +139,8 @@
 			<fontSize>${system_info_fontsize}</fontSize>
 			<text>{system:total} Games</text>
 			<emptyTextDefaults>0</emptyTextDefaults>
-			<opacity>0.8</opacity>
-			<glowSize>0.5</glowSize>
+			<opacity>0.9</opacity>
+			<glowSize>1.2</glowSize>
 			<glowColor>ffffff26</glowColor>
 			<zIndex>16</zIndex>
 		</text>
@@ -156,8 +156,8 @@
 			<fontSize>${system_info_fontsize}</fontSize>
 			<text>{system:gamesPlayed} Played&#10;{system:favorites} Favorites</text>
 			<emptyTextDefaults>0</emptyTextDefaults>
-			<opacity>0.8</opacity>
-			<glowSize>0.5</glowSize>
+			<opacity>0.9</opacity>
+			<glowSize>1.2</glowSize>
 			<glowColor>ffffff26</glowColor>
 			<zIndex>16</zIndex>
 		</text>
