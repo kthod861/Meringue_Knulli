@@ -45,7 +45,7 @@
 		<gamelist_stack_info_pos>0.77 0.13</gamelist_stack_info_pos>
 
 		<system_info_pos>0.01 0.2215</system_info_pos>
-		<system_info_fontsize ifSubset="font_size:large">0.029</system_info_fontsize>
+		<system_info_fontsize ifSubset="font_size:large">0.026</system_info_fontsize>
 		<system_info_fontsize ifSubset="font_size:medium">0.021</system_info_fontsize>
 		<system_info_fontsize ifSubset="font_size:small">0.018</system_info_fontsize>
 		
