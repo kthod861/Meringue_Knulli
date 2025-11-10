@@ -140,7 +140,7 @@
 			<text>{system:total} Games</text>
 			<emptyTextDefaults>0</emptyTextDefaults>
 			<opacity>0.9</opacity>
-			<glowSize>1.2</glowSize>
+			<glowSize>.9</glowSize>
 			<glowColor>ffffff26</glowColor>
 			<zIndex>16</zIndex>
 		</text>
@@ -157,7 +157,7 @@
 			<text>{system:gamesPlayed} Played&#10;{system:favorites} Favorites</text>
 			<emptyTextDefaults>0</emptyTextDefaults>
 			<opacity>0.9</opacity>
-			<glowSize>1.2</glowSize>
+			<glowSize>0.9</glowSize>
 			<glowColor>ffffff26</glowColor>
 			<zIndex>16</zIndex>
 		</text>
