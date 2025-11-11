@@ -45,7 +45,7 @@
 			<pos>${gamelist_publisher_pos}</pos>
 			<origin>0 0.5</origin>
 			<w>0.22</w>
-			<size>0.7 ${fontSizeBody-small}</size>
+			<size>0.7 0.025</size>
 			<alignment>left</alignment>
 			<text>{game:publisher}</text>
 			<fontPath>${fontRegular}</fontPath>

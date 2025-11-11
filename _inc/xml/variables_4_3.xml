@@ -36,12 +36,12 @@
 		<gamelist_game_name_fontSize ifSubset="font_size:medium">0.03</gamelist_game_name_fontSize>
 		<gamelist_game_name_fontSize ifSubset="font_size:large">0.035</gamelist_game_name_fontSize>
 		<system_sysinfo_pos>0.39 0.22</system_sysinfo_pos>
-		<system_manufacturer_pos>0.5 0.258</system_manufacturer_pos>
+		<system_manufacturer_pos>0.5 0.255</system_manufacturer_pos>
 		
 		<gamelist_publisher_pos>0.010 0.13</gamelist_publisher_pos>
 		<gamelist_stack_rating_pos>0.01 0.148</gamelist_stack_rating_pos>
 		
-		<gamelist_stack_info_fontSize>0.02</gamelist_stack_info_fontSize>
+		<gamelist_stack_info_fontSize>0.022</gamelist_stack_info_fontSize>
 		<gamelist_stack_info_pos>0.77 0.12</gamelist_stack_info_pos>
 
 		<system_info_pos>0.01 0.28</system_info_pos>

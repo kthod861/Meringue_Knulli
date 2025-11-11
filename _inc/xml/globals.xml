@@ -29,7 +29,7 @@
 		<include name="swoop" displayName="Swoop" />	
 	</subset>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="2.4" />
+		<include name="version" displayName="2.5" />
 	</subset>
 
 	<variables>
@@ -52,10 +52,10 @@
 		<c.textHeader>6ecaca</c.textHeader>
 		
 		<fontRegular>./../fonts/5by7.ttf</fontRegular>
-		<fontSizeBody>0.03125</fontSizeBody>
-		<fontSizeBody-small>0.015</fontSizeBody-small>
-		<fontSizeCaption>0.028125</fontSizeCaption> 
-		<fontSizeH2>0.04375</fontSizeH2>
+		<fontSizeBody>0.038</fontSizeBody>
+		<fontSizeBody-small>0.025</fontSizeBody-small>
+		<fontSizeCaption>0.031</fontSizeCaption> 
+		<fontSizeH2>0.06</fontSizeH2>
 		<fontBold>./../fonts/5by7.ttf</fontBold>
 		<font_path>./../fonts/5by7.ttf</font_path>
 		<gamelistGrid_size>1 0.85</gamelistGrid_size>
@@ -123,7 +123,7 @@
       </batteryIndicator>
       <text name="clock">
          <pos>1 1</pos>
-		 <fontPath>./../fonts/${fontRegular}</fontPath>
+		 <fontPath>${font_path}</fontPath>
       </text>
       <!-- End: Resets -->
 	</view>
@@ -138,21 +138,21 @@
 			<zIndex> 20 </zIndex>
 			
 			<clock name="system-clock">
-				<color>777777FF</color>
-				<fontPath>./../fonts/${fontRegular}</fontPath>
-				<fontSize>0.023</fontSize>
+				<color>c8c8c8</color>
+				<fontPath>${font_path}</fontPath>
+				<fontSize>0.03</fontSize>
 			</clock>
 			
 			<networkIcon name="system-network-icon">
 				<maxSize>1 1</maxSize>
-				<color>777777FF</color>
+				<color>c8c8c8</color>
 				<networkIcon>./../icons/Network.png</networkIcon>
 				<planemodeIcon>./../icons/Planemode.png</planemodeIcon>
 			</networkIcon>
 		 
 			<batteryIcon name="system-battery-icon">
 				<maxSize>1 1</maxSize>
-				<color>777777FF</color>
+				<color>c8c8c8</color>
 				<incharge>./../batteryIndicator/incharge.png</incharge>
 				<full>./../batteryIndicator/full.png</full>
 				<at75>./../batteryIndicator/75.png</at75>
@@ -163,8 +163,8 @@
 
 			<batteryText name="system-battery-text">
 				<color>777777FF</color>
-				<fontPath>./../fonts/${fontRegular}</fontPath>
-				<fontSize>0.023</fontSize>
+				<fontPath>${font_path}</fontPath>
+				<fontSize>0.03</fontSize>
 			</batteryText>
 		 
 		</stackpanel>

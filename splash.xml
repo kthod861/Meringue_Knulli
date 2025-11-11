@@ -21,13 +21,13 @@
       <minSize>1 0.01</minSize>
     </image>
     <image name="progressbar:active">
-      <color>94A0FF</color>
+      <color>3b4066</color>
       <tile>true</tile>
     </image>
     <text name="label">
       <alignment>center</alignment>
-      <fontPath>./_inc/fonts/font.ttf</fontPath>
-      <fontSize>0.0375</fontSize> <!-- 12-->
+      <fontPath>./_inc/fonts/5by7.ttf</fontPath>
+      <fontSize>0.05</fontSize> <!-- 12-->
       <color>ffffff</color>
       <origin>0.5 1</origin>
       <pos>0.5 0.95</pos>
