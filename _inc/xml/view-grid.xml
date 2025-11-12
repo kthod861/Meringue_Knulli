@@ -85,36 +85,42 @@
 				<w>0.8</w>
 			</rating>
 		</stackpanel>
-		<!-- stack info -->
-		<stackpanel name="lastplayed_gametime" extra="true">
-			<separator>0</separator>
-			<pos>${gamelist_stack_info_pos}</pos>
-			<w>0.22</w>
-			<h>0.08</h>
-			<orientation>vertical</orientation>
-			<reverse>false</reverse>
-			<zIndex> 20 </zIndex>
-			<!-- last played-->
-			<text name="systemInfoEx" extra="true">
-				<text>{game:lastplayed} > 0 ? "Last played  : "+elapsed( {game:lastplayed} ) : "Last played  : Never"</text>
-				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
-				<alignment>right</alignment>
-				<color>dddddd</color>
-				<h>0.5</h>
-			</text>
-			<!-- play time-->
-			<text name="systemInfoEx" extra="true">
+
+			<!-- game time-->
+
+			<text name="systemInfoGameTime" extra="true">
+				<pos>${gamelist_PlayTime_pos}</pos>
+				<origin>1 0.5</origin>
+				<w>0.2</w>
+				<h>0.03</h>
 				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : None"</text>
 				<fontPath>${fontRegular}</fontPath>
 				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
 				<alignment>right</alignment>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScroll>horizontal</autoScroll>
+				<autoScrollDelay>0.00</autoScrollDelay>
 				<color>dddddd</color>
-				<h>0.5</h>
+				<zIndex> 20 </zIndex>
 			</text>
-		
-		</stackpanel>
 
+			<!-- last played-->
+			<text name="systemInfoLastPlayed" extra="true">
+				<pos>${gamelist_LastPlayed_pos}</pos>
+				<origin>1 0.5</origin>
+				<w>0.22</w>
+				<h>0.03</h>
+				<text>{game:lastplayed} > 0 ? "Last played  : "+elapsed( {game:lastplayed} ) : "Last played  : Never"</text>
+				<fontPath>${fontRegular}</fontPath>
+				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
+				<alignment>right</alignment>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScroll>horizontal</autoScroll>
+				<autoScrollDelay>0.01</autoScrollDelay>
+				<color>dddddd</color>
+				<zIndex> 20 </zIndex>
+			</text>
+			
 		<!-- Background-->
 		<image name="background_boxart" extra="true">
 			<path>${background_path}</path>

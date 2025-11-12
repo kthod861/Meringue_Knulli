@@ -41,8 +41,9 @@
 		<gamelist_publisher_pos>0.010 0.13</gamelist_publisher_pos>
 		<gamelist_stack_rating_pos>0.01 0.148</gamelist_stack_rating_pos>
 		
-		<gamelist_stack_info_fontSize>0.022</gamelist_stack_info_fontSize>
-		<gamelist_stack_info_pos>0.77 0.12</gamelist_stack_info_pos>
+		<gamelist_stack_info_fontSize>0.025</gamelist_stack_info_fontSize>
+		<gamelist_LastPlayed_pos>0.99 0.12</gamelist_LastPlayed_pos>
+		<gamelist_PlayTime_pos>0.99 0.16</gamelist_PlayTime_pos>
 
 		<system_info_pos>0.01 0.28</system_info_pos>
 		
