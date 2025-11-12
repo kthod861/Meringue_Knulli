@@ -2,7 +2,7 @@
 <theme>
 	<variables>
 		<GridLayout_small>7 2</GridLayout_small>
-		<GridLayout_medium>5 1</GridLayout_medium>
-		<GridLayout_large>3 1</GridLayout_large>
+		<GridLayout_medium>6 3</GridLayout_medium>
+		<GridLayout_large>5 2</GridLayout_large>
 	</variables>
 </theme>
