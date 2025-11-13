@@ -20,7 +20,7 @@
       <color>000000</color>
       <origin>0.5 1</origin>
       <pos>0.5 1</pos>
-      <maxSize>1 0.01</maxSize>
+      <maxSize>1 0.02</maxSize>
       <minSize>1 0.01</minSize>
     </image>
     <image name="progressbar:active">

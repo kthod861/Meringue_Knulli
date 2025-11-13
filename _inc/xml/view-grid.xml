@@ -74,6 +74,9 @@
 				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
 				<fontPath>${fontRegular}</fontPath>
 				<w>0.27</w>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScroll>horizontal</autoScroll>
+				<autoScrollDelay>0.01</autoScrollDelay>
 			</text>
 			<!-- rating-->
 			<rating name="rating" extra="true">
