@@ -38,6 +38,7 @@
 		<system_sysinfo_pos>0.39 0.22</system_sysinfo_pos>
 		<system_manufacturer_pos>0.5 0.27</system_manufacturer_pos>
 		
+		<gamelist_system_pos>0.010 0.115</gamelist_system_pos>
 		<gamelist_publisher_pos>0.010 0.14</gamelist_publisher_pos>
 		<gamelist_stack_rating_pos>0.01 0.165</gamelist_stack_rating_pos>
 		

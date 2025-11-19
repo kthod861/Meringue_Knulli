@@ -58,7 +58,23 @@
 			<visible>true</visible>
 			<zIndex>16</zIndex>
 		</text>
-		
+		<text name="system" extra="true">
+			<pos>${gamelist_system_pos}</pos>
+			<origin>0 0.5</origin>
+			<w>0.22</w>
+			<size>0.7 0.025</size>
+			<alignment>left</alignment>
+			<text>proper({game:system:fullName})</text>
+			<fontPath>${fontRegular}</fontPath>
+			<color>dddddd</color>
+			<alignment>left</alignment>
+			<fontSize>${gamelist_stack_info_fontSize}</fontSize>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScroll>horizontal</autoScroll>
+			<autoScrollDelay>0.01</autoScrollDelay>
+			<visible>true</visible>
+			<zIndex>16</zIndex>
+		</text>
 		<stackpanel name="release_rating" extra="true">
 			<separator>0</separator>
 			<pos>${gamelist_stack_rating_pos}</pos>
