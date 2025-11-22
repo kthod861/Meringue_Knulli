@@ -65,7 +65,8 @@
 			<size>0.7 0.025</size>
 			<alignment>left</alignment>
 			<!--<text>proper({game:system:fullName})</text>-->
-			<text>{system:collection} ? proper({game:system:fullName}) : ".........................."</text>
+			<text>proper({game:system:fullName})</text>
+			<visible>{system:collection}</visible>
 			<fontPath>${fontRegular}</fontPath>
 			<color>dddddd</color>
 			<alignment>left</alignment>
@@ -73,7 +74,6 @@
 			<singleLineScroll>true</singleLineScroll>
 			<autoScroll>horizontal</autoScroll>
 			<autoScrollDelay>0.01</autoScrollDelay>
-			<visible>true</visible>
 			<zIndex>16</zIndex>
 		</text>
 		<stackpanel name="release_rating" extra="true">
@@ -90,11 +90,25 @@
 				<color>dddddd</color>
 				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
 				<fontPath>${fontRegular}</fontPath>
-				<w>0.27</w>
+				<w>0.3</w>
 				<singleLineScroll>true</singleLineScroll>
 				<autoScroll>horizontal</autoScroll>
 				<autoScrollDelay>0.01</autoScrollDelay>
 			</text>
+				<image name="stack.savestate">
+					<visible>{game:hasSaveState}</visible>
+					<linearSmooth>true</linearSmooth>
+					<path>./../images/savestate.png</path>
+					<maxSize>1 1</maxSize>
+					<color>dddddd</color>
+				</image>
+				<image name="stack.cheevos">
+					<visible>{game:cheevos}</visible>
+					<linearSmooth>true</linearSmooth>
+					<path>./../images/cheevos.png</path>
+					<maxSize>1 1</maxSize>
+					<color>dddddd</color>
+				</image>
 			<!-- rating-->
 			<rating name="rating" extra="true">
 				<value>{game:rating}</value>
@@ -231,6 +245,7 @@
 				<animation property="scale" from="1.05" to="1" duration="500" mode="easeOut" begin="1500"/>
 			</storyboard>
 		</image>
+
 		<ninepatch name="gridtile.background:selected"
 			animateColor="4075F9"
 			animateColorTime="300"
