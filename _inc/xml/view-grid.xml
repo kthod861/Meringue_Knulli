@@ -64,7 +64,8 @@
 			<w>0.22</w>
 			<size>0.7 0.025</size>
 			<alignment>left</alignment>
-			<text>proper({game:system:fullName})</text>
+			<!--<text>proper({game:system:fullName})</text>-->
+			<text>{system:collection} ? proper({game:system:fullName}) : ".........................."</text>
 			<fontPath>${fontRegular}</fontPath>
 			<color>dddddd</color>
 			<alignment>left</alignment>
@@ -106,39 +107,38 @@
 		</stackpanel>
 
 			<!-- game time-->
+		<text name="systemInfoGameTime" extra="true">
+			<pos>${gamelist_PlayTime_pos}</pos>
+			<origin>1 0.5</origin>
+			<w>0.2</w>
+			<h>0.03</h>
+			<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : None"</text>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${gamelist_stack_info_fontSize}</fontSize>
+			<alignment>right</alignment>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScroll>horizontal</autoScroll>
+			<autoScrollDelay>0.00</autoScrollDelay>
+			<color>dddddd</color>
+			<zIndex> 20 </zIndex>
+		</text>
 
-			<text name="systemInfoGameTime" extra="true">
-				<pos>${gamelist_PlayTime_pos}</pos>
-				<origin>1 0.5</origin>
-				<w>0.2</w>
-				<h>0.03</h>
-				<text>{game:gametime} > 0 ? "Game time  : "+expandseconds({game:gametime}) : "Game time  : None"</text>
-				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
-				<alignment>right</alignment>
-				<singleLineScroll>true</singleLineScroll>
-				<autoScroll>horizontal</autoScroll>
-				<autoScrollDelay>0.00</autoScrollDelay>
-				<color>dddddd</color>
-				<zIndex> 20 </zIndex>
-			</text>
-
-			<!-- last played-->
-			<text name="systemInfoLastPlayed" extra="true">
-				<pos>${gamelist_LastPlayed_pos}</pos>
-				<origin>1 0.5</origin>
-				<w>0.22</w>
-				<h>0.03</h>
-				<text>{game:lastplayed} > 0 ? "Last played  : "+elapsed( {game:lastplayed} ) : "Last played  : Never"</text>
-				<fontPath>${fontRegular}</fontPath>
-				<fontSize>${gamelist_stack_info_fontSize}</fontSize>
-				<alignment>right</alignment>
-				<singleLineScroll>true</singleLineScroll>
-				<autoScroll>horizontal</autoScroll>
-				<autoScrollDelay>0.01</autoScrollDelay>
-				<color>dddddd</color>
-				<zIndex> 20 </zIndex>
-			</text>
+		<!-- last played-->
+		<text name="systemInfoLastPlayed" extra="true">
+			<pos>${gamelist_LastPlayed_pos}</pos>
+			<origin>1 0.5</origin>
+			<w>0.22</w>
+			<h>0.03</h>
+			<text>{game:lastplayed} > 0 ? "Last played  : "+elapsed( {game:lastplayed} ) : "Last played  : Never"</text>
+			<fontPath>${fontRegular}</fontPath>
+			<fontSize>${gamelist_stack_info_fontSize}</fontSize>
+			<alignment>right</alignment>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScroll>horizontal</autoScroll>
+			<autoScrollDelay>0.01</autoScrollDelay>
+			<color>dddddd</color>
+			<zIndex> 20 </zIndex>
+		</text>
 			
 		<!-- Background-->
 		<image name="background_boxart" extra="true">

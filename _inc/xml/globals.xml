@@ -29,7 +29,7 @@
 		<include name="swoop" displayName="Swoop" />	
 	</subset>
 	<subset name="theme_version" displayName="Theme version">
-		<include name="version" displayName="2.5" />
+		<include name="version" displayName="2.6" />
 	</subset>
 
 	<variables>
